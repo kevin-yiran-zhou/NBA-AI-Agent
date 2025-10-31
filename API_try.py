@@ -54,9 +54,7 @@ def test_get_nba_player(client):
     return response.data
 
 def test_list_nba_games(client):
-    response = client.nba.games.list(
-        dates=["2024-04-01", "2024-04-02", "2024-04-03", "2024-04-04"], per_page=25
-    )
+    response = client.nba.games.list(dates=["2025-10-30"], per_page=25)
     assert len(response.data) <= 25
     game = response.data[0]
     assert game.id is not None
@@ -166,14 +164,15 @@ def test_get_nba_game(client):
 
 # Test
 
-print("test_list_nba_teams:")
-data = test_list_nba_teams(client)
-for each in data:
-    print(each.full_name)
+# print("test_list_nba_teams:")
+# data = test_list_nba_teams(client)
+# for each in data:
+#     print(each.full_name)
 
 # print("test_get_nba_team:")
 # data = test_get_nba_team(client)
-# print(data.full_name)
+# # print(data.full_name)
+# print(data)
 
 # print("test_list_nba_players:")
 # data = test_list_nba_players(client)
@@ -182,13 +181,15 @@ for each in data:
 
 # print("test_get_nba_player:")
 # data = test_get_nba_player(client)
-# print(data.first_name, data.last_name)
+# # print(data.first_name, data.last_name)
+# print(data)
 
 # print("test_list_nba_games:")
 # data = test_list_nba_games(client)
 # for each in data:
 #     print(each.home_team.full_name, 'vs', each.visitor_team.full_name)  
 
-# print("test_get_nba_game:")
-# data = test_get_nba_game(client)
+print("test_get_nba_game:")
+data = test_get_nba_game(client)
 # print(data.home_team.full_name, 'vs', data.visitor_team.full_name)
+print(data)
