@@ -45,12 +45,13 @@ def test_list_nba_players(client):
 #     return response.data
 
 def test_get_nba_player(client):
-    response = client.nba.players.get(115)
+    # response = client.nba.players.get(115)
+    response = client.nba.players.list(first_name="Hansen")
     player = response.data
-    assert player.id == 115
-    assert player.first_name == "Stephen"
-    assert player.last_name == "Curry"
-    assert player.team is not None
+    # assert player.id == 115
+    # assert player.first_name == "Stephen"
+    # assert player.last_name == "Curry"
+    # assert player.team is not None
     return response.data
 
 def test_list_nba_games(client):
@@ -179,17 +180,18 @@ def test_get_nba_game(client):
 # for each in data:
 #     print(each.first_name, each.last_name)
 
-# print("test_get_nba_player:")
-# data = test_get_nba_player(client)
-# # print(data.first_name, data.last_name)
-# print(data)
+print("test_get_nba_player:")
+data = test_get_nba_player(client)
+# print(data.first_name, data.last_name)
+for each in data:
+    print(each.first_name, each.last_name)
 
 # print("test_list_nba_games:")
 # data = test_list_nba_games(client)
 # for each in data:
 #     print(each.home_team.full_name, 'vs', each.visitor_team.full_name)  
 
-print("test_get_nba_game:")
-data = test_get_nba_game(client)
-# print(data.home_team.full_name, 'vs', data.visitor_team.full_name)
-print(data)
+# print("test_get_nba_game:")
+# data = test_get_nba_game(client)
+# # print(data.home_team.full_name, 'vs', data.visitor_team.full_name)
+# print(data)
