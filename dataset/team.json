@@ -1,9 +1,9 @@
 [
   {
-    "text": "Are the Warriors in the Western or Eastern Conference?",
+    "text": "I want to know the conference for the Warriors.",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
+      "input": "Warriors",
       "attribute": "conference"
     }
   },
@@ -11,7 +11,7 @@
     "text": "Which conference are the Warriors in?",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
+      "input": "Warriors",
       "attribute": "conference"
     }
   },
@@ -19,7 +19,7 @@
     "text": "What conference do the Warriors play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
+      "input": "Warriors",
       "attribute": "conference"
     }
   },
@@ -27,15 +27,15 @@
     "text": "Tell me which conference the Lakers belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Lakers",
+      "input": "Lakers",
       "attribute": "conference"
     }
   },
   {
-    "text": "Are the Lakers in the Western or Eastern Conference?",
+    "text": "Which conference are the Lakers in?",
     "intent": "team_info",
     "slots": {
-      "name": "Lakers",
+      "input": "Lakers",
       "attribute": "conference"
     }
   },
@@ -43,23 +43,7 @@
     "text": "What conference do the Lakers play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Lakers",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Which conference are the Celtics in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Celtics",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Are the Celtics in the Western or Eastern Conference?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Celtics",
+      "input": "Lakers",
       "attribute": "conference"
     }
   },
@@ -67,15 +51,31 @@
     "text": "Tell me which conference the Celtics belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Celtics",
+      "input": "Celtics",
       "attribute": "conference"
     }
   },
   {
-    "text": "Which conference are the Bucks in?",
+    "text": "Are the Celtics in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
+      "input": "Celtics",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "What conference do the Celtics play in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Celtics",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Tell me which conference the Bucks belong to.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Bucks",
       "attribute": "conference"
     }
   },
@@ -83,7 +83,7 @@
     "text": "Are the Bucks in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
+      "input": "Bucks",
       "attribute": "conference"
     }
   },
@@ -91,23 +91,15 @@
     "text": "What conference do the Bucks play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
+      "input": "Bucks",
       "attribute": "conference"
     }
   },
   {
-    "text": "I want to know the conference for the Heat.",
+    "text": "Tell me which conference the Heat belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Heat",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "What conference do the Heat play in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Heat",
+      "input": "Heat",
       "attribute": "conference"
     }
   },
@@ -115,7 +107,15 @@
     "text": "Are the Heat in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Heat",
+      "input": "Heat",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Which conference are the Heat in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Heat",
       "attribute": "conference"
     }
   },
@@ -123,15 +123,15 @@
     "text": "Tell me which conference the Suns belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Suns",
       "attribute": "conference"
     }
   },
   {
-    "text": "What conference do the Suns play in?",
+    "text": "Which conference are the Suns in?",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Suns",
       "attribute": "conference"
     }
   },
@@ -139,7 +139,7 @@
     "text": "I want to know the conference for the Suns.",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Suns",
       "attribute": "conference"
     }
   },
@@ -147,15 +147,7 @@
     "text": "What conference do the Nuggets play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Tell me which conference the Nuggets belong to.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Nuggets",
+      "input": "Nuggets",
       "attribute": "conference"
     }
   },
@@ -163,7 +155,31 @@
     "text": "I want to know the conference for the Nuggets.",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
+      "input": "Nuggets",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Which conference are the Nuggets in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Nuggets",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "I want to know the conference for the Knicks.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Knicks",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Are the Knicks in the Western or Eastern Conference?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Knicks",
       "attribute": "conference"
     }
   },
@@ -171,39 +187,23 @@
     "text": "Which conference are the Knicks in?",
     "intent": "team_info",
     "slots": {
-      "name": "Knicks",
+      "input": "Knicks",
       "attribute": "conference"
     }
   },
   {
-    "text": "What conference do the Knicks play in?",
+    "text": "I want to know the conference for the 76ers.",
     "intent": "team_info",
     "slots": {
-      "name": "Knicks",
+      "input": "76ers",
       "attribute": "conference"
     }
   },
   {
-    "text": "Tell me which conference the Knicks belong to.",
+    "text": "Are the 76ers in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Knicks",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Which conference are the 76ers in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "76ers",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Tell me which conference the 76ers belong to.",
-    "intent": "team_info",
-    "slots": {
-      "name": "76ers",
+      "input": "76ers",
       "attribute": "conference"
     }
   },
@@ -211,23 +211,7 @@
     "text": "What conference do the 76ers play in?",
     "intent": "team_info",
     "slots": {
-      "name": "76ers",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Are the Mavericks in the Western or Eastern Conference?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Mavericks",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "What conference do the Mavericks play in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Mavericks",
+      "input": "76ers",
       "attribute": "conference"
     }
   },
@@ -235,15 +219,23 @@
     "text": "Tell me which conference the Mavericks belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Mavericks",
+      "input": "Mavericks",
       "attribute": "conference"
     }
   },
   {
-    "text": "Are the Bulls in the Western or Eastern Conference?",
+    "text": "Are the Mavericks in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Bulls",
+      "input": "Mavericks",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Which conference are the Mavericks in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Mavericks",
       "attribute": "conference"
     }
   },
@@ -251,31 +243,39 @@
     "text": "Tell me which conference the Bulls belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Bulls",
+      "input": "Bulls",
       "attribute": "conference"
     }
   },
   {
-    "text": "What conference do the Bulls play in?",
+    "text": "Which conference are the Bulls in?",
     "intent": "team_info",
     "slots": {
-      "name": "Bulls",
+      "input": "Bulls",
       "attribute": "conference"
     }
   },
   {
-    "text": "Which conference are the Raptors in?",
+    "text": "I want to know the conference for the Bulls.",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
+      "input": "Bulls",
       "attribute": "conference"
     }
   },
   {
-    "text": "I want to know the conference for the Raptors.",
+    "text": "Are the Raptors in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
+      "input": "Raptors",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Tell me which conference the Raptors belong to.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Raptors",
       "attribute": "conference"
     }
   },
@@ -283,15 +283,7 @@
     "text": "What conference do the Raptors play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Tell me which conference the Hawks belong to.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Hawks",
+      "input": "Raptors",
       "attribute": "conference"
     }
   },
@@ -299,15 +291,23 @@
     "text": "Are the Hawks in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
+      "input": "Hawks",
       "attribute": "conference"
     }
   },
   {
-    "text": "I want to know the conference for the Hawks.",
+    "text": "Which conference are the Hawks in?",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
+      "input": "Hawks",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Tell me which conference the Hawks belong to.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Hawks",
       "attribute": "conference"
     }
   },
@@ -315,7 +315,7 @@
     "text": "Tell me which conference the Grizzlies belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Grizzlies",
+      "input": "Grizzlies",
       "attribute": "conference"
     }
   },
@@ -323,23 +323,15 @@
     "text": "What conference do the Grizzlies play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Grizzlies",
+      "input": "Grizzlies",
       "attribute": "conference"
     }
   },
   {
-    "text": "I want to know the conference for the Grizzlies.",
+    "text": "Which conference are the Grizzlies in?",
     "intent": "team_info",
     "slots": {
-      "name": "Grizzlies",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "What conference do the Kings play in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Kings",
+      "input": "Grizzlies",
       "attribute": "conference"
     }
   },
@@ -347,15 +339,23 @@
     "text": "Which conference are the Kings in?",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
+      "input": "Kings",
       "attribute": "conference"
     }
   },
   {
-    "text": "Tell me which conference the Kings belong to.",
+    "text": "What conference do the Kings play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
+      "input": "Kings",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "I want to know the conference for the Kings.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Kings",
       "attribute": "conference"
     }
   },
@@ -363,7 +363,7 @@
     "text": "Which conference are the Cavaliers in?",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
+      "input": "Cavaliers",
       "attribute": "conference"
     }
   },
@@ -371,7 +371,7 @@
     "text": "What conference do the Cavaliers play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
+      "input": "Cavaliers",
       "attribute": "conference"
     }
   },
@@ -379,23 +379,7 @@
     "text": "Tell me which conference the Cavaliers belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "What conference do the Pacers play in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pacers",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "I want to know the conference for the Pacers.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pacers",
+      "input": "Cavaliers",
       "attribute": "conference"
     }
   },
@@ -403,23 +387,31 @@
     "text": "Which conference are the Pacers in?",
     "intent": "team_info",
     "slots": {
-      "name": "Pacers",
+      "input": "Pacers",
       "attribute": "conference"
     }
   },
   {
-    "text": "Are the Pelicans in the Western or Eastern Conference?",
+    "text": "Are the Pacers in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Pelicans",
+      "input": "Pacers",
       "attribute": "conference"
     }
   },
   {
-    "text": "What conference do the Pelicans play in?",
+    "text": "Tell me which conference the Pacers belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Pelicans",
+      "input": "Pacers",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "I want to know the conference for the Pelicans.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Pelicans",
       "attribute": "conference"
     }
   },
@@ -427,23 +419,23 @@
     "text": "Which conference are the Pelicans in?",
     "intent": "team_info",
     "slots": {
-      "name": "Pelicans",
+      "input": "Pelicans",
       "attribute": "conference"
     }
   },
   {
-    "text": "Which conference are the Magic in?",
+    "text": "Are the Pelicans in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Magic",
+      "input": "Pelicans",
       "attribute": "conference"
     }
   },
   {
-    "text": "Tell me which conference the Magic belong to.",
+    "text": "What conference do the Magic play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Magic",
+      "input": "Magic",
       "attribute": "conference"
     }
   },
@@ -451,7 +443,15 @@
     "text": "I want to know the conference for the Magic.",
     "intent": "team_info",
     "slots": {
-      "name": "Magic",
+      "input": "Magic",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Tell me which conference the Magic belong to.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Magic",
       "attribute": "conference"
     }
   },
@@ -459,15 +459,7 @@
     "text": "Are the Spurs in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Spurs",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "I want to know the conference for the Spurs.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Spurs",
+      "input": "Spurs",
       "attribute": "conference"
     }
   },
@@ -475,23 +467,15 @@
     "text": "What conference do the Spurs play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Spurs",
+      "input": "Spurs",
       "attribute": "conference"
     }
   },
   {
-    "text": "Are the Thunder in the Western or Eastern Conference?",
+    "text": "I want to know the conference for the Spurs.",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "I want to know the conference for the Thunder.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Thunder",
+      "input": "Spurs",
       "attribute": "conference"
     }
   },
@@ -499,15 +483,39 @@
     "text": "Which conference are the Thunder in?",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
+      "input": "Thunder",
       "attribute": "conference"
     }
   },
   {
-    "text": "What conference do the Jazz play in?",
+    "text": "Tell me which conference the Thunder belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
+      "input": "Thunder",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "What conference do the Thunder play in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Thunder",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Are the Jazz in the Western or Eastern Conference?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Jazz",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "I want to know the conference for the Jazz.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Jazz",
       "attribute": "conference"
     }
   },
@@ -515,31 +523,15 @@
     "text": "Tell me which conference the Jazz belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
+      "input": "Jazz",
       "attribute": "conference"
     }
   },
   {
-    "text": "Which conference are the Jazz in?",
+    "text": "Tell me which conference the Timberwolves belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Which conference are the Timberwolves in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Timberwolves",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "What conference do the Timberwolves play in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Timberwolves",
+      "input": "Timberwolves",
       "attribute": "conference"
     }
   },
@@ -547,23 +539,23 @@
     "text": "Are the Timberwolves in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Timberwolves",
+      "input": "Timberwolves",
       "attribute": "conference"
     }
   },
   {
-    "text": "Which conference are the Pistons in?",
+    "text": "What conference do the Timberwolves play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Pistons",
+      "input": "Timberwolves",
       "attribute": "conference"
     }
   },
   {
-    "text": "Are the Pistons in the Western or Eastern Conference?",
+    "text": "Tell me which conference the Pistons belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Pistons",
+      "input": "Pistons",
       "attribute": "conference"
     }
   },
@@ -571,23 +563,23 @@
     "text": "I want to know the conference for the Pistons.",
     "intent": "team_info",
     "slots": {
-      "name": "Pistons",
+      "input": "Pistons",
       "attribute": "conference"
     }
   },
   {
-    "text": "Are the Wizards in the Western or Eastern Conference?",
+    "text": "What conference do the Pistons play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Wizards",
+      "input": "Pistons",
       "attribute": "conference"
     }
   },
   {
-    "text": "I want to know the conference for the Wizards.",
+    "text": "What conference do the Wizards play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Wizards",
+      "input": "Wizards",
       "attribute": "conference"
     }
   },
@@ -595,23 +587,15 @@
     "text": "Which conference are the Wizards in?",
     "intent": "team_info",
     "slots": {
-      "name": "Wizards",
+      "input": "Wizards",
       "attribute": "conference"
     }
   },
   {
-    "text": "What conference do the Nets play in?",
+    "text": "Tell me which conference the Wizards belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Nets",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Tell me which conference the Nets belong to.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Nets",
+      "input": "Wizards",
       "attribute": "conference"
     }
   },
@@ -619,23 +603,39 @@
     "text": "Which conference are the Nets in?",
     "intent": "team_info",
     "slots": {
-      "name": "Nets",
+      "input": "Nets",
       "attribute": "conference"
     }
   },
   {
-    "text": "What conference do the Hornets play in?",
+    "text": "What conference do the Nets play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
+      "input": "Nets",
       "attribute": "conference"
     }
   },
   {
-    "text": "I want to know the conference for the Hornets.",
+    "text": "Are the Nets in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
+      "input": "Nets",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Tell me which conference the Hornets belong to.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Hornets",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Are the Hornets in the Western or Eastern Conference?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Hornets",
       "attribute": "conference"
     }
   },
@@ -643,7 +643,15 @@
     "text": "Which conference are the Hornets in?",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
+      "input": "Hornets",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Tell me which conference the Trail Blazers belong to.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Trail Blazers",
       "attribute": "conference"
     }
   },
@@ -651,7 +659,7 @@
     "text": "I want to know the conference for the Trail Blazers.",
     "intent": "team_info",
     "slots": {
-      "name": "Trail Blazers",
+      "input": "Trail Blazers",
       "attribute": "conference"
     }
   },
@@ -659,23 +667,7 @@
     "text": "Are the Trail Blazers in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Trail Blazers",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Which conference are the Trail Blazers in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Trail Blazers",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Are the Clippers in the Western or Eastern Conference?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Clippers",
+      "input": "Trail Blazers",
       "attribute": "conference"
     }
   },
@@ -683,7 +675,7 @@
     "text": "What conference do the Clippers play in?",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
+      "input": "Clippers",
       "attribute": "conference"
     }
   },
@@ -691,15 +683,15 @@
     "text": "Which conference are the Clippers in?",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
+      "input": "Clippers",
       "attribute": "conference"
     }
   },
   {
-    "text": "What conference do the Rockets play in?",
+    "text": "Tell me which conference the Clippers belong to.",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Clippers",
       "attribute": "conference"
     }
   },
@@ -707,7 +699,15 @@
     "text": "Are the Rockets in the Western or Eastern Conference?",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Rockets",
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Tell me which conference the Rockets belong to.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Rockets",
       "attribute": "conference"
     }
   },
@@ -715,7 +715,7 @@
     "text": "I want to know the conference for the Rockets.",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Rockets",
       "attribute": "conference"
     }
   },
@@ -723,15 +723,15 @@
     "text": "Tell me the division of the Warriors.",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
+      "input": "Warriors",
       "attribute": "division"
     }
   },
   {
-    "text": "In what division do the Warriors compete?",
+    "text": "I'd like to know which division the Warriors are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
+      "input": "Warriors",
       "attribute": "division"
     }
   },
@@ -739,23 +739,7 @@
     "text": "Which division are the Warriors in?",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "In what division do the Lakers compete?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Lakers",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "Which division are the Lakers in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Lakers",
+      "input": "Warriors",
       "attribute": "division"
     }
   },
@@ -763,15 +747,31 @@
     "text": "What division do the Lakers belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Lakers",
+      "input": "Lakers",
       "attribute": "division"
     }
   },
   {
-    "text": "What division do the Celtics belong to?",
+    "text": "I'd like to know which division the Lakers are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Celtics",
+      "input": "Lakers",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "In what division do the Lakers compete?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Lakers",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Tell me the division of the Celtics.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Celtics",
       "attribute": "division"
     }
   },
@@ -779,15 +779,23 @@
     "text": "Which division are the Celtics in?",
     "intent": "team_info",
     "slots": {
-      "name": "Celtics",
+      "input": "Celtics",
       "attribute": "division"
     }
   },
   {
-    "text": "I'd like to know which division the Celtics are part of.",
+    "text": "What division do the Celtics belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Celtics",
+      "input": "Celtics",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Which division are the Bucks in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Bucks",
       "attribute": "division"
     }
   },
@@ -795,15 +803,7 @@
     "text": "Tell me the division of the Bucks.",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "I'd like to know which division the Bucks are part of.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Bucks",
+      "input": "Bucks",
       "attribute": "division"
     }
   },
@@ -811,15 +811,7 @@
     "text": "What division do the Bucks belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "I'd like to know which division the Heat are part of.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Heat",
+      "input": "Bucks",
       "attribute": "division"
     }
   },
@@ -827,7 +819,7 @@
     "text": "Which division are the Heat in?",
     "intent": "team_info",
     "slots": {
-      "name": "Heat",
+      "input": "Heat",
       "attribute": "division"
     }
   },
@@ -835,23 +827,23 @@
     "text": "In what division do the Heat compete?",
     "intent": "team_info",
     "slots": {
-      "name": "Heat",
+      "input": "Heat",
       "attribute": "division"
     }
   },
   {
-    "text": "I'd like to know which division the Suns are part of.",
+    "text": "What division do the Heat belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Heat",
       "attribute": "division"
     }
   },
   {
-    "text": "In what division do the Suns compete?",
+    "text": "Tell me the division of the Suns.",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Suns",
       "attribute": "division"
     }
   },
@@ -859,15 +851,23 @@
     "text": "Which division are the Suns in?",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Suns",
       "attribute": "division"
     }
   },
   {
-    "text": "I'd like to know which division the Nuggets are part of.",
+    "text": "In what division do the Suns compete?",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
+      "input": "Suns",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "In what division do the Nuggets compete?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Nuggets",
       "attribute": "division"
     }
   },
@@ -875,31 +875,23 @@
     "text": "Tell me the division of the Nuggets.",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
+      "input": "Nuggets",
       "attribute": "division"
     }
   },
   {
-    "text": "Which division are the Nuggets in?",
+    "text": "I'd like to know which division the Nuggets are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
+      "input": "Nuggets",
       "attribute": "division"
     }
   },
   {
-    "text": "Which division are the Knicks in?",
+    "text": "In what division do the Knicks compete?",
     "intent": "team_info",
     "slots": {
-      "name": "Knicks",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "What division do the Knicks belong to?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Knicks",
+      "input": "Knicks",
       "attribute": "division"
     }
   },
@@ -907,23 +899,31 @@
     "text": "Tell me the division of the Knicks.",
     "intent": "team_info",
     "slots": {
-      "name": "Knicks",
+      "input": "Knicks",
       "attribute": "division"
     }
   },
   {
-    "text": "What division do the 76ers belong to?",
+    "text": "Which division are the Knicks in?",
     "intent": "team_info",
     "slots": {
-      "name": "76ers",
+      "input": "Knicks",
       "attribute": "division"
     }
   },
   {
-    "text": "Which division are the 76ers in?",
+    "text": "In what division do the 76ers compete?",
     "intent": "team_info",
     "slots": {
-      "name": "76ers",
+      "input": "76ers",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Tell me the division of the 76ers.",
+    "intent": "team_info",
+    "slots": {
+      "input": "76ers",
       "attribute": "division"
     }
   },
@@ -931,23 +931,7 @@
     "text": "I'd like to know which division the 76ers are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "76ers",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "Tell me the division of the Mavericks.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Mavericks",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "What division do the Mavericks belong to?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Mavericks",
+      "input": "76ers",
       "attribute": "division"
     }
   },
@@ -955,15 +939,31 @@
     "text": "Which division are the Mavericks in?",
     "intent": "team_info",
     "slots": {
-      "name": "Mavericks",
+      "input": "Mavericks",
       "attribute": "division"
     }
   },
   {
-    "text": "Tell me the division of the Bulls.",
+    "text": "I'd like to know which division the Mavericks are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Bulls",
+      "input": "Mavericks",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "In what division do the Mavericks compete?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Mavericks",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Which division are the Bulls in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Bulls",
       "attribute": "division"
     }
   },
@@ -971,7 +971,7 @@
     "text": "I'd like to know which division the Bulls are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Bulls",
+      "input": "Bulls",
       "attribute": "division"
     }
   },
@@ -979,7 +979,7 @@
     "text": "What division do the Bulls belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Bulls",
+      "input": "Bulls",
       "attribute": "division"
     }
   },
@@ -987,15 +987,7 @@
     "text": "What division do the Raptors belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "Which division are the Raptors in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Raptors",
+      "input": "Raptors",
       "attribute": "division"
     }
   },
@@ -1003,7 +995,15 @@
     "text": "I'd like to know which division the Raptors are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
+      "input": "Raptors",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Which division are the Raptors in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Raptors",
       "attribute": "division"
     }
   },
@@ -1011,7 +1011,7 @@
     "text": "Tell me the division of the Hawks.",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
+      "input": "Hawks",
       "attribute": "division"
     }
   },
@@ -1019,7 +1019,7 @@
     "text": "I'd like to know which division the Hawks are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
+      "input": "Hawks",
       "attribute": "division"
     }
   },
@@ -1027,23 +1027,15 @@
     "text": "Which division are the Hawks in?",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
+      "input": "Hawks",
       "attribute": "division"
     }
   },
   {
-    "text": "What division do the Grizzlies belong to?",
+    "text": "I'd like to know which division the Grizzlies are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Grizzlies",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "In what division do the Grizzlies compete?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Grizzlies",
+      "input": "Grizzlies",
       "attribute": "division"
     }
   },
@@ -1051,15 +1043,15 @@
     "text": "Tell me the division of the Grizzlies.",
     "intent": "team_info",
     "slots": {
-      "name": "Grizzlies",
+      "input": "Grizzlies",
       "attribute": "division"
     }
   },
   {
-    "text": "What division do the Kings belong to?",
+    "text": "What division do the Grizzlies belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
+      "input": "Grizzlies",
       "attribute": "division"
     }
   },
@@ -1067,7 +1059,15 @@
     "text": "I'd like to know which division the Kings are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
+      "input": "Kings",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "What division do the Kings belong to?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Kings",
       "attribute": "division"
     }
   },
@@ -1075,7 +1075,7 @@
     "text": "Which division are the Kings in?",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
+      "input": "Kings",
       "attribute": "division"
     }
   },
@@ -1083,7 +1083,7 @@
     "text": "In what division do the Cavaliers compete?",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
+      "input": "Cavaliers",
       "attribute": "division"
     }
   },
@@ -1091,31 +1091,15 @@
     "text": "What division do the Cavaliers belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
+      "input": "Cavaliers",
       "attribute": "division"
     }
   },
   {
-    "text": "Which division are the Cavaliers in?",
+    "text": "Tell me the division of the Cavaliers.",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "What division do the Pacers belong to?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pacers",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "I'd like to know which division the Pacers are part of.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pacers",
+      "input": "Cavaliers",
       "attribute": "division"
     }
   },
@@ -1123,23 +1107,23 @@
     "text": "Tell me the division of the Pacers.",
     "intent": "team_info",
     "slots": {
-      "name": "Pacers",
+      "input": "Pacers",
       "attribute": "division"
     }
   },
   {
-    "text": "Tell me the division of the Pelicans.",
+    "text": "In what division do the Pacers compete?",
     "intent": "team_info",
     "slots": {
-      "name": "Pelicans",
+      "input": "Pacers",
       "attribute": "division"
     }
   },
   {
-    "text": "I'd like to know which division the Pelicans are part of.",
+    "text": "I'd like to know which division the Pacers are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Pelicans",
+      "input": "Pacers",
       "attribute": "division"
     }
   },
@@ -1147,7 +1131,39 @@
     "text": "Which division are the Pelicans in?",
     "intent": "team_info",
     "slots": {
-      "name": "Pelicans",
+      "input": "Pelicans",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "What division do the Pelicans belong to?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Pelicans",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Tell me the division of the Pelicans.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Pelicans",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Which division are the Magic in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Magic",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Tell me the division of the Magic.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Magic",
       "attribute": "division"
     }
   },
@@ -1155,39 +1171,15 @@
     "text": "In what division do the Magic compete?",
     "intent": "team_info",
     "slots": {
-      "name": "Magic",
+      "input": "Magic",
       "attribute": "division"
     }
   },
   {
-    "text": "What division do the Magic belong to?",
+    "text": "I'd like to know which division the Spurs are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Magic",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "I'd like to know which division the Magic are part of.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Magic",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "Tell me the division of the Spurs.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Spurs",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "What division do the Spurs belong to?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Spurs",
+      "input": "Spurs",
       "attribute": "division"
     }
   },
@@ -1195,7 +1187,15 @@
     "text": "In what division do the Spurs compete?",
     "intent": "team_info",
     "slots": {
-      "name": "Spurs",
+      "input": "Spurs",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "What division do the Spurs belong to?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Spurs",
       "attribute": "division"
     }
   },
@@ -1203,15 +1203,15 @@
     "text": "Which division are the Thunder in?",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
+      "input": "Thunder",
       "attribute": "division"
     }
   },
   {
-    "text": "In what division do the Thunder compete?",
+    "text": "I'd like to know which division the Thunder are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
+      "input": "Thunder",
       "attribute": "division"
     }
   },
@@ -1219,15 +1219,15 @@
     "text": "Tell me the division of the Thunder.",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
+      "input": "Thunder",
       "attribute": "division"
     }
   },
   {
-    "text": "What division do the Jazz belong to?",
+    "text": "Tell me the division of the Jazz.",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
+      "input": "Jazz",
       "attribute": "division"
     }
   },
@@ -1235,15 +1235,15 @@
     "text": "In what division do the Jazz compete?",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
+      "input": "Jazz",
       "attribute": "division"
     }
   },
   {
-    "text": "I'd like to know which division the Jazz are part of.",
+    "text": "Which division are the Jazz in?",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
+      "input": "Jazz",
       "attribute": "division"
     }
   },
@@ -1251,15 +1251,15 @@
     "text": "In what division do the Timberwolves compete?",
     "intent": "team_info",
     "slots": {
-      "name": "Timberwolves",
+      "input": "Timberwolves",
       "attribute": "division"
     }
   },
   {
-    "text": "What division do the Timberwolves belong to?",
+    "text": "I'd like to know which division the Timberwolves are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Timberwolves",
+      "input": "Timberwolves",
       "attribute": "division"
     }
   },
@@ -1267,7 +1267,7 @@
     "text": "Which division are the Timberwolves in?",
     "intent": "team_info",
     "slots": {
-      "name": "Timberwolves",
+      "input": "Timberwolves",
       "attribute": "division"
     }
   },
@@ -1275,23 +1275,23 @@
     "text": "I'd like to know which division the Pistons are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Pistons",
+      "input": "Pistons",
       "attribute": "division"
     }
   },
   {
-    "text": "In what division do the Pistons compete?",
+    "text": "Tell me the division of the Pistons.",
     "intent": "team_info",
     "slots": {
-      "name": "Pistons",
+      "input": "Pistons",
       "attribute": "division"
     }
   },
   {
-    "text": "Which division are the Pistons in?",
+    "text": "What division do the Pistons belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Pistons",
+      "input": "Pistons",
       "attribute": "division"
     }
   },
@@ -1299,15 +1299,7 @@
     "text": "What division do the Wizards belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Wizards",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "In what division do the Wizards compete?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Wizards",
+      "input": "Wizards",
       "attribute": "division"
     }
   },
@@ -1315,15 +1307,23 @@
     "text": "Tell me the division of the Wizards.",
     "intent": "team_info",
     "slots": {
-      "name": "Wizards",
+      "input": "Wizards",
       "attribute": "division"
     }
   },
   {
-    "text": "In what division do the Nets compete?",
+    "text": "Which division are the Wizards in?",
     "intent": "team_info",
     "slots": {
-      "name": "Nets",
+      "input": "Wizards",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Tell me the division of the Nets.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Nets",
       "attribute": "division"
     }
   },
@@ -1331,15 +1331,23 @@
     "text": "Which division are the Nets in?",
     "intent": "team_info",
     "slots": {
-      "name": "Nets",
+      "input": "Nets",
       "attribute": "division"
     }
   },
   {
-    "text": "I'd like to know which division the Nets are part of.",
+    "text": "What division do the Nets belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Nets",
+      "input": "Nets",
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Which division are the Hornets in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Hornets",
       "attribute": "division"
     }
   },
@@ -1347,15 +1355,7 @@
     "text": "What division do the Hornets belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "In what division do the Hornets compete?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Hornets",
+      "input": "Hornets",
       "attribute": "division"
     }
   },
@@ -1363,15 +1363,15 @@
     "text": "Tell me the division of the Hornets.",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
+      "input": "Hornets",
       "attribute": "division"
     }
   },
   {
-    "text": "Which division are the Trail Blazers in?",
+    "text": "Tell me the division of the Trail Blazers.",
     "intent": "team_info",
     "slots": {
-      "name": "Trail Blazers",
+      "input": "Trail Blazers",
       "attribute": "division"
     }
   },
@@ -1379,7 +1379,7 @@
     "text": "In what division do the Trail Blazers compete?",
     "intent": "team_info",
     "slots": {
-      "name": "Trail Blazers",
+      "input": "Trail Blazers",
       "attribute": "division"
     }
   },
@@ -1387,7 +1387,7 @@
     "text": "I'd like to know which division the Trail Blazers are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Trail Blazers",
+      "input": "Trail Blazers",
       "attribute": "division"
     }
   },
@@ -1395,23 +1395,23 @@
     "text": "Tell me the division of the Clippers.",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
+      "input": "Clippers",
       "attribute": "division"
     }
   },
   {
-    "text": "I'd like to know which division the Clippers are part of.",
+    "text": "What division do the Clippers belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
+      "input": "Clippers",
       "attribute": "division"
     }
   },
   {
-    "text": "In what division do the Clippers compete?",
+    "text": "Which division are the Clippers in?",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
+      "input": "Clippers",
       "attribute": "division"
     }
   },
@@ -1419,39 +1419,31 @@
     "text": "Tell me the division of the Rockets.",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Rockets",
       "attribute": "division"
     }
   },
   {
-    "text": "Which division are the Rockets in?",
+    "text": "I'd like to know which division the Rockets are part of.",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Rockets",
       "attribute": "division"
     }
   },
   {
-    "text": "In what division do the Rockets compete?",
+    "text": "What division do the Rockets belong to?",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Rockets",
       "attribute": "division"
     }
   },
   {
-    "text": "Where are the Warriors from?",
+    "text": "Which city are the Warriors based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Tell me which city the Warriors are located in.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Warriors",
+      "input": "Warriors",
       "attribute": "city"
     }
   },
@@ -1459,7 +1451,31 @@
     "text": "I want to know the home city of the Warriors.",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
+      "input": "Warriors",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Where are the Warriors from?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Warriors",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "I want to know the home city of the Lakers.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Lakers",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Which city are the Lakers based in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Lakers",
       "attribute": "city"
     }
   },
@@ -1467,31 +1483,15 @@
     "text": "What city do the Lakers represent?",
     "intent": "team_info",
     "slots": {
-      "name": "Lakers",
+      "input": "Lakers",
       "attribute": "city"
     }
   },
   {
-    "text": "Tell me which city the Lakers are located in.",
+    "text": "Where are the Celtics from?",
     "intent": "team_info",
     "slots": {
-      "name": "Lakers",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Where are the Lakers from?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Lakers",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "What city do the Celtics represent?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Celtics",
+      "input": "Celtics",
       "attribute": "city"
     }
   },
@@ -1499,23 +1499,15 @@
     "text": "Tell me which city the Celtics are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Celtics",
+      "input": "Celtics",
       "attribute": "city"
     }
   },
   {
-    "text": "Which city are the Celtics based in?",
+    "text": "I want to know the home city of the Celtics.",
     "intent": "team_info",
     "slots": {
-      "name": "Celtics",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Tell me which city the Bucks are located in.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Bucks",
+      "input": "Celtics",
       "attribute": "city"
     }
   },
@@ -1523,31 +1515,23 @@
     "text": "Which city are the Bucks based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
+      "input": "Bucks",
       "attribute": "city"
     }
   },
   {
-    "text": "I want to know the home city of the Bucks.",
+    "text": "Tell me which city the Bucks are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
+      "input": "Bucks",
       "attribute": "city"
     }
   },
   {
-    "text": "What city do the Heat represent?",
+    "text": "What city do the Bucks represent?",
     "intent": "team_info",
     "slots": {
-      "name": "Heat",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Which city are the Heat based in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Heat",
+      "input": "Bucks",
       "attribute": "city"
     }
   },
@@ -1555,23 +1539,23 @@
     "text": "I want to know the home city of the Heat.",
     "intent": "team_info",
     "slots": {
-      "name": "Heat",
+      "input": "Heat",
       "attribute": "city"
     }
   },
   {
-    "text": "Tell me which city the Suns are located in.",
+    "text": "Where are the Heat from?",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Heat",
       "attribute": "city"
     }
   },
   {
-    "text": "What city do the Suns represent?",
+    "text": "What city do the Heat represent?",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Heat",
       "attribute": "city"
     }
   },
@@ -1579,7 +1563,23 @@
     "text": "Which city are the Suns based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Suns",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Tell me which city the Suns are located in.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Suns",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Where are the Suns from?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Suns",
       "attribute": "city"
     }
   },
@@ -1587,7 +1587,7 @@
     "text": "I want to know the home city of the Nuggets.",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
+      "input": "Nuggets",
       "attribute": "city"
     }
   },
@@ -1595,7 +1595,7 @@
     "text": "Which city are the Nuggets based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
+      "input": "Nuggets",
       "attribute": "city"
     }
   },
@@ -1603,23 +1603,15 @@
     "text": "Tell me which city the Nuggets are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
+      "input": "Nuggets",
       "attribute": "city"
     }
   },
   {
-    "text": "Where are the Knicks from?",
+    "text": "Which city are the Knicks based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Knicks",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Tell me which city the Knicks are located in.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Knicks",
+      "input": "Knicks",
       "attribute": "city"
     }
   },
@@ -1627,23 +1619,15 @@
     "text": "What city do the Knicks represent?",
     "intent": "team_info",
     "slots": {
-      "name": "Knicks",
+      "input": "Knicks",
       "attribute": "city"
     }
   },
   {
-    "text": "Tell me which city the 76ers are located in.",
+    "text": "Tell me which city the Knicks are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "76ers",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Where are the 76ers from?",
-    "intent": "team_info",
-    "slots": {
-      "name": "76ers",
+      "input": "Knicks",
       "attribute": "city"
     }
   },
@@ -1651,7 +1635,23 @@
     "text": "I want to know the home city of the 76ers.",
     "intent": "team_info",
     "slots": {
-      "name": "76ers",
+      "input": "76ers",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "What city do the 76ers represent?",
+    "intent": "team_info",
+    "slots": {
+      "input": "76ers",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Where are the 76ers from?",
+    "intent": "team_info",
+    "slots": {
+      "input": "76ers",
       "attribute": "city"
     }
   },
@@ -1659,15 +1659,7 @@
     "text": "Where are the Mavericks from?",
     "intent": "team_info",
     "slots": {
-      "name": "Mavericks",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "What city do the Mavericks represent?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Mavericks",
+      "input": "Mavericks",
       "attribute": "city"
     }
   },
@@ -1675,7 +1667,23 @@
     "text": "I want to know the home city of the Mavericks.",
     "intent": "team_info",
     "slots": {
-      "name": "Mavericks",
+      "input": "Mavericks",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Tell me which city the Mavericks are located in.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Mavericks",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Tell me which city the Bulls are located in.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Bulls",
       "attribute": "city"
     }
   },
@@ -1683,7 +1691,7 @@
     "text": "Where are the Bulls from?",
     "intent": "team_info",
     "slots": {
-      "name": "Bulls",
+      "input": "Bulls",
       "attribute": "city"
     }
   },
@@ -1691,23 +1699,7 @@
     "text": "Which city are the Bulls based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Bulls",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "I want to know the home city of the Bulls.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Bulls",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Where are the Raptors from?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Raptors",
+      "input": "Bulls",
       "attribute": "city"
     }
   },
@@ -1715,23 +1707,31 @@
     "text": "Which city are the Raptors based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
+      "input": "Raptors",
       "attribute": "city"
     }
   },
   {
-    "text": "What city do the Raptors represent?",
+    "text": "Tell me which city the Raptors are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
+      "input": "Raptors",
       "attribute": "city"
     }
   },
   {
-    "text": "I want to know the home city of the Hawks.",
+    "text": "I want to know the home city of the Raptors.",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
+      "input": "Raptors",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Where are the Hawks from?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Hawks",
       "attribute": "city"
     }
   },
@@ -1739,23 +1739,23 @@
     "text": "What city do the Hawks represent?",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
+      "input": "Hawks",
       "attribute": "city"
     }
   },
   {
-    "text": "Tell me which city the Hawks are located in.",
+    "text": "I want to know the home city of the Hawks.",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
+      "input": "Hawks",
       "attribute": "city"
     }
   },
   {
-    "text": "What city do the Grizzlies represent?",
+    "text": "Which city are the Grizzlies based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Grizzlies",
+      "input": "Grizzlies",
       "attribute": "city"
     }
   },
@@ -1763,15 +1763,15 @@
     "text": "Where are the Grizzlies from?",
     "intent": "team_info",
     "slots": {
-      "name": "Grizzlies",
+      "input": "Grizzlies",
       "attribute": "city"
     }
   },
   {
-    "text": "Tell me which city the Grizzlies are located in.",
+    "text": "I want to know the home city of the Grizzlies.",
     "intent": "team_info",
     "slots": {
-      "name": "Grizzlies",
+      "input": "Grizzlies",
       "attribute": "city"
     }
   },
@@ -1779,15 +1779,15 @@
     "text": "Where are the Kings from?",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
+      "input": "Kings",
       "attribute": "city"
     }
   },
   {
-    "text": "Which city are the Kings based in?",
+    "text": "Tell me which city the Kings are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
+      "input": "Kings",
       "attribute": "city"
     }
   },
@@ -1795,7 +1795,7 @@
     "text": "I want to know the home city of the Kings.",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
+      "input": "Kings",
       "attribute": "city"
     }
   },
@@ -1803,7 +1803,7 @@
     "text": "What city do the Cavaliers represent?",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
+      "input": "Cavaliers",
       "attribute": "city"
     }
   },
@@ -1811,15 +1811,15 @@
     "text": "Tell me which city the Cavaliers are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
+      "input": "Cavaliers",
       "attribute": "city"
     }
   },
   {
-    "text": "Where are the Cavaliers from?",
+    "text": "Which city are the Cavaliers based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
+      "input": "Cavaliers",
       "attribute": "city"
     }
   },
@@ -1827,15 +1827,7 @@
     "text": "Which city are the Pacers based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Pacers",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "I want to know the home city of the Pacers.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pacers",
+      "input": "Pacers",
       "attribute": "city"
     }
   },
@@ -1843,15 +1835,15 @@
     "text": "Where are the Pacers from?",
     "intent": "team_info",
     "slots": {
-      "name": "Pacers",
+      "input": "Pacers",
       "attribute": "city"
     }
   },
   {
-    "text": "I want to know the home city of the Pelicans.",
+    "text": "I want to know the home city of the Pacers.",
     "intent": "team_info",
     "slots": {
-      "name": "Pelicans",
+      "input": "Pacers",
       "attribute": "city"
     }
   },
@@ -1859,7 +1851,15 @@
     "text": "What city do the Pelicans represent?",
     "intent": "team_info",
     "slots": {
-      "name": "Pelicans",
+      "input": "Pelicans",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Which city are the Pelicans based in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Pelicans",
       "attribute": "city"
     }
   },
@@ -1867,23 +1867,7 @@
     "text": "Tell me which city the Pelicans are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Pelicans",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Which city are the Magic based in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Magic",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Where are the Magic from?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Magic",
+      "input": "Pelicans",
       "attribute": "city"
     }
   },
@@ -1891,7 +1875,23 @@
     "text": "Tell me which city the Magic are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Magic",
+      "input": "Magic",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "I want to know the home city of the Magic.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Magic",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "What city do the Magic represent?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Magic",
       "attribute": "city"
     }
   },
@@ -1899,31 +1899,23 @@
     "text": "I want to know the home city of the Spurs.",
     "intent": "team_info",
     "slots": {
-      "name": "Spurs",
+      "input": "Spurs",
       "attribute": "city"
     }
   },
   {
-    "text": "Which city are the Spurs based in?",
+    "text": "Where are the Spurs from?",
     "intent": "team_info",
     "slots": {
-      "name": "Spurs",
+      "input": "Spurs",
       "attribute": "city"
     }
   },
   {
-    "text": "What city do the Spurs represent?",
+    "text": "Tell me which city the Spurs are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Spurs",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "I want to know the home city of the Thunder.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Thunder",
+      "input": "Spurs",
       "attribute": "city"
     }
   },
@@ -1931,23 +1923,23 @@
     "text": "What city do the Thunder represent?",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
+      "input": "Thunder",
       "attribute": "city"
     }
   },
   {
-    "text": "Which city are the Thunder based in?",
+    "text": "Where are the Thunder from?",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
+      "input": "Thunder",
       "attribute": "city"
     }
   },
   {
-    "text": "I want to know the home city of the Jazz.",
+    "text": "Tell me which city the Thunder are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
+      "input": "Thunder",
       "attribute": "city"
     }
   },
@@ -1955,7 +1947,15 @@
     "text": "Tell me which city the Jazz are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
+      "input": "Jazz",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "I want to know the home city of the Jazz.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Jazz",
       "attribute": "city"
     }
   },
@@ -1963,15 +1963,7 @@
     "text": "Which city are the Jazz based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "I want to know the home city of the Timberwolves.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Timberwolves",
+      "input": "Jazz",
       "attribute": "city"
     }
   },
@@ -1979,7 +1971,15 @@
     "text": "Which city are the Timberwolves based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Timberwolves",
+      "input": "Timberwolves",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Tell me which city the Timberwolves are located in.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Timberwolves",
       "attribute": "city"
     }
   },
@@ -1987,23 +1987,7 @@
     "text": "What city do the Timberwolves represent?",
     "intent": "team_info",
     "slots": {
-      "name": "Timberwolves",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "What city do the Pistons represent?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pistons",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "I want to know the home city of the Pistons.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pistons",
+      "input": "Timberwolves",
       "attribute": "city"
     }
   },
@@ -2011,7 +1995,39 @@
     "text": "Tell me which city the Pistons are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Pistons",
+      "input": "Pistons",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Which city are the Pistons based in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Pistons",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "I want to know the home city of the Pistons.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Pistons",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "What city do the Wizards represent?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Wizards",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "I want to know the home city of the Wizards.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Wizards",
       "attribute": "city"
     }
   },
@@ -2019,39 +2035,23 @@
     "text": "Which city are the Wizards based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Wizards",
+      "input": "Wizards",
       "attribute": "city"
     }
   },
   {
-    "text": "Where are the Wizards from?",
+    "text": "I want to know the home city of the Nets.",
     "intent": "team_info",
     "slots": {
-      "name": "Wizards",
+      "input": "Nets",
       "attribute": "city"
     }
   },
   {
-    "text": "Tell me which city the Wizards are located in.",
+    "text": "Tell me which city the Nets are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Wizards",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Which city are the Nets based in?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Nets",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "What city do the Nets represent?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Nets",
+      "input": "Nets",
       "attribute": "city"
     }
   },
@@ -2059,15 +2059,15 @@
     "text": "Where are the Nets from?",
     "intent": "team_info",
     "slots": {
-      "name": "Nets",
+      "input": "Nets",
       "attribute": "city"
     }
   },
   {
-    "text": "I want to know the home city of the Hornets.",
+    "text": "Which city are the Hornets based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
+      "input": "Hornets",
       "attribute": "city"
     }
   },
@@ -2075,7 +2075,7 @@
     "text": "Tell me which city the Hornets are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
+      "input": "Hornets",
       "attribute": "city"
     }
   },
@@ -2083,7 +2083,7 @@
     "text": "Where are the Hornets from?",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
+      "input": "Hornets",
       "attribute": "city"
     }
   },
@@ -2091,7 +2091,15 @@
     "text": "Tell me which city the Trail Blazers are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Trail Blazers",
+      "input": "Trail Blazers",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Which city are the Trail Blazers based in?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Trail Blazers",
       "attribute": "city"
     }
   },
@@ -2099,23 +2107,15 @@
     "text": "I want to know the home city of the Trail Blazers.",
     "intent": "team_info",
     "slots": {
-      "name": "Trail Blazers",
+      "input": "Trail Blazers",
       "attribute": "city"
     }
   },
   {
-    "text": "What city do the Trail Blazers represent?",
+    "text": "I want to know the home city of the Clippers.",
     "intent": "team_info",
     "slots": {
-      "name": "Trail Blazers",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Where are the Clippers from?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Clippers",
+      "input": "Clippers",
       "attribute": "city"
     }
   },
@@ -2123,31 +2123,15 @@
     "text": "Tell me which city the Clippers are located in.",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
+      "input": "Clippers",
       "attribute": "city"
     }
   },
   {
-    "text": "Which city are the Clippers based in?",
+    "text": "Where are the Clippers from?",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "I want to know the home city of the Rockets.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Rockets",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "What city do the Rockets represent?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Rockets",
+      "input": "Clippers",
       "attribute": "city"
     }
   },
@@ -2155,15 +2139,31 @@
     "text": "Which city are the Rockets based in?",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Rockets",
       "attribute": "city"
     }
   },
   {
-    "text": "Tell me the full name of the Warriors.",
+    "text": "What city do the Rockets represent?",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
+      "input": "Rockets",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Tell me which city the Rockets are located in.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Rockets",
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "What's the complete team name for the Warriors?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Warriors",
       "attribute": "full_name"
     }
   },
@@ -2171,31 +2171,23 @@
     "text": "How do you say the full team name of the Warriors?",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
+      "input": "Warriors",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Give me the full official name of the Warriors.",
+    "text": "Tell me the full name of the Warriors.",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
+      "input": "Warriors",
       "attribute": "full_name"
     }
   },
   {
-    "text": "What is the full name of the Lakers?",
+    "text": "Tell me the full name of the Lakers.",
     "intent": "team_info",
     "slots": {
-      "name": "Lakers",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "Give me the full official name of the Lakers.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Lakers",
+      "input": "Lakers",
       "attribute": "full_name"
     }
   },
@@ -2203,7 +2195,23 @@
     "text": "What's the complete team name for the Lakers?",
     "intent": "team_info",
     "slots": {
-      "name": "Lakers",
+      "input": "Lakers",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Give me the full official name of the Lakers.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Lakers",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Tell me the full name of the Celtics.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Celtics",
       "attribute": "full_name"
     }
   },
@@ -2211,15 +2219,7 @@
     "text": "What's the complete team name for the Celtics?",
     "intent": "team_info",
     "slots": {
-      "name": "Celtics",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "How do you say the full team name of the Celtics?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Celtics",
+      "input": "Celtics",
       "attribute": "full_name"
     }
   },
@@ -2227,7 +2227,7 @@
     "text": "What is the full name of the Celtics?",
     "intent": "team_info",
     "slots": {
-      "name": "Celtics",
+      "input": "Celtics",
       "attribute": "full_name"
     }
   },
@@ -2235,7 +2235,7 @@
     "text": "Give me the full official name of the Bucks.",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
+      "input": "Bucks",
       "attribute": "full_name"
     }
   },
@@ -2243,23 +2243,15 @@
     "text": "How do you say the full team name of the Bucks?",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
+      "input": "Bucks",
       "attribute": "full_name"
     }
   },
   {
-    "text": "What's the complete team name for the Bucks?",
+    "text": "Tell me the full name of the Bucks.",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "What is the full name of the Heat?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Heat",
+      "input": "Bucks",
       "attribute": "full_name"
     }
   },
@@ -2267,23 +2259,23 @@
     "text": "What's the complete team name for the Heat?",
     "intent": "team_info",
     "slots": {
-      "name": "Heat",
+      "input": "Heat",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Tell me the full name of the Heat.",
+    "text": "How do you say the full team name of the Heat?",
     "intent": "team_info",
     "slots": {
-      "name": "Heat",
+      "input": "Heat",
       "attribute": "full_name"
     }
   },
   {
-    "text": "How do you say the full team name of the Suns?",
+    "text": "Give me the full official name of the Heat.",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Heat",
       "attribute": "full_name"
     }
   },
@@ -2291,23 +2283,23 @@
     "text": "Give me the full official name of the Suns.",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Suns",
       "attribute": "full_name"
     }
   },
   {
-    "text": "What is the full name of the Suns?",
+    "text": "Tell me the full name of the Suns.",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Suns",
       "attribute": "full_name"
     }
   },
   {
-    "text": "What's the complete team name for the Nuggets?",
+    "text": "How do you say the full team name of the Suns?",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
+      "input": "Suns",
       "attribute": "full_name"
     }
   },
@@ -2315,7 +2307,7 @@
     "text": "Tell me the full name of the Nuggets.",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
+      "input": "Nuggets",
       "attribute": "full_name"
     }
   },
@@ -2323,15 +2315,15 @@
     "text": "What is the full name of the Nuggets?",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
+      "input": "Nuggets",
       "attribute": "full_name"
     }
   },
   {
-    "text": "What is the full name of the Knicks?",
+    "text": "Give me the full official name of the Nuggets.",
     "intent": "team_info",
     "slots": {
-      "name": "Knicks",
+      "input": "Nuggets",
       "attribute": "full_name"
     }
   },
@@ -2339,31 +2331,23 @@
     "text": "How do you say the full team name of the Knicks?",
     "intent": "team_info",
     "slots": {
-      "name": "Knicks",
+      "input": "Knicks",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Tell me the full name of the Knicks.",
+    "text": "What's the complete team name for the Knicks?",
     "intent": "team_info",
     "slots": {
-      "name": "Knicks",
+      "input": "Knicks",
       "attribute": "full_name"
     }
   },
   {
-    "text": "What is the full name of the 76ers?",
+    "text": "Give me the full official name of the Knicks.",
     "intent": "team_info",
     "slots": {
-      "name": "76ers",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "How do you say the full team name of the 76ers?",
-    "intent": "team_info",
-    "slots": {
-      "name": "76ers",
+      "input": "Knicks",
       "attribute": "full_name"
     }
   },
@@ -2371,15 +2355,31 @@
     "text": "Tell me the full name of the 76ers.",
     "intent": "team_info",
     "slots": {
-      "name": "76ers",
+      "input": "76ers",
       "attribute": "full_name"
     }
   },
   {
-    "text": "What's the complete team name for the Mavericks?",
+    "text": "What is the full name of the 76ers?",
     "intent": "team_info",
     "slots": {
-      "name": "Mavericks",
+      "input": "76ers",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What's the complete team name for the 76ers?",
+    "intent": "team_info",
+    "slots": {
+      "input": "76ers",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Tell me the full name of the Mavericks.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Mavericks",
       "attribute": "full_name"
     }
   },
@@ -2387,31 +2387,15 @@
     "text": "How do you say the full team name of the Mavericks?",
     "intent": "team_info",
     "slots": {
-      "name": "Mavericks",
+      "input": "Mavericks",
       "attribute": "full_name"
     }
   },
   {
-    "text": "What is the full name of the Mavericks?",
+    "text": "Give me the full official name of the Mavericks.",
     "intent": "team_info",
     "slots": {
-      "name": "Mavericks",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "What is the full name of the Bulls?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Bulls",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "Give me the full official name of the Bulls.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Bulls",
+      "input": "Mavericks",
       "attribute": "full_name"
     }
   },
@@ -2419,7 +2403,23 @@
     "text": "What's the complete team name for the Bulls?",
     "intent": "team_info",
     "slots": {
-      "name": "Bulls",
+      "input": "Bulls",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Give me the full official name of the Bulls.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Bulls",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Tell me the full name of the Bulls.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Bulls",
       "attribute": "full_name"
     }
   },
@@ -2427,7 +2427,7 @@
     "text": "Tell me the full name of the Raptors.",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
+      "input": "Raptors",
       "attribute": "full_name"
     }
   },
@@ -2435,15 +2435,23 @@
     "text": "How do you say the full team name of the Raptors?",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
+      "input": "Raptors",
       "attribute": "full_name"
     }
   },
   {
-    "text": "What's the complete team name for the Raptors?",
+    "text": "Give me the full official name of the Raptors.",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
+      "input": "Raptors",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What is the full name of the Hawks?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Hawks",
       "attribute": "full_name"
     }
   },
@@ -2451,15 +2459,7 @@
     "text": "How do you say the full team name of the Hawks?",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "Give me the full official name of the Hawks.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Hawks",
+      "input": "Hawks",
       "attribute": "full_name"
     }
   },
@@ -2467,23 +2467,15 @@
     "text": "Tell me the full name of the Hawks.",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
+      "input": "Hawks",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Tell me the full name of the Grizzlies.",
+    "text": "What is the full name of the Grizzlies?",
     "intent": "team_info",
     "slots": {
-      "name": "Grizzlies",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "How do you say the full team name of the Grizzlies?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Grizzlies",
+      "input": "Grizzlies",
       "attribute": "full_name"
     }
   },
@@ -2491,23 +2483,15 @@
     "text": "What's the complete team name for the Grizzlies?",
     "intent": "team_info",
     "slots": {
-      "name": "Grizzlies",
+      "input": "Grizzlies",
       "attribute": "full_name"
     }
   },
   {
-    "text": "What is the full name of the Kings?",
+    "text": "Tell me the full name of the Grizzlies.",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "How do you say the full team name of the Kings?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Kings",
+      "input": "Grizzlies",
       "attribute": "full_name"
     }
   },
@@ -2515,23 +2499,23 @@
     "text": "Tell me the full name of the Kings.",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
+      "input": "Kings",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Give me the full official name of the Cavaliers.",
+    "text": "Give me the full official name of the Kings.",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
+      "input": "Kings",
       "attribute": "full_name"
     }
   },
   {
-    "text": "What's the complete team name for the Cavaliers?",
+    "text": "What is the full name of the Kings?",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
+      "input": "Kings",
       "attribute": "full_name"
     }
   },
@@ -2539,7 +2523,39 @@
     "text": "What is the full name of the Cavaliers?",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
+      "input": "Cavaliers",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "How do you say the full team name of the Cavaliers?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Cavaliers",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Tell me the full name of the Cavaliers.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Cavaliers",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Give me the full official name of the Pacers.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Pacers",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What is the full name of the Pacers?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Pacers",
       "attribute": "full_name"
     }
   },
@@ -2547,31 +2563,15 @@
     "text": "Tell me the full name of the Pacers.",
     "intent": "team_info",
     "slots": {
-      "name": "Pacers",
+      "input": "Pacers",
       "attribute": "full_name"
     }
   },
   {
-    "text": "How do you say the full team name of the Pacers?",
+    "text": "Give me the full official name of the Pelicans.",
     "intent": "team_info",
     "slots": {
-      "name": "Pacers",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "What's the complete team name for the Pacers?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pacers",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "How do you say the full team name of the Pelicans?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pelicans",
+      "input": "Pelicans",
       "attribute": "full_name"
     }
   },
@@ -2579,15 +2579,23 @@
     "text": "What is the full name of the Pelicans?",
     "intent": "team_info",
     "slots": {
-      "name": "Pelicans",
+      "input": "Pelicans",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Tell me the full name of the Pelicans.",
+    "text": "What's the complete team name for the Pelicans?",
     "intent": "team_info",
     "slots": {
-      "name": "Pelicans",
+      "input": "Pelicans",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What is the full name of the Magic?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Magic",
       "attribute": "full_name"
     }
   },
@@ -2595,7 +2603,7 @@
     "text": "How do you say the full team name of the Magic?",
     "intent": "team_info",
     "slots": {
-      "name": "Magic",
+      "input": "Magic",
       "attribute": "full_name"
     }
   },
@@ -2603,31 +2611,15 @@
     "text": "What's the complete team name for the Magic?",
     "intent": "team_info",
     "slots": {
-      "name": "Magic",
+      "input": "Magic",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Tell me the full name of the Magic.",
+    "text": "How do you say the full team name of the Spurs?",
     "intent": "team_info",
     "slots": {
-      "name": "Magic",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "What is the full name of the Spurs?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Spurs",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "Tell me the full name of the Spurs.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Spurs",
+      "input": "Spurs",
       "attribute": "full_name"
     }
   },
@@ -2635,7 +2627,15 @@
     "text": "What's the complete team name for the Spurs?",
     "intent": "team_info",
     "slots": {
-      "name": "Spurs",
+      "input": "Spurs",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Give me the full official name of the Spurs.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Spurs",
       "attribute": "full_name"
     }
   },
@@ -2643,23 +2643,23 @@
     "text": "Give me the full official name of the Thunder.",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
+      "input": "Thunder",
       "attribute": "full_name"
     }
   },
   {
-    "text": "How do you say the full team name of the Thunder?",
+    "text": "What's the complete team name for the Thunder?",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
+      "input": "Thunder",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Tell me the full name of the Thunder.",
+    "text": "What is the full name of the Thunder?",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
+      "input": "Thunder",
       "attribute": "full_name"
     }
   },
@@ -2667,7 +2667,7 @@
     "text": "How do you say the full team name of the Jazz?",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
+      "input": "Jazz",
       "attribute": "full_name"
     }
   },
@@ -2675,15 +2675,23 @@
     "text": "Give me the full official name of the Jazz.",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
+      "input": "Jazz",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Tell me the full name of the Jazz.",
+    "text": "What's the complete team name for the Jazz?",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
+      "input": "Jazz",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What's the complete team name for the Timberwolves?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Timberwolves",
       "attribute": "full_name"
     }
   },
@@ -2691,23 +2699,23 @@
     "text": "How do you say the full team name of the Timberwolves?",
     "intent": "team_info",
     "slots": {
-      "name": "Timberwolves",
+      "input": "Timberwolves",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Tell me the full name of the Timberwolves.",
+    "text": "What is the full name of the Timberwolves?",
     "intent": "team_info",
     "slots": {
-      "name": "Timberwolves",
+      "input": "Timberwolves",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Give me the full official name of the Timberwolves.",
+    "text": "How do you say the full team name of the Pistons?",
     "intent": "team_info",
     "slots": {
-      "name": "Timberwolves",
+      "input": "Pistons",
       "attribute": "full_name"
     }
   },
@@ -2715,7 +2723,7 @@
     "text": "Give me the full official name of the Pistons.",
     "intent": "team_info",
     "slots": {
-      "name": "Pistons",
+      "input": "Pistons",
       "attribute": "full_name"
     }
   },
@@ -2723,23 +2731,7 @@
     "text": "What is the full name of the Pistons?",
     "intent": "team_info",
     "slots": {
-      "name": "Pistons",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "What's the complete team name for the Pistons?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pistons",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "How do you say the full team name of the Wizards?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Wizards",
+      "input": "Pistons",
       "attribute": "full_name"
     }
   },
@@ -2747,15 +2739,31 @@
     "text": "What's the complete team name for the Wizards?",
     "intent": "team_info",
     "slots": {
-      "name": "Wizards",
+      "input": "Wizards",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Give me the full official name of the Wizards.",
+    "text": "What is the full name of the Wizards?",
     "intent": "team_info",
     "slots": {
-      "name": "Wizards",
+      "input": "Wizards",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "How do you say the full team name of the Wizards?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Wizards",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What's the complete team name for the Nets?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Nets",
       "attribute": "full_name"
     }
   },
@@ -2763,7 +2771,7 @@
     "text": "Tell me the full name of the Nets.",
     "intent": "team_info",
     "slots": {
-      "name": "Nets",
+      "input": "Nets",
       "attribute": "full_name"
     }
   },
@@ -2771,15 +2779,15 @@
     "text": "Give me the full official name of the Nets.",
     "intent": "team_info",
     "slots": {
-      "name": "Nets",
+      "input": "Nets",
       "attribute": "full_name"
     }
   },
   {
-    "text": "How do you say the full team name of the Nets?",
+    "text": "What is the full name of the Hornets?",
     "intent": "team_info",
     "slots": {
-      "name": "Nets",
+      "input": "Hornets",
       "attribute": "full_name"
     }
   },
@@ -2787,39 +2795,15 @@
     "text": "Tell me the full name of the Hornets.",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
+      "input": "Hornets",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Give me the full official name of the Hornets.",
+    "text": "How do you say the full team name of the Hornets?",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "What's the complete team name for the Hornets?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Hornets",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "Tell me the full name of the Trail Blazers.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Trail Blazers",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "How do you say the full team name of the Trail Blazers?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Trail Blazers",
+      "input": "Hornets",
       "attribute": "full_name"
     }
   },
@@ -2827,15 +2811,23 @@
     "text": "Give me the full official name of the Trail Blazers.",
     "intent": "team_info",
     "slots": {
-      "name": "Trail Blazers",
+      "input": "Trail Blazers",
       "attribute": "full_name"
     }
   },
   {
-    "text": "How do you say the full team name of the Clippers?",
+    "text": "What is the full name of the Trail Blazers?",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
+      "input": "Trail Blazers",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Tell me the full name of the Trail Blazers.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Trail Blazers",
       "attribute": "full_name"
     }
   },
@@ -2843,7 +2835,7 @@
     "text": "What is the full name of the Clippers?",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
+      "input": "Clippers",
       "attribute": "full_name"
     }
   },
@@ -2851,7 +2843,15 @@
     "text": "Tell me the full name of the Clippers.",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
+      "input": "Clippers",
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Give me the full official name of the Clippers.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Clippers",
       "attribute": "full_name"
     }
   },
@@ -2859,31 +2859,31 @@
     "text": "How do you say the full team name of the Rockets?",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Rockets",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Give me the full official name of the Rockets.",
+    "text": "What's the complete team name for the Rockets?",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Rockets",
       "attribute": "full_name"
     }
   },
   {
-    "text": "What is the full name of the Rockets?",
+    "text": "Tell me the full name of the Rockets.",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Rockets",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Tell me the abbreviation used for the Warriors.",
+    "text": "What's the team code for the Warriors?",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
+      "input": "Warriors",
       "attribute": "abbreviation"
     }
   },
@@ -2891,15 +2891,23 @@
     "text": "Give me the short abbreviation of the Warriors.",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
+      "input": "Warriors",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What is the abbreviation for the Warriors?",
+    "text": "Tell me the abbreviation used for the Warriors.",
     "intent": "team_info",
     "slots": {
-      "name": "Warriors",
+      "input": "Warriors",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What is the abbreviation for the Lakers?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Lakers",
       "attribute": "abbreviation"
     }
   },
@@ -2907,15 +2915,7 @@
     "text": "What's the team code for the Lakers?",
     "intent": "team_info",
     "slots": {
-      "name": "Lakers",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "I want to know the three-letter code for the Lakers.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Lakers",
+      "input": "Lakers",
       "attribute": "abbreviation"
     }
   },
@@ -2923,15 +2923,15 @@
     "text": "Give me the short abbreviation of the Lakers.",
     "intent": "team_info",
     "slots": {
-      "name": "Lakers",
+      "input": "Lakers",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What's the team code for the Celtics?",
+    "text": "Tell me the abbreviation used for the Celtics.",
     "intent": "team_info",
     "slots": {
-      "name": "Celtics",
+      "input": "Celtics",
       "attribute": "abbreviation"
     }
   },
@@ -2939,23 +2939,23 @@
     "text": "Give me the short abbreviation of the Celtics.",
     "intent": "team_info",
     "slots": {
-      "name": "Celtics",
+      "input": "Celtics",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "I want to know the three-letter code for the Celtics.",
+    "text": "What's the team code for the Celtics?",
     "intent": "team_info",
     "slots": {
-      "name": "Celtics",
+      "input": "Celtics",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What is the abbreviation for the Bucks?",
+    "text": "I want to know the three-letter code for the Bucks.",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
+      "input": "Bucks",
       "attribute": "abbreviation"
     }
   },
@@ -2963,23 +2963,15 @@
     "text": "What's the team code for the Bucks?",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
+      "input": "Bucks",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Give me the short abbreviation of the Bucks.",
+    "text": "Tell me the abbreviation used for the Bucks.",
     "intent": "team_info",
     "slots": {
-      "name": "Bucks",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "What is the abbreviation for the Heat?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Heat",
+      "input": "Bucks",
       "attribute": "abbreviation"
     }
   },
@@ -2987,15 +2979,23 @@
     "text": "What's the team code for the Heat?",
     "intent": "team_info",
     "slots": {
-      "name": "Heat",
+      "input": "Heat",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Tell me the abbreviation used for the Heat.",
+    "text": "I want to know the three-letter code for the Heat.",
     "intent": "team_info",
     "slots": {
-      "name": "Heat",
+      "input": "Heat",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Give me the short abbreviation of the Heat.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Heat",
       "attribute": "abbreviation"
     }
   },
@@ -3003,15 +3003,15 @@
     "text": "What's the team code for the Suns?",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Suns",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Tell me the abbreviation used for the Suns.",
+    "text": "What is the abbreviation for the Suns?",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
+      "input": "Suns",
       "attribute": "abbreviation"
     }
   },
@@ -3019,15 +3019,7 @@
     "text": "Give me the short abbreviation of the Suns.",
     "intent": "team_info",
     "slots": {
-      "name": "Suns",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "I want to know the three-letter code for the Nuggets.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Nuggets",
+      "input": "Suns",
       "attribute": "abbreviation"
     }
   },
@@ -3035,31 +3027,23 @@
     "text": "What is the abbreviation for the Nuggets?",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
+      "input": "Nuggets",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What's the team code for the Nuggets?",
+    "text": "Give me the short abbreviation of the Nuggets.",
     "intent": "team_info",
     "slots": {
-      "name": "Nuggets",
+      "input": "Nuggets",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What is the abbreviation for the Knicks?",
+    "text": "I want to know the three-letter code for the Nuggets.",
     "intent": "team_info",
     "slots": {
-      "name": "Knicks",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "Give me the short abbreviation of the Knicks.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Knicks",
+      "input": "Nuggets",
       "attribute": "abbreviation"
     }
   },
@@ -3067,23 +3051,31 @@
     "text": "I want to know the three-letter code for the Knicks.",
     "intent": "team_info",
     "slots": {
-      "name": "Knicks",
+      "input": "Knicks",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What is the abbreviation for the 76ers?",
+    "text": "What is the abbreviation for the Knicks?",
     "intent": "team_info",
     "slots": {
-      "name": "76ers",
+      "input": "Knicks",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Tell me the abbreviation used for the 76ers.",
+    "text": "What's the team code for the Knicks?",
     "intent": "team_info",
     "slots": {
-      "name": "76ers",
+      "input": "Knicks",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "I want to know the three-letter code for the 76ers.",
+    "intent": "team_info",
+    "slots": {
+      "input": "76ers",
       "attribute": "abbreviation"
     }
   },
@@ -3091,7 +3083,15 @@
     "text": "Give me the short abbreviation of the 76ers.",
     "intent": "team_info",
     "slots": {
-      "name": "76ers",
+      "input": "76ers",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What's the team code for the 76ers?",
+    "intent": "team_info",
+    "slots": {
+      "input": "76ers",
       "attribute": "abbreviation"
     }
   },
@@ -3099,7 +3099,15 @@
     "text": "What is the abbreviation for the Mavericks?",
     "intent": "team_info",
     "slots": {
-      "name": "Mavericks",
+      "input": "Mavericks",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What's the team code for the Mavericks?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Mavericks",
       "attribute": "abbreviation"
     }
   },
@@ -3107,31 +3115,7 @@
     "text": "Tell me the abbreviation used for the Mavericks.",
     "intent": "team_info",
     "slots": {
-      "name": "Mavericks",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "I want to know the three-letter code for the Mavericks.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Mavericks",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "Give me the short abbreviation of the Bulls.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Bulls",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "What's the team code for the Bulls?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Bulls",
+      "input": "Mavericks",
       "attribute": "abbreviation"
     }
   },
@@ -3139,23 +3123,39 @@
     "text": "I want to know the three-letter code for the Bulls.",
     "intent": "team_info",
     "slots": {
-      "name": "Bulls",
+      "input": "Bulls",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What's the team code for the Raptors?",
+    "text": "What is the abbreviation for the Bulls?",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
+      "input": "Bulls",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Tell me the abbreviation used for the Raptors.",
+    "text": "What's the team code for the Bulls?",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
+      "input": "Bulls",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What is the abbreviation for the Raptors?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Raptors",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "I want to know the three-letter code for the Raptors.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Raptors",
       "attribute": "abbreviation"
     }
   },
@@ -3163,23 +3163,23 @@
     "text": "Give me the short abbreviation of the Raptors.",
     "intent": "team_info",
     "slots": {
-      "name": "Raptors",
+      "input": "Raptors",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What's the team code for the Hawks?",
+    "text": "What is the abbreviation for the Hawks?",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
+      "input": "Hawks",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "I want to know the three-letter code for the Hawks.",
+    "text": "Give me the short abbreviation of the Hawks.",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
+      "input": "Hawks",
       "attribute": "abbreviation"
     }
   },
@@ -3187,7 +3187,7 @@
     "text": "Tell me the abbreviation used for the Hawks.",
     "intent": "team_info",
     "slots": {
-      "name": "Hawks",
+      "input": "Hawks",
       "attribute": "abbreviation"
     }
   },
@@ -3195,15 +3195,7 @@
     "text": "Give me the short abbreviation of the Grizzlies.",
     "intent": "team_info",
     "slots": {
-      "name": "Grizzlies",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "What is the abbreviation for the Grizzlies?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Grizzlies",
+      "input": "Grizzlies",
       "attribute": "abbreviation"
     }
   },
@@ -3211,15 +3203,15 @@
     "text": "What's the team code for the Grizzlies?",
     "intent": "team_info",
     "slots": {
-      "name": "Grizzlies",
+      "input": "Grizzlies",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Tell me the abbreviation used for the Kings.",
+    "text": "What is the abbreviation for the Grizzlies?",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
+      "input": "Grizzlies",
       "attribute": "abbreviation"
     }
   },
@@ -3227,15 +3219,23 @@
     "text": "I want to know the three-letter code for the Kings.",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
+      "input": "Kings",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Give me the short abbreviation of the Kings.",
+    "text": "What's the team code for the Kings?",
     "intent": "team_info",
     "slots": {
-      "name": "Kings",
+      "input": "Kings",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What is the abbreviation for the Kings?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Kings",
       "attribute": "abbreviation"
     }
   },
@@ -3243,15 +3243,7 @@
     "text": "Tell me the abbreviation used for the Cavaliers.",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "What's the team code for the Cavaliers?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Cavaliers",
+      "input": "Cavaliers",
       "attribute": "abbreviation"
     }
   },
@@ -3259,23 +3251,23 @@
     "text": "I want to know the three-letter code for the Cavaliers.",
     "intent": "team_info",
     "slots": {
-      "name": "Cavaliers",
+      "input": "Cavaliers",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Give me the short abbreviation of the Pacers.",
+    "text": "What is the abbreviation for the Cavaliers?",
     "intent": "team_info",
     "slots": {
-      "name": "Pacers",
+      "input": "Cavaliers",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What's the team code for the Pacers?",
+    "text": "Tell me the abbreviation used for the Pacers.",
     "intent": "team_info",
     "slots": {
-      "name": "Pacers",
+      "input": "Pacers",
       "attribute": "abbreviation"
     }
   },
@@ -3283,7 +3275,31 @@
     "text": "What is the abbreviation for the Pacers?",
     "intent": "team_info",
     "slots": {
-      "name": "Pacers",
+      "input": "Pacers",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Give me the short abbreviation of the Pacers.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Pacers",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What's the team code for the Pelicans?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Pelicans",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Tell me the abbreviation used for the Pelicans.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Pelicans",
       "attribute": "abbreviation"
     }
   },
@@ -3291,23 +3307,7 @@
     "text": "I want to know the three-letter code for the Pelicans.",
     "intent": "team_info",
     "slots": {
-      "name": "Pelicans",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "Give me the short abbreviation of the Pelicans.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pelicans",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "What is the abbreviation for the Pelicans?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pelicans",
+      "input": "Pelicans",
       "attribute": "abbreviation"
     }
   },
@@ -3315,15 +3315,15 @@
     "text": "I want to know the three-letter code for the Magic.",
     "intent": "team_info",
     "slots": {
-      "name": "Magic",
+      "input": "Magic",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Give me the short abbreviation of the Magic.",
+    "text": "Tell me the abbreviation used for the Magic.",
     "intent": "team_info",
     "slots": {
-      "name": "Magic",
+      "input": "Magic",
       "attribute": "abbreviation"
     }
   },
@@ -3331,23 +3331,7 @@
     "text": "What's the team code for the Magic?",
     "intent": "team_info",
     "slots": {
-      "name": "Magic",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "Tell me the abbreviation used for the Spurs.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Spurs",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "I want to know the three-letter code for the Spurs.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Spurs",
+      "input": "Magic",
       "attribute": "abbreviation"
     }
   },
@@ -3355,15 +3339,23 @@
     "text": "What's the team code for the Spurs?",
     "intent": "team_info",
     "slots": {
-      "name": "Spurs",
+      "input": "Spurs",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "I want to know the three-letter code for the Thunder.",
+    "text": "Give me the short abbreviation of the Spurs.",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
+      "input": "Spurs",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "I want to know the three-letter code for the Spurs.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Spurs",
       "attribute": "abbreviation"
     }
   },
@@ -3371,31 +3363,23 @@
     "text": "What's the team code for the Thunder?",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
+      "input": "Thunder",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Give me the short abbreviation of the Thunder.",
+    "text": "What is the abbreviation for the Thunder?",
     "intent": "team_info",
     "slots": {
-      "name": "Thunder",
+      "input": "Thunder",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Give me the short abbreviation of the Jazz.",
+    "text": "Tell me the abbreviation used for the Thunder.",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "What's the team code for the Jazz?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Jazz",
+      "input": "Thunder",
       "attribute": "abbreviation"
     }
   },
@@ -3403,7 +3387,31 @@
     "text": "What is the abbreviation for the Jazz?",
     "intent": "team_info",
     "slots": {
-      "name": "Jazz",
+      "input": "Jazz",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "I want to know the three-letter code for the Jazz.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Jazz",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What's the team code for the Jazz?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Jazz",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What's the team code for the Timberwolves?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Timberwolves",
       "attribute": "abbreviation"
     }
   },
@@ -3411,23 +3419,15 @@
     "text": "Tell me the abbreviation used for the Timberwolves.",
     "intent": "team_info",
     "slots": {
-      "name": "Timberwolves",
+      "input": "Timberwolves",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What is the abbreviation for the Timberwolves?",
+    "text": "I want to know the three-letter code for the Timberwolves.",
     "intent": "team_info",
     "slots": {
-      "name": "Timberwolves",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "Give me the short abbreviation of the Timberwolves.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Timberwolves",
+      "input": "Timberwolves",
       "attribute": "abbreviation"
     }
   },
@@ -3435,7 +3435,15 @@
     "text": "I want to know the three-letter code for the Pistons.",
     "intent": "team_info",
     "slots": {
-      "name": "Pistons",
+      "input": "Pistons",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Give me the short abbreviation of the Pistons.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Pistons",
       "attribute": "abbreviation"
     }
   },
@@ -3443,31 +3451,7 @@
     "text": "What is the abbreviation for the Pistons?",
     "intent": "team_info",
     "slots": {
-      "name": "Pistons",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "Tell me the abbreviation used for the Pistons.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Pistons",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "I want to know the three-letter code for the Wizards.",
-    "intent": "team_info",
-    "slots": {
-      "name": "Wizards",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "What is the abbreviation for the Wizards?",
-    "intent": "team_info",
-    "slots": {
-      "name": "Wizards",
+      "input": "Pistons",
       "attribute": "abbreviation"
     }
   },
@@ -3475,23 +3459,23 @@
     "text": "Give me the short abbreviation of the Wizards.",
     "intent": "team_info",
     "slots": {
-      "name": "Wizards",
+      "input": "Wizards",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What is the abbreviation for the Nets?",
+    "text": "What is the abbreviation for the Wizards?",
     "intent": "team_info",
     "slots": {
-      "name": "Nets",
+      "input": "Wizards",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Give me the short abbreviation of the Nets.",
+    "text": "Tell me the abbreviation used for the Wizards.",
     "intent": "team_info",
     "slots": {
-      "name": "Nets",
+      "input": "Wizards",
       "attribute": "abbreviation"
     }
   },
@@ -3499,23 +3483,23 @@
     "text": "I want to know the three-letter code for the Nets.",
     "intent": "team_info",
     "slots": {
-      "name": "Nets",
+      "input": "Nets",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "I want to know the three-letter code for the Hornets.",
+    "text": "Give me the short abbreviation of the Nets.",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
+      "input": "Nets",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Tell me the abbreviation used for the Hornets.",
+    "text": "What is the abbreviation for the Nets?",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
+      "input": "Nets",
       "attribute": "abbreviation"
     }
   },
@@ -3523,23 +3507,23 @@
     "text": "What is the abbreviation for the Hornets?",
     "intent": "team_info",
     "slots": {
-      "name": "Hornets",
+      "input": "Hornets",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "I want to know the three-letter code for the Trail Blazers.",
+    "text": "I want to know the three-letter code for the Hornets.",
     "intent": "team_info",
     "slots": {
-      "name": "Trail Blazers",
+      "input": "Hornets",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What is the abbreviation for the Trail Blazers?",
+    "text": "What's the team code for the Hornets?",
     "intent": "team_info",
     "slots": {
-      "name": "Trail Blazers",
+      "input": "Hornets",
       "attribute": "abbreviation"
     }
   },
@@ -3547,23 +3531,23 @@
     "text": "Give me the short abbreviation of the Trail Blazers.",
     "intent": "team_info",
     "slots": {
-      "name": "Trail Blazers",
+      "input": "Trail Blazers",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What is the abbreviation for the Clippers?",
+    "text": "What is the abbreviation for the Trail Blazers?",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
+      "input": "Trail Blazers",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Tell me the abbreviation used for the Clippers.",
+    "text": "What's the team code for the Trail Blazers?",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
+      "input": "Trail Blazers",
       "attribute": "abbreviation"
     }
   },
@@ -3571,7 +3555,23 @@
     "text": "I want to know the three-letter code for the Clippers.",
     "intent": "team_info",
     "slots": {
-      "name": "Clippers",
+      "input": "Clippers",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Give me the short abbreviation of the Clippers.",
+    "intent": "team_info",
+    "slots": {
+      "input": "Clippers",
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What's the team code for the Clippers?",
+    "intent": "team_info",
+    "slots": {
+      "input": "Clippers",
       "attribute": "abbreviation"
     }
   },
@@ -3579,23 +3579,23 @@
     "text": "Give me the short abbreviation of the Rockets.",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Rockets",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "What's the team code for the Rockets?",
+    "text": "What is the abbreviation for the Rockets?",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Rockets",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Tell me the abbreviation used for the Rockets.",
+    "text": "I want to know the three-letter code for the Rockets.",
     "intent": "team_info",
     "slots": {
-      "name": "Rockets",
+      "input": "Rockets",
       "attribute": "abbreviation"
     }
   }

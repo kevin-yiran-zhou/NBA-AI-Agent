@@ -54,7 +54,7 @@ for attr, tmpl_list in templates.items():
             dataset.append({
                 "text": t.format(team=team),
                 "intent": "team_info",
-                "slots": {"name": team, "attribute": attr}
+                "slots": {"input": team, "attribute": attr}
             })
 
 with open("team.json", "w") as f:

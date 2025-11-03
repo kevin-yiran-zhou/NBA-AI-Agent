@@ -93,8 +93,8 @@ for attr, tmpl_list in templates.items():
             dataset.append({
                 "text": t.format(player=player),
                 "intent": "player_info",
-                "slots": {"player_name": player, "attribute": attr}
+                "slots": {"input": player, "attribute": attr}
             })
 
-with open("player_info.json", "w") as f:
+with open("player.json", "w") as f:
     json.dump(dataset, f, indent=2)

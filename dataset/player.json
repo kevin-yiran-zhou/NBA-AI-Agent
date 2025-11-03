@@ -1,9 +1,9 @@
 [
   {
-    "text": "Which position does Stephen Curry play?",
+    "text": "Which position is Stephen Curry known for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "position"
     }
   },
@@ -11,15 +11,15 @@
     "text": "What position does Stephen Curry play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "position"
     }
   },
   {
-    "text": "Which position is Stephen Curry known for?",
+    "text": "Which position does Stephen Curry play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "position"
     }
   },
@@ -27,15 +27,15 @@
     "text": "Which position is LeBron James known for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "position"
     }
   },
   {
-    "text": "Tell me LeBron James's playing position.",
+    "text": "I want to know LeBron James's position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "position"
     }
   },
@@ -43,15 +43,7 @@
     "text": "What position does LeBron James play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "Tell me Giannis Antetokounmpo's playing position.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "LeBron James",
       "attribute": "position"
     }
   },
@@ -59,7 +51,15 @@
     "text": "I want to know Giannis Antetokounmpo's position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Tell me Giannis Antetokounmpo's playing position.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Giannis Antetokounmpo",
       "attribute": "position"
     }
   },
@@ -67,7 +67,15 @@
     "text": "Which position is Giannis Antetokounmpo known for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Tell me Luka Doncic's playing position.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Luka Doncic",
       "attribute": "position"
     }
   },
@@ -75,15 +83,7 @@
     "text": "Which position is Luka Doncic known for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "I want to know Luka Doncic's position.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "position"
     }
   },
@@ -91,15 +91,15 @@
     "text": "Which position does Luka Doncic play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "position"
     }
   },
   {
-    "text": "I want to know Kevin Durant's position.",
+    "text": "Tell me Kevin Durant's playing position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
       "attribute": "position"
     }
   },
@@ -107,7 +107,7 @@
     "text": "Which position is Kevin Durant known for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
       "attribute": "position"
     }
   },
@@ -115,7 +115,7 @@
     "text": "Which position does Kevin Durant play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
       "attribute": "position"
     }
   },
@@ -123,15 +123,15 @@
     "text": "I want to know Nikola Jokic's position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "position"
     }
   },
   {
-    "text": "What position does Nikola Jokic play?",
+    "text": "Which position is Nikola Jokic known for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "position"
     }
   },
@@ -139,15 +139,7 @@
     "text": "Tell me Nikola Jokic's playing position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "Which position is Jayson Tatum known for?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Nikola Jokic",
       "attribute": "position"
     }
   },
@@ -155,7 +147,15 @@
     "text": "What position does Jayson Tatum play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "I want to know Jayson Tatum's position.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jayson Tatum",
       "attribute": "position"
     }
   },
@@ -163,7 +163,15 @@
     "text": "Tell me Jayson Tatum's playing position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "What position does Devin Booker play?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Devin Booker",
       "attribute": "position"
     }
   },
@@ -171,7 +179,7 @@
     "text": "Which position is Devin Booker known for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "position"
     }
   },
@@ -179,31 +187,7 @@
     "text": "I want to know Devin Booker's position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "Which position does Devin Booker play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Devin Booker",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "Which position is Jimmy Butler known for?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jimmy Butler",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "What position does Jimmy Butler play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Devin Booker",
       "attribute": "position"
     }
   },
@@ -211,15 +195,23 @@
     "text": "Which position does Jimmy Butler play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
       "attribute": "position"
     }
   },
   {
-    "text": "Which position does Joel Embiid play?",
+    "text": "What position does Jimmy Butler play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Jimmy Butler",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Tell me Jimmy Butler's playing position.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jimmy Butler",
       "attribute": "position"
     }
   },
@@ -227,7 +219,7 @@
     "text": "Tell me Joel Embiid's playing position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "position"
     }
   },
@@ -235,7 +227,23 @@
     "text": "I want to know Joel Embiid's position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Which position does Joel Embiid play?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Joel Embiid",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Which position is Kyrie Irving known for?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kyrie Irving",
       "attribute": "position"
     }
   },
@@ -243,15 +251,7 @@
     "text": "Which position does Kyrie Irving play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "I want to know Kyrie Irving's position.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "position"
     }
   },
@@ -259,15 +259,7 @@
     "text": "Tell me Kyrie Irving's playing position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "Which position is Anthony Davis known for?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Kyrie Irving",
       "attribute": "position"
     }
   },
@@ -275,7 +267,15 @@
     "text": "Tell me Anthony Davis's playing position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Which position is Anthony Davis known for?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Anthony Davis",
       "attribute": "position"
     }
   },
@@ -283,15 +283,7 @@
     "text": "What position does Anthony Davis play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "Which position does Damian Lillard play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Anthony Davis",
       "attribute": "position"
     }
   },
@@ -299,15 +291,39 @@
     "text": "Tell me Damian Lillard's playing position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "position"
     }
   },
   {
-    "text": "I want to know Damian Lillard's position.",
+    "text": "Which position is Damian Lillard known for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "What position does Damian Lillard play?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Damian Lillard",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "I want to know Ja Morant's position.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Ja Morant",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Tell me Ja Morant's playing position.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Ja Morant",
       "attribute": "position"
     }
   },
@@ -315,39 +331,7 @@
     "text": "What position does Ja Morant play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "Which position does Ja Morant play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Ja Morant",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "Which position is Ja Morant known for?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Ja Morant",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "What position does Trae Young play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Trae Young",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "Which position does Trae Young play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Trae Young",
+      "input": "Ja Morant",
       "attribute": "position"
     }
   },
@@ -355,23 +339,23 @@
     "text": "Tell me Trae Young's playing position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "position"
     }
   },
   {
-    "text": "Which position is Donovan Mitchell known for?",
+    "text": "I want to know Trae Young's position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Trae Young",
       "attribute": "position"
     }
   },
   {
-    "text": "Tell me Donovan Mitchell's playing position.",
+    "text": "What position does Trae Young play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Trae Young",
       "attribute": "position"
     }
   },
@@ -379,15 +363,39 @@
     "text": "Which position does Donovan Mitchell play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "position"
     }
   },
   {
-    "text": "Which position does Shai Gilgeous-Alexander play?",
+    "text": "What position does Donovan Mitchell play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Donovan Mitchell",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Which position is Donovan Mitchell known for?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Donovan Mitchell",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Tell me Shai Gilgeous-Alexander's playing position.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Shai Gilgeous-Alexander",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Which position is Shai Gilgeous-Alexander known for?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "position"
     }
   },
@@ -395,15 +403,23 @@
     "text": "I want to know Shai Gilgeous-Alexander's position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "position"
     }
   },
   {
-    "text": "What position does Shai Gilgeous-Alexander play?",
+    "text": "Which position is Zion Williamson known for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Zion Williamson",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Which position does Zion Williamson play?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Zion Williamson",
       "attribute": "position"
     }
   },
@@ -411,31 +427,7 @@
     "text": "Tell me Zion Williamson's playing position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "What position does Zion Williamson play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Zion Williamson",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "I want to know Zion Williamson's position.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Zion Williamson",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "Which position does Jaylen Brown play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Zion Williamson",
       "attribute": "position"
     }
   },
@@ -443,31 +435,23 @@
     "text": "Tell me Jaylen Brown's playing position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "position"
     }
   },
   {
-    "text": "Which position is Jaylen Brown known for?",
+    "text": "I want to know Jaylen Brown's position.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "position"
     }
   },
   {
-    "text": "Which position is Jalen Brunson known for?",
+    "text": "What position does Jaylen Brown play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "What position does Jalen Brunson play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jaylen Brown",
       "attribute": "position"
     }
   },
@@ -475,7 +459,23 @@
     "text": "Which position does Jalen Brunson play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "What position does Jalen Brunson play?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jalen Brunson",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Tell me Jalen Brunson's playing position.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jalen Brunson",
       "attribute": "position"
     }
   },
@@ -483,15 +483,15 @@
     "text": "What's Stephen Curry's height?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "height"
     }
   },
   {
-    "text": "I want to know Stephen Curry's height.",
+    "text": "Tell me Stephen Curry's height in feet.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "height"
     }
   },
@@ -499,7 +499,7 @@
     "text": "Can you tell me how tall Stephen Curry is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "height"
     }
   },
@@ -507,15 +507,7 @@
     "text": "How tall is LeBron James?",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "Tell me LeBron James's height in feet.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "height"
     }
   },
@@ -523,7 +515,15 @@
     "text": "What's LeBron James's height?",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Can you tell me how tall LeBron James is?",
+    "intent": "player_info",
+    "slots": {
+      "input": "LeBron James",
       "attribute": "height"
     }
   },
@@ -531,7 +531,7 @@
     "text": "How tall is Giannis Antetokounmpo?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "height"
     }
   },
@@ -539,7 +539,7 @@
     "text": "Can you tell me how tall Giannis Antetokounmpo is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "height"
     }
   },
@@ -547,15 +547,7 @@
     "text": "What's Giannis Antetokounmpo's height?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "I want to know Luka Doncic's height.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Giannis Antetokounmpo",
       "attribute": "height"
     }
   },
@@ -563,23 +555,23 @@
     "text": "How tall is Luka Doncic?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "height"
     }
   },
   {
-    "text": "What's Luka Doncic's height?",
+    "text": "I want to know Luka Doncic's height.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "height"
     }
   },
   {
-    "text": "Can you tell me how tall Kevin Durant is?",
+    "text": "Tell me Luka Doncic's height in feet.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Luka Doncic",
       "attribute": "height"
     }
   },
@@ -587,7 +579,7 @@
     "text": "I want to know Kevin Durant's height.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
       "attribute": "height"
     }
   },
@@ -595,15 +587,15 @@
     "text": "What's Kevin Durant's height?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
       "attribute": "height"
     }
   },
   {
-    "text": "Can you tell me how tall Nikola Jokic is?",
+    "text": "Tell me Kevin Durant's height in feet.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Kevin Durant",
       "attribute": "height"
     }
   },
@@ -611,31 +603,23 @@
     "text": "Tell me Nikola Jokic's height in feet.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "height"
     }
   },
   {
-    "text": "I want to know Nikola Jokic's height.",
+    "text": "How tall is Nikola Jokic?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "height"
     }
   },
   {
-    "text": "I want to know Jayson Tatum's height.",
+    "text": "Can you tell me how tall Nikola Jokic is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "What's Jayson Tatum's height?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Nikola Jokic",
       "attribute": "height"
     }
   },
@@ -643,23 +627,31 @@
     "text": "Can you tell me how tall Jayson Tatum is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
       "attribute": "height"
     }
   },
   {
-    "text": "What's Devin Booker's height?",
+    "text": "I want to know Jayson Tatum's height.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Jayson Tatum",
       "attribute": "height"
     }
   },
   {
-    "text": "Tell me Devin Booker's height in feet.",
+    "text": "What's Jayson Tatum's height?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Jayson Tatum",
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "I want to know Devin Booker's height.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Devin Booker",
       "attribute": "height"
     }
   },
@@ -667,7 +659,23 @@
     "text": "How tall is Devin Booker?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Tell me Devin Booker's height in feet.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Devin Booker",
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "What's Jimmy Butler's height?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jimmy Butler",
       "attribute": "height"
     }
   },
@@ -675,15 +683,7 @@
     "text": "I want to know Jimmy Butler's height.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "How tall is Jimmy Butler?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
       "attribute": "height"
     }
   },
@@ -691,7 +691,15 @@
     "text": "Tell me Jimmy Butler's height in feet.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Can you tell me how tall Joel Embiid is?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Joel Embiid",
       "attribute": "height"
     }
   },
@@ -699,23 +707,15 @@
     "text": "How tall is Joel Embiid?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "height"
     }
   },
   {
-    "text": "I want to know Joel Embiid's height.",
+    "text": "Tell me Joel Embiid's height in feet.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "What's Joel Embiid's height?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "height"
     }
   },
@@ -723,7 +723,15 @@
     "text": "Can you tell me how tall Kyrie Irving is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Tell me Kyrie Irving's height in feet.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kyrie Irving",
       "attribute": "height"
     }
   },
@@ -731,15 +739,15 @@
     "text": "How tall is Kyrie Irving?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "height"
     }
   },
   {
-    "text": "What's Kyrie Irving's height?",
+    "text": "Can you tell me how tall Anthony Davis is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Anthony Davis",
       "attribute": "height"
     }
   },
@@ -747,7 +755,7 @@
     "text": "How tall is Anthony Davis?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "height"
     }
   },
@@ -755,15 +763,7 @@
     "text": "What's Anthony Davis's height?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "Tell me Anthony Davis's height in feet.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "height"
     }
   },
@@ -771,7 +771,7 @@
     "text": "Tell me Damian Lillard's height in feet.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "height"
     }
   },
@@ -779,15 +779,31 @@
     "text": "How tall is Damian Lillard?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "height"
     }
   },
   {
-    "text": "What's Damian Lillard's height?",
+    "text": "Can you tell me how tall Damian Lillard is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Tell me Ja Morant's height in feet.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Ja Morant",
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "What's Ja Morant's height?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Ja Morant",
       "attribute": "height"
     }
   },
@@ -795,23 +811,15 @@
     "text": "How tall is Ja Morant?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "height"
     }
   },
   {
-    "text": "Can you tell me how tall Ja Morant is?",
+    "text": "I want to know Trae Young's height.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "I want to know Ja Morant's height.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Ja Morant",
+      "input": "Trae Young",
       "attribute": "height"
     }
   },
@@ -819,7 +827,7 @@
     "text": "How tall is Trae Young?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "height"
     }
   },
@@ -827,31 +835,7 @@
     "text": "What's Trae Young's height?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "Can you tell me how tall Trae Young is?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Trae Young",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "Can you tell me how tall Donovan Mitchell is?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Donovan Mitchell",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "How tall is Donovan Mitchell?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Trae Young",
       "attribute": "height"
     }
   },
@@ -859,7 +843,23 @@
     "text": "What's Donovan Mitchell's height?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Can you tell me how tall Donovan Mitchell is?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Donovan Mitchell",
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "How tall is Donovan Mitchell?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Donovan Mitchell",
       "attribute": "height"
     }
   },
@@ -867,7 +867,15 @@
     "text": "What's Shai Gilgeous-Alexander's height?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Can you tell me how tall Shai Gilgeous-Alexander is?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "height"
     }
   },
@@ -875,23 +883,7 @@
     "text": "Tell me Shai Gilgeous-Alexander's height in feet.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "How tall is Shai Gilgeous-Alexander?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "What's Zion Williamson's height?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "height"
     }
   },
@@ -899,15 +891,23 @@
     "text": "How tall is Zion Williamson?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
       "attribute": "height"
     }
   },
   {
-    "text": "Tell me Zion Williamson's height in feet.",
+    "text": "Can you tell me how tall Zion Williamson is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "What's Zion Williamson's height?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Zion Williamson",
       "attribute": "height"
     }
   },
@@ -915,7 +915,7 @@
     "text": "How tall is Jaylen Brown?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "height"
     }
   },
@@ -923,23 +923,15 @@
     "text": "Tell me Jaylen Brown's height in feet.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "height"
     }
   },
   {
-    "text": "I want to know Jaylen Brown's height.",
+    "text": "Can you tell me how tall Jaylen Brown is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "What's Jalen Brunson's height?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jaylen Brown",
       "attribute": "height"
     }
   },
@@ -947,7 +939,7 @@
     "text": "How tall is Jalen Brunson?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "height"
     }
   },
@@ -955,23 +947,23 @@
     "text": "I want to know Jalen Brunson's height.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "height"
     }
   },
   {
-    "text": "Can you tell me how heavy Stephen Curry is?",
+    "text": "Tell me Jalen Brunson's height in feet.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
-      "attribute": "weight"
+      "input": "Jalen Brunson",
+      "attribute": "height"
     }
   },
   {
-    "text": "How much does Stephen Curry weigh?",
+    "text": "I want to know Stephen Curry's weight.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "weight"
     }
   },
@@ -979,23 +971,15 @@
     "text": "What's Stephen Curry's weight?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "weight"
     }
   },
   {
-    "text": "Tell me LeBron James's weight in pounds.",
+    "text": "Tell me Stephen Curry's weight in pounds.",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
-      "attribute": "weight"
-    }
-  },
-  {
-    "text": "I want to know LeBron James's weight.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "LeBron James",
+      "input": "Stephen Curry",
       "attribute": "weight"
     }
   },
@@ -1003,15 +987,23 @@
     "text": "Can you tell me how heavy LeBron James is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "weight"
     }
   },
   {
-    "text": "Tell me Giannis Antetokounmpo's weight in pounds.",
+    "text": "How much does LeBron James weigh?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "LeBron James",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "I want to know LeBron James's weight.",
+    "intent": "player_info",
+    "slots": {
+      "input": "LeBron James",
       "attribute": "weight"
     }
   },
@@ -1019,23 +1011,23 @@
     "text": "How much does Giannis Antetokounmpo weigh?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "weight"
     }
   },
   {
-    "text": "Can you tell me how heavy Giannis Antetokounmpo is?",
+    "text": "Tell me Giannis Antetokounmpo's weight in pounds.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "weight"
     }
   },
   {
-    "text": "How much does Luka Doncic weigh?",
+    "text": "I want to know Giannis Antetokounmpo's weight.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Giannis Antetokounmpo",
       "attribute": "weight"
     }
   },
@@ -1043,7 +1035,7 @@
     "text": "I want to know Luka Doncic's weight.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "weight"
     }
   },
@@ -1051,7 +1043,15 @@
     "text": "Tell me Luka Doncic's weight in pounds.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "Can you tell me how heavy Luka Doncic is?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Luka Doncic",
       "attribute": "weight"
     }
   },
@@ -1059,7 +1059,15 @@
     "text": "Tell me Kevin Durant's weight in pounds.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "Can you tell me how heavy Kevin Durant is?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kevin Durant",
       "attribute": "weight"
     }
   },
@@ -1067,31 +1075,7 @@
     "text": "What's Kevin Durant's weight?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
-      "attribute": "weight"
-    }
-  },
-  {
-    "text": "I want to know Kevin Durant's weight.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Kevin Durant",
-      "attribute": "weight"
-    }
-  },
-  {
-    "text": "Tell me Nikola Jokic's weight in pounds.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Nikola Jokic",
-      "attribute": "weight"
-    }
-  },
-  {
-    "text": "Can you tell me how heavy Nikola Jokic is?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Kevin Durant",
       "attribute": "weight"
     }
   },
@@ -1099,15 +1083,31 @@
     "text": "How much does Nikola Jokic weigh?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "weight"
     }
   },
   {
-    "text": "How much does Jayson Tatum weigh?",
+    "text": "What's Nikola Jokic's weight?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Nikola Jokic",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "Can you tell me how heavy Nikola Jokic is?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Nikola Jokic",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "What's Jayson Tatum's weight?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jayson Tatum",
       "attribute": "weight"
     }
   },
@@ -1115,15 +1115,15 @@
     "text": "Can you tell me how heavy Jayson Tatum is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
       "attribute": "weight"
     }
   },
   {
-    "text": "I want to know Jayson Tatum's weight.",
+    "text": "How much does Jayson Tatum weigh?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
       "attribute": "weight"
     }
   },
@@ -1131,7 +1131,15 @@
     "text": "I want to know Devin Booker's weight.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "What's Devin Booker's weight?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Devin Booker",
       "attribute": "weight"
     }
   },
@@ -1139,23 +1147,23 @@
     "text": "How much does Devin Booker weigh?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "weight"
     }
   },
   {
-    "text": "Can you tell me how heavy Devin Booker is?",
+    "text": "How much does Jimmy Butler weigh?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Jimmy Butler",
       "attribute": "weight"
     }
   },
   {
-    "text": "I want to know Jimmy Butler's weight.",
+    "text": "What's Jimmy Butler's weight?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
       "attribute": "weight"
     }
   },
@@ -1163,31 +1171,7 @@
     "text": "Tell me Jimmy Butler's weight in pounds.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
-      "attribute": "weight"
-    }
-  },
-  {
-    "text": "Can you tell me how heavy Jimmy Butler is?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jimmy Butler",
-      "attribute": "weight"
-    }
-  },
-  {
-    "text": "Tell me Joel Embiid's weight in pounds.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Joel Embiid",
-      "attribute": "weight"
-    }
-  },
-  {
-    "text": "What's Joel Embiid's weight?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Jimmy Butler",
       "attribute": "weight"
     }
   },
@@ -1195,15 +1179,23 @@
     "text": "I want to know Joel Embiid's weight.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "weight"
     }
   },
   {
-    "text": "Tell me Kyrie Irving's weight in pounds.",
+    "text": "Tell me Joel Embiid's weight in pounds.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Joel Embiid",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "How much does Joel Embiid weigh?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Joel Embiid",
       "attribute": "weight"
     }
   },
@@ -1211,23 +1203,23 @@
     "text": "What's Kyrie Irving's weight?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "weight"
     }
   },
   {
-    "text": "I want to know Kyrie Irving's weight.",
+    "text": "Tell me Kyrie Irving's weight in pounds.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "weight"
     }
   },
   {
-    "text": "Can you tell me how heavy Anthony Davis is?",
+    "text": "Can you tell me how heavy Kyrie Irving is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Kyrie Irving",
       "attribute": "weight"
     }
   },
@@ -1235,23 +1227,31 @@
     "text": "What's Anthony Davis's weight?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "weight"
     }
   },
   {
-    "text": "How much does Anthony Davis weigh?",
+    "text": "Tell me Anthony Davis's weight in pounds.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "weight"
     }
   },
   {
-    "text": "Tell me Damian Lillard's weight in pounds.",
+    "text": "I want to know Anthony Davis's weight.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Anthony Davis",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "Can you tell me how heavy Damian Lillard is?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Damian Lillard",
       "attribute": "weight"
     }
   },
@@ -1259,15 +1259,15 @@
     "text": "I want to know Damian Lillard's weight.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "weight"
     }
   },
   {
-    "text": "What's Damian Lillard's weight?",
+    "text": "Tell me Damian Lillard's weight in pounds.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "weight"
     }
   },
@@ -1275,7 +1275,15 @@
     "text": "What's Ja Morant's weight?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "Tell me Ja Morant's weight in pounds.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Ja Morant",
       "attribute": "weight"
     }
   },
@@ -1283,15 +1291,7 @@
     "text": "How much does Ja Morant weigh?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
-      "attribute": "weight"
-    }
-  },
-  {
-    "text": "I want to know Ja Morant's weight.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "weight"
     }
   },
@@ -1299,15 +1299,7 @@
     "text": "How much does Trae Young weigh?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
-      "attribute": "weight"
-    }
-  },
-  {
-    "text": "Tell me Trae Young's weight in pounds.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "weight"
     }
   },
@@ -1315,23 +1307,23 @@
     "text": "I want to know Trae Young's weight.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "weight"
     }
   },
   {
-    "text": "How much does Donovan Mitchell weigh?",
+    "text": "Tell me Trae Young's weight in pounds.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Trae Young",
       "attribute": "weight"
     }
   },
   {
-    "text": "Can you tell me how heavy Donovan Mitchell is?",
+    "text": "I want to know Donovan Mitchell's weight.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "weight"
     }
   },
@@ -1339,23 +1331,15 @@
     "text": "What's Donovan Mitchell's weight?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "weight"
     }
   },
   {
-    "text": "How much does Shai Gilgeous-Alexander weigh?",
+    "text": "How much does Donovan Mitchell weigh?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
-      "attribute": "weight"
-    }
-  },
-  {
-    "text": "I want to know Shai Gilgeous-Alexander's weight.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Donovan Mitchell",
       "attribute": "weight"
     }
   },
@@ -1363,7 +1347,31 @@
     "text": "Can you tell me how heavy Shai Gilgeous-Alexander is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "How much does Shai Gilgeous-Alexander weigh?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Shai Gilgeous-Alexander",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "I want to know Shai Gilgeous-Alexander's weight.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Shai Gilgeous-Alexander",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "What's Zion Williamson's weight?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Zion Williamson",
       "attribute": "weight"
     }
   },
@@ -1371,15 +1379,7 @@
     "text": "Can you tell me how heavy Zion Williamson is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
-      "attribute": "weight"
-    }
-  },
-  {
-    "text": "How much does Zion Williamson weigh?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
       "attribute": "weight"
     }
   },
@@ -1387,15 +1387,7 @@
     "text": "I want to know Zion Williamson's weight.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
-      "attribute": "weight"
-    }
-  },
-  {
-    "text": "Tell me Jaylen Brown's weight in pounds.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Zion Williamson",
       "attribute": "weight"
     }
   },
@@ -1403,7 +1395,7 @@
     "text": "I want to know Jaylen Brown's weight.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "weight"
     }
   },
@@ -1411,23 +1403,23 @@
     "text": "Can you tell me how heavy Jaylen Brown is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "weight"
     }
   },
   {
-    "text": "What's Jalen Brunson's weight?",
+    "text": "How much does Jaylen Brown weigh?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jaylen Brown",
       "attribute": "weight"
     }
   },
   {
-    "text": "How much does Jalen Brunson weigh?",
+    "text": "I want to know Jalen Brunson's weight.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "weight"
     }
   },
@@ -1435,15 +1427,23 @@
     "text": "Can you tell me how heavy Jalen Brunson is?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "weight"
     }
   },
   {
-    "text": "I want to know Stephen Curry's jersey number.",
+    "text": "What's Jalen Brunson's weight?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Jalen Brunson",
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "What number does Stephen Curry wear?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Stephen Curry",
       "attribute": "jersey_number"
     }
   },
@@ -1451,31 +1451,15 @@
     "text": "Which jersey number does Stephen Curry wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "Tell me Stephen Curry's jersey number.",
+    "text": "Which jersey number does Stephen Curry use?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "Tell me LeBron James's jersey number.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "LeBron James",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "What number does LeBron James wear?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "LeBron James",
+      "input": "Stephen Curry",
       "attribute": "jersey_number"
     }
   },
@@ -1483,15 +1467,31 @@
     "text": "Which jersey number does LeBron James wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "Which jersey number does Giannis Antetokounmpo wear?",
+    "text": "Tell me LeBron James's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "LeBron James",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Which jersey number does LeBron James use?",
+    "intent": "player_info",
+    "slots": {
+      "input": "LeBron James",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Which jersey number does Giannis Antetokounmpo use?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Giannis Antetokounmpo",
       "attribute": "jersey_number"
     }
   },
@@ -1499,15 +1499,15 @@
     "text": "Tell me Giannis Antetokounmpo's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "What number does Giannis Antetokounmpo wear?",
+    "text": "I want to know Giannis Antetokounmpo's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "jersey_number"
     }
   },
@@ -1515,23 +1515,31 @@
     "text": "Tell me Luka Doncic's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "Which jersey number does Luka Doncic wear?",
+    "text": "Which jersey number does Luka Doncic use?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "I want to know Luka Doncic's jersey number.",
+    "text": "What number does Luka Doncic wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Tell me Kevin Durant's jersey number.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kevin Durant",
       "attribute": "jersey_number"
     }
   },
@@ -1539,31 +1547,15 @@
     "text": "I want to know Kevin Durant's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "What number does Kevin Durant wear?",
+    "text": "Which jersey number does Kevin Durant wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "Which jersey number does Kevin Durant use?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Kevin Durant",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "Tell me Nikola Jokic's jersey number.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Kevin Durant",
       "attribute": "jersey_number"
     }
   },
@@ -1571,23 +1563,39 @@
     "text": "Which jersey number does Nikola Jokic wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "I want to know Nikola Jokic's jersey number.",
+    "text": "Tell me Nikola Jokic's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "I want to know Jayson Tatum's jersey number.",
+    "text": "Which jersey number does Nikola Jokic use?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Nikola Jokic",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Which jersey number does Jayson Tatum wear?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jayson Tatum",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "What number does Jayson Tatum wear?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jayson Tatum",
       "attribute": "jersey_number"
     }
   },
@@ -1595,15 +1603,7 @@
     "text": "Tell me Jayson Tatum's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "Which jersey number does Jayson Tatum use?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
       "attribute": "jersey_number"
     }
   },
@@ -1611,7 +1611,15 @@
     "text": "I want to know Devin Booker's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "What number does Devin Booker wear?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Devin Booker",
       "attribute": "jersey_number"
     }
   },
@@ -1619,15 +1627,23 @@
     "text": "Which jersey number does Devin Booker wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "Tell me Devin Booker's jersey number.",
+    "text": "What number does Jimmy Butler wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Jimmy Butler",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "I want to know Jimmy Butler's jersey number.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jimmy Butler",
       "attribute": "jersey_number"
     }
   },
@@ -1635,39 +1651,7 @@
     "text": "Which jersey number does Jimmy Butler use?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "Which jersey number does Jimmy Butler wear?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jimmy Butler",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "Tell me Jimmy Butler's jersey number.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jimmy Butler",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "Tell me Joel Embiid's jersey number.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Joel Embiid",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "What number does Joel Embiid wear?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Jimmy Butler",
       "attribute": "jersey_number"
     }
   },
@@ -1675,15 +1659,23 @@
     "text": "Which jersey number does Joel Embiid wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "What number does Kyrie Irving wear?",
+    "text": "What number does Joel Embiid wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Joel Embiid",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Which jersey number does Joel Embiid use?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Joel Embiid",
       "attribute": "jersey_number"
     }
   },
@@ -1691,23 +1683,31 @@
     "text": "Tell me Kyrie Irving's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "Which jersey number does Kyrie Irving wear?",
+    "text": "I want to know Kyrie Irving's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "I want to know Anthony Davis's jersey number.",
+    "text": "Which jersey number does Kyrie Irving use?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Kyrie Irving",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Tell me Anthony Davis's jersey number.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Anthony Davis",
       "attribute": "jersey_number"
     }
   },
@@ -1715,7 +1715,7 @@
     "text": "Which jersey number does Anthony Davis use?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "jersey_number"
     }
   },
@@ -1723,7 +1723,15 @@
     "text": "Which jersey number does Anthony Davis wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Which jersey number does Damian Lillard use?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Damian Lillard",
       "attribute": "jersey_number"
     }
   },
@@ -1731,23 +1739,15 @@
     "text": "I want to know Damian Lillard's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "What number does Damian Lillard wear?",
+    "text": "Which jersey number does Damian Lillard wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "Tell me Damian Lillard's jersey number.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "jersey_number"
     }
   },
@@ -1755,7 +1755,7 @@
     "text": "Tell me Ja Morant's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "jersey_number"
     }
   },
@@ -1763,15 +1763,31 @@
     "text": "What number does Ja Morant wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "I want to know Ja Morant's jersey number.",
+    "text": "Which jersey number does Ja Morant wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Tell me Trae Young's jersey number.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Trae Young",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Which jersey number does Trae Young use?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Trae Young",
       "attribute": "jersey_number"
     }
   },
@@ -1779,23 +1795,7 @@
     "text": "What number does Trae Young wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "Which jersey number does Trae Young wear?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Trae Young",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "I want to know Trae Young's jersey number.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "jersey_number"
     }
   },
@@ -1803,15 +1803,7 @@
     "text": "I want to know Donovan Mitchell's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "What number does Donovan Mitchell wear?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "jersey_number"
     }
   },
@@ -1819,23 +1811,31 @@
     "text": "Which jersey number does Donovan Mitchell wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "Tell me Shai Gilgeous-Alexander's jersey number.",
+    "text": "Tell me Donovan Mitchell's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Donovan Mitchell",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "Which jersey number does Shai Gilgeous-Alexander use?",
+    "text": "I want to know Shai Gilgeous-Alexander's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "What number does Shai Gilgeous-Alexander wear?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "jersey_number"
     }
   },
@@ -1843,7 +1843,7 @@
     "text": "Which jersey number does Shai Gilgeous-Alexander wear?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "jersey_number"
     }
   },
@@ -1851,23 +1851,23 @@
     "text": "Which jersey number does Zion Williamson use?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "What number does Zion Williamson wear?",
+    "text": "Tell me Zion Williamson's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "Which jersey number does Zion Williamson wear?",
+    "text": "I want to know Zion Williamson's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
       "attribute": "jersey_number"
     }
   },
@@ -1875,15 +1875,7 @@
     "text": "I want to know Jaylen Brown's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "What number does Jaylen Brown wear?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "jersey_number"
     }
   },
@@ -1891,23 +1883,15 @@
     "text": "Which jersey number does Jaylen Brown use?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "What number does Jalen Brunson wear?",
+    "text": "Tell me Jaylen Brown's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "I want to know Jalen Brunson's jersey number.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jaylen Brown",
       "attribute": "jersey_number"
     }
   },
@@ -1915,47 +1899,47 @@
     "text": "Tell me Jalen Brunson's jersey number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "Where did Stephen Curry play college basketball?",
+    "text": "Which jersey number does Jalen Brunson use?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
-      "attribute": "college"
+      "input": "Jalen Brunson",
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Which jersey number does Jalen Brunson wear?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jalen Brunson",
+      "attribute": "jersey_number"
     }
   },
   {
     "text": "I want to know Stephen Curry's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "college"
     }
   },
   {
-    "text": "Tell me Stephen Curry's college.",
+    "text": "Which college did Stephen Curry play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "college"
     }
   },
   {
-    "text": "Tell me LeBron James's college.",
+    "text": "Which college did Stephen Curry attend?",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Which college did LeBron James attend?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "LeBron James",
+      "input": "Stephen Curry",
       "attribute": "college"
     }
   },
@@ -1963,23 +1947,31 @@
     "text": "I want to know LeBron James's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "college"
     }
   },
   {
-    "text": "I want to know Giannis Antetokounmpo's college.",
+    "text": "Which college did LeBron James play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "LeBron James",
       "attribute": "college"
     }
   },
   {
-    "text": "Which college did Giannis Antetokounmpo attend?",
+    "text": "Tell me LeBron James's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "LeBron James",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Which college did Giannis Antetokounmpo play?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Giannis Antetokounmpo",
       "attribute": "college"
     }
   },
@@ -1987,15 +1979,15 @@
     "text": "Where did Giannis Antetokounmpo play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "college"
     }
   },
   {
-    "text": "I want to know Luka Doncic's college.",
+    "text": "Which college did Giannis Antetokounmpo attend?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Giannis Antetokounmpo",
       "attribute": "college"
     }
   },
@@ -2003,7 +1995,15 @@
     "text": "Tell me Luka Doncic's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Which college did Luka Doncic play?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Luka Doncic",
       "attribute": "college"
     }
   },
@@ -2011,7 +2011,23 @@
     "text": "Which college did Luka Doncic attend?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Tell me Kevin Durant's college.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kevin Durant",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Which college did Kevin Durant attend?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kevin Durant",
       "attribute": "college"
     }
   },
@@ -2019,39 +2035,15 @@
     "text": "Which college did Kevin Durant play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
       "attribute": "college"
     }
   },
   {
-    "text": "Where did Kevin Durant play college basketball?",
+    "text": "Which college did Nikola Jokic attend?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "I want to know Kevin Durant's college.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Kevin Durant",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Tell me Nikola Jokic's college.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Nikola Jokic",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Where did Nikola Jokic play college basketball?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "college"
     }
   },
@@ -2059,23 +2051,15 @@
     "text": "I want to know Nikola Jokic's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "college"
     }
   },
   {
-    "text": "Which college did Jayson Tatum attend?",
+    "text": "Where did Nikola Jokic play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Which college did Jayson Tatum play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Nikola Jokic",
       "attribute": "college"
     }
   },
@@ -2083,23 +2067,23 @@
     "text": "Tell me Jayson Tatum's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
       "attribute": "college"
     }
   },
   {
-    "text": "Tell me Devin Booker's college.",
+    "text": "Which college did Jayson Tatum play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Jayson Tatum",
       "attribute": "college"
     }
   },
   {
-    "text": "Which college did Devin Booker attend?",
+    "text": "I want to know Jayson Tatum's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Jayson Tatum",
       "attribute": "college"
     }
   },
@@ -2107,23 +2091,31 @@
     "text": "Where did Devin Booker play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "college"
     }
   },
   {
-    "text": "Where did Jimmy Butler play college basketball?",
+    "text": "Tell me Devin Booker's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Devin Booker",
       "attribute": "college"
     }
   },
   {
-    "text": "Which college did Jimmy Butler play?",
+    "text": "I want to know Devin Booker's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Devin Booker",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "I want to know Jimmy Butler's college.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jimmy Butler",
       "attribute": "college"
     }
   },
@@ -2131,7 +2123,31 @@
     "text": "Which college did Jimmy Butler attend?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Tell me Jimmy Butler's college.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jimmy Butler",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Which college did Joel Embiid play?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Joel Embiid",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "I want to know Joel Embiid's college.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Joel Embiid",
       "attribute": "college"
     }
   },
@@ -2139,23 +2155,15 @@
     "text": "Where did Joel Embiid play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "college"
     }
   },
   {
-    "text": "Which college did Joel Embiid attend?",
+    "text": "Where did Kyrie Irving play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Tell me Joel Embiid's college.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Kyrie Irving",
       "attribute": "college"
     }
   },
@@ -2163,31 +2171,31 @@
     "text": "Which college did Kyrie Irving attend?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "college"
     }
   },
   {
-    "text": "I want to know Kyrie Irving's college.",
+    "text": "Tell me Kyrie Irving's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "college"
     }
   },
   {
-    "text": "Which college did Kyrie Irving play?",
+    "text": "Which college did Anthony Davis attend?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Anthony Davis",
       "attribute": "college"
     }
   },
   {
-    "text": "I want to know Anthony Davis's college.",
+    "text": "Tell me Anthony Davis's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "college"
     }
   },
@@ -2195,23 +2203,7 @@
     "text": "Where did Anthony Davis play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Which college did Anthony Davis play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Anthony Davis",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Where did Damian Lillard play college basketball?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Anthony Davis",
       "attribute": "college"
     }
   },
@@ -2219,23 +2211,23 @@
     "text": "Which college did Damian Lillard play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "college"
     }
   },
   {
-    "text": "I want to know Damian Lillard's college.",
+    "text": "Where did Damian Lillard play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "college"
     }
   },
   {
-    "text": "Which college did Ja Morant play?",
+    "text": "Which college did Damian Lillard attend?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Damian Lillard",
       "attribute": "college"
     }
   },
@@ -2243,15 +2235,23 @@
     "text": "Where did Ja Morant play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "college"
     }
   },
   {
-    "text": "I want to know Ja Morant's college.",
+    "text": "Which college did Ja Morant attend?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Which college did Ja Morant play?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Ja Morant",
       "attribute": "college"
     }
   },
@@ -2259,23 +2259,23 @@
     "text": "I want to know Trae Young's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "college"
     }
   },
   {
-    "text": "Which college did Trae Young play?",
+    "text": "Which college did Trae Young attend?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "college"
     }
   },
   {
-    "text": "Tell me Trae Young's college.",
+    "text": "Where did Trae Young play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "college"
     }
   },
@@ -2283,39 +2283,31 @@
     "text": "Tell me Donovan Mitchell's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "college"
     }
   },
   {
-    "text": "Which college did Donovan Mitchell attend?",
+    "text": "Where did Donovan Mitchell play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "college"
     }
   },
   {
-    "text": "Which college did Donovan Mitchell play?",
+    "text": "I want to know Donovan Mitchell's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "college"
     }
   },
   {
-    "text": "Tell me Shai Gilgeous-Alexander's college.",
+    "text": "Where did Shai Gilgeous-Alexander play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Which college did Shai Gilgeous-Alexander play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "college"
     }
   },
@@ -2323,7 +2315,15 @@
     "text": "Which college did Shai Gilgeous-Alexander attend?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "I want to know Shai Gilgeous-Alexander's college.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "college"
     }
   },
@@ -2331,15 +2331,7 @@
     "text": "Tell me Zion Williamson's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Which college did Zion Williamson play?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
       "attribute": "college"
     }
   },
@@ -2347,7 +2339,15 @@
     "text": "Where did Zion Williamson play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Which college did Zion Williamson play?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Zion Williamson",
       "attribute": "college"
     }
   },
@@ -2355,15 +2355,7 @@
     "text": "Where did Jaylen Brown play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Tell me Jaylen Brown's college.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "college"
     }
   },
@@ -2371,15 +2363,23 @@
     "text": "Which college did Jaylen Brown attend?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "college"
     }
   },
   {
-    "text": "Which college did Jalen Brunson attend?",
+    "text": "Tell me Jaylen Brown's college.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jaylen Brown",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "I want to know Jalen Brunson's college.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jalen Brunson",
       "attribute": "college"
     }
   },
@@ -2387,55 +2387,39 @@
     "text": "Where did Jalen Brunson play college basketball?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "college"
     }
   },
   {
-    "text": "Tell me Jalen Brunson's college.",
+    "text": "Which college did Jalen Brunson play?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "college"
+    }
+  },
+  {
+    "text": "Where is Stephen Curry from?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Stephen Curry",
+      "attribute": "country"
     }
   },
   {
     "text": "Which country does Stephen Curry represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "country"
     }
   },
   {
-    "text": "Which country does Stephen Curry represent?",
+    "text": "I want to know Stephen Curry's country.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "What country is Stephen Curry from?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Stephen Curry",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "I want to know LeBron James's country.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "LeBron James",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "What country is LeBron James from?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "LeBron James",
+      "input": "Stephen Curry",
       "attribute": "country"
     }
   },
@@ -2443,15 +2427,31 @@
     "text": "Which country does LeBron James represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "country"
     }
   },
   {
-    "text": "I want to know Giannis Antetokounmpo's country.",
+    "text": "What country is LeBron James from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "LeBron James",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "I want to know LeBron James's country.",
+    "intent": "player_info",
+    "slots": {
+      "input": "LeBron James",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Where is Giannis Antetokounmpo from?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Giannis Antetokounmpo",
       "attribute": "country"
     }
   },
@@ -2459,7 +2459,7 @@
     "text": "Which country does Giannis Antetokounmpo represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "country"
     }
   },
@@ -2467,7 +2467,7 @@
     "text": "Which country does Giannis Antetokounmpo represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "country"
     }
   },
@@ -2475,7 +2475,7 @@
     "text": "Where is Luka Doncic from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "country"
     }
   },
@@ -2483,15 +2483,15 @@
     "text": "Which country does Luka Doncic represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "country"
     }
   },
   {
-    "text": "Which country does Luka Doncic represent?",
+    "text": "What country is Luka Doncic from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "country"
     }
   },
@@ -2499,7 +2499,15 @@
     "text": "Where is Kevin Durant from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "What country is Kevin Durant from?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kevin Durant",
       "attribute": "country"
     }
   },
@@ -2507,23 +2515,15 @@
     "text": "Which country does Kevin Durant represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
       "attribute": "country"
     }
   },
   {
-    "text": "Which country does Kevin Durant represent?",
+    "text": "What country is Nikola Jokic from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Where is Nikola Jokic from?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "country"
     }
   },
@@ -2531,23 +2531,15 @@
     "text": "Which country does Nikola Jokic represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "country"
     }
   },
   {
-    "text": "I want to know Nikola Jokic's country.",
+    "text": "Which country does Nikola Jokic represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Which country does Jayson Tatum represent?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Nikola Jokic",
       "attribute": "country"
     }
   },
@@ -2555,7 +2547,15 @@
     "text": "I want to know Jayson Tatum's country.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "What country is Jayson Tatum from?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jayson Tatum",
       "attribute": "country"
     }
   },
@@ -2563,7 +2563,7 @@
     "text": "Where is Jayson Tatum from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
       "attribute": "country"
     }
   },
@@ -2571,7 +2571,15 @@
     "text": "What country is Devin Booker from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "I want to know Devin Booker's country.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Devin Booker",
       "attribute": "country"
     }
   },
@@ -2579,15 +2587,7 @@
     "text": "Where is Devin Booker from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Which country does Devin Booker represent?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "country"
     }
   },
@@ -2595,15 +2595,7 @@
     "text": "What country is Jimmy Butler from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Which country does Jimmy Butler represent?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
       "attribute": "country"
     }
   },
@@ -2611,15 +2603,31 @@
     "text": "I want to know Jimmy Butler's country.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
       "attribute": "country"
     }
   },
   {
-    "text": "What country is Joel Embiid from?",
+    "text": "Which country does Jimmy Butler represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Jimmy Butler",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Where is Joel Embiid from?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Joel Embiid",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "I want to know Joel Embiid's country.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Joel Embiid",
       "attribute": "country"
     }
   },
@@ -2627,31 +2635,7 @@
     "text": "Which country does Joel Embiid represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Which country does Joel Embiid represent?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Joel Embiid",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Where is Kyrie Irving from?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Kyrie Irving",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Which country does Kyrie Irving represent?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Joel Embiid",
       "attribute": "country"
     }
   },
@@ -2659,15 +2643,23 @@
     "text": "I want to know Kyrie Irving's country.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "country"
     }
   },
   {
-    "text": "Which country does Anthony Davis represent?",
+    "text": "Which country does Kyrie Irving represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Kyrie Irving",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Where is Kyrie Irving from?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kyrie Irving",
       "attribute": "country"
     }
   },
@@ -2675,31 +2667,31 @@
     "text": "What country is Anthony Davis from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "country"
     }
   },
   {
-    "text": "Where is Anthony Davis from?",
+    "text": "Which country does Anthony Davis represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "country"
     }
   },
   {
-    "text": "Which country does Damian Lillard represent?",
+    "text": "I want to know Anthony Davis's country.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Anthony Davis",
       "attribute": "country"
     }
   },
   {
-    "text": "I want to know Damian Lillard's country.",
+    "text": "Where is Damian Lillard from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "country"
     }
   },
@@ -2707,7 +2699,23 @@
     "text": "What country is Damian Lillard from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Which country does Damian Lillard represent?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Damian Lillard",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Where is Ja Morant from?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Ja Morant",
       "attribute": "country"
     }
   },
@@ -2715,15 +2723,7 @@
     "text": "I want to know Ja Morant's country.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "What country is Ja Morant from?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "country"
     }
   },
@@ -2731,7 +2731,7 @@
     "text": "Which country does Ja Morant represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "country"
     }
   },
@@ -2739,7 +2739,15 @@
     "text": "Which country does Trae Young represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Where is Trae Young from?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Trae Young",
       "attribute": "country"
     }
   },
@@ -2747,31 +2755,15 @@
     "text": "I want to know Trae Young's country.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "country"
     }
   },
   {
-    "text": "What country is Trae Young from?",
+    "text": "What country is Donovan Mitchell from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "I want to know Donovan Mitchell's country.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Donovan Mitchell",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Where is Donovan Mitchell from?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "country"
     }
   },
@@ -2779,7 +2771,15 @@
     "text": "Which country does Donovan Mitchell represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "I want to know Donovan Mitchell's country.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Donovan Mitchell",
       "attribute": "country"
     }
   },
@@ -2787,31 +2787,23 @@
     "text": "Which country does Shai Gilgeous-Alexander represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "country"
     }
   },
   {
-    "text": "What country is Shai Gilgeous-Alexander from?",
+    "text": "Which country does Shai Gilgeous-Alexander represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "country"
     }
   },
   {
-    "text": "I want to know Shai Gilgeous-Alexander's country.",
+    "text": "Where is Shai Gilgeous-Alexander from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "What country is Zion Williamson from?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "country"
     }
   },
@@ -2819,7 +2811,15 @@
     "text": "Which country does Zion Williamson represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "I want to know Zion Williamson's country.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Zion Williamson",
       "attribute": "country"
     }
   },
@@ -2827,7 +2827,15 @@
     "text": "Where is Zion Williamson from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "I want to know Jaylen Brown's country.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jaylen Brown",
       "attribute": "country"
     }
   },
@@ -2835,7 +2843,7 @@
     "text": "What country is Jaylen Brown from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "country"
     }
   },
@@ -2843,15 +2851,7 @@
     "text": "Where is Jaylen Brown from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Which country does Jaylen Brown represent?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "country"
     }
   },
@@ -2859,7 +2859,7 @@
     "text": "I want to know Jalen Brunson's country.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "country"
     }
   },
@@ -2867,39 +2867,39 @@
     "text": "Which country does Jalen Brunson represent?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "country"
     }
   },
   {
-    "text": "Which country does Jalen Brunson represent?",
+    "text": "What country is Jalen Brunson from?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "country"
-    }
-  },
-  {
-    "text": "Which year was Stephen Curry drafted?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Stephen Curry",
-      "attribute": "draft_year"
     }
   },
   {
     "text": "In what year was Stephen Curry drafted into the NBA?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "I want to know Stephen Curry's draft year.",
+    "text": "Tell me Stephen Curry's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "When was Stephen Curry drafted?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Stephen Curry",
       "attribute": "draft_year"
     }
   },
@@ -2907,23 +2907,23 @@
     "text": "I want to know LeBron James's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "Which year was LeBron James drafted?",
+    "text": "Tell me LeBron James's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "When was LeBron James drafted?",
+    "text": "In what year was LeBron James drafted into the NBA?",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "draft_year"
     }
   },
@@ -2931,31 +2931,23 @@
     "text": "I want to know Giannis Antetokounmpo's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "When was Giannis Antetokounmpo drafted?",
+    "text": "In what year was Giannis Antetokounmpo drafted into the NBA?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "Tell me Giannis Antetokounmpo's draft year.",
+    "text": "Which year was Giannis Antetokounmpo drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "I want to know Luka Doncic's draft year.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Giannis Antetokounmpo",
       "attribute": "draft_year"
     }
   },
@@ -2963,7 +2955,7 @@
     "text": "Tell me Luka Doncic's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "draft_year"
     }
   },
@@ -2971,23 +2963,15 @@
     "text": "When was Luka Doncic drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "Tell me Kevin Durant's draft year.",
+    "text": "Which year was Luka Doncic drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "In what year was Kevin Durant drafted into the NBA?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Luka Doncic",
       "attribute": "draft_year"
     }
   },
@@ -2995,15 +2979,23 @@
     "text": "When was Kevin Durant drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "I want to know Nikola Jokic's draft year.",
+    "text": "In what year was Kevin Durant drafted into the NBA?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Kevin Durant",
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Which year was Kevin Durant drafted?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kevin Durant",
       "attribute": "draft_year"
     }
   },
@@ -3011,7 +3003,7 @@
     "text": "When was Nikola Jokic drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "draft_year"
     }
   },
@@ -3019,15 +3011,23 @@
     "text": "In what year was Nikola Jokic drafted into the NBA?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "Tell me Jayson Tatum's draft year.",
+    "text": "I want to know Nikola Jokic's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Nikola Jokic",
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "I want to know Jayson Tatum's draft year.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jayson Tatum",
       "attribute": "draft_year"
     }
   },
@@ -3035,31 +3035,23 @@
     "text": "When was Jayson Tatum drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "In what year was Jayson Tatum drafted into the NBA?",
+    "text": "Tell me Jayson Tatum's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "When was Devin Booker drafted?",
+    "text": "In what year was Devin Booker drafted into the NBA?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "Which year was Devin Booker drafted?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "draft_year"
     }
   },
@@ -3067,7 +3059,15 @@
     "text": "Tell me Devin Booker's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "I want to know Devin Booker's draft year.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Devin Booker",
       "attribute": "draft_year"
     }
   },
@@ -3075,31 +3075,23 @@
     "text": "Tell me Jimmy Butler's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "When was Jimmy Butler drafted?",
+    "text": "I want to know Jimmy Butler's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "In what year was Jimmy Butler drafted into the NBA?",
+    "text": "Which year was Jimmy Butler drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "I want to know Joel Embiid's draft year.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Jimmy Butler",
       "attribute": "draft_year"
     }
   },
@@ -3107,23 +3099,31 @@
     "text": "Tell me Joel Embiid's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "Which year was Joel Embiid drafted?",
+    "text": "When was Joel Embiid drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "When was Kyrie Irving drafted?",
+    "text": "In what year was Joel Embiid drafted into the NBA?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Joel Embiid",
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "I want to know Kyrie Irving's draft year.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kyrie Irving",
       "attribute": "draft_year"
     }
   },
@@ -3131,15 +3131,31 @@
     "text": "In what year was Kyrie Irving drafted into the NBA?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "Tell me Kyrie Irving's draft year.",
+    "text": "When was Kyrie Irving drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "When was Anthony Davis drafted?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Anthony Davis",
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Tell me Anthony Davis's draft year.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Anthony Davis",
       "attribute": "draft_year"
     }
   },
@@ -3147,31 +3163,15 @@
     "text": "Which year was Anthony Davis drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "In what year was Anthony Davis drafted into the NBA?",
+    "text": "When was Damian Lillard drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "I want to know Anthony Davis's draft year.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Anthony Davis",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "Tell me Damian Lillard's draft year.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "draft_year"
     }
   },
@@ -3179,7 +3179,7 @@
     "text": "In what year was Damian Lillard drafted into the NBA?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "draft_year"
     }
   },
@@ -3187,7 +3187,7 @@
     "text": "Which year was Damian Lillard drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "draft_year"
     }
   },
@@ -3195,15 +3195,15 @@
     "text": "I want to know Ja Morant's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "Which year was Ja Morant drafted?",
+    "text": "Tell me Ja Morant's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "draft_year"
     }
   },
@@ -3211,23 +3211,7 @@
     "text": "When was Ja Morant drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "Tell me Trae Young's draft year.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Trae Young",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "I want to know Trae Young's draft year.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Trae Young",
+      "input": "Ja Morant",
       "attribute": "draft_year"
     }
   },
@@ -3235,7 +3219,23 @@
     "text": "When was Trae Young drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "In what year was Trae Young drafted into the NBA?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Trae Young",
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Tell me Trae Young's draft year.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Trae Young",
       "attribute": "draft_year"
     }
   },
@@ -3243,15 +3243,7 @@
     "text": "Tell me Donovan Mitchell's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "I want to know Donovan Mitchell's draft year.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "draft_year"
     }
   },
@@ -3259,15 +3251,15 @@
     "text": "Which year was Donovan Mitchell drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "When was Shai Gilgeous-Alexander drafted?",
+    "text": "In what year was Donovan Mitchell drafted into the NBA?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Donovan Mitchell",
       "attribute": "draft_year"
     }
   },
@@ -3275,7 +3267,7 @@
     "text": "Tell me Shai Gilgeous-Alexander's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "draft_year"
     }
   },
@@ -3283,23 +3275,15 @@
     "text": "I want to know Shai Gilgeous-Alexander's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "In what year was Zion Williamson drafted into the NBA?",
+    "text": "Which year was Shai Gilgeous-Alexander drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "Which year was Zion Williamson drafted?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "draft_year"
     }
   },
@@ -3307,23 +3291,23 @@
     "text": "I want to know Zion Williamson's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "In what year was Jaylen Brown drafted into the NBA?",
+    "text": "Which year was Zion Williamson drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Zion Williamson",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "When was Jaylen Brown drafted?",
+    "text": "When was Zion Williamson drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Zion Williamson",
       "attribute": "draft_year"
     }
   },
@@ -3331,7 +3315,31 @@
     "text": "I want to know Jaylen Brown's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Which year was Jaylen Brown drafted?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jaylen Brown",
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "In what year was Jaylen Brown drafted into the NBA?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jaylen Brown",
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "When was Jalen Brunson drafted?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jalen Brunson",
       "attribute": "draft_year"
     }
   },
@@ -3339,23 +3347,15 @@
     "text": "Tell me Jalen Brunson's draft year.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "draft_year"
     }
   },
   {
-    "text": "I want to know Jalen Brunson's draft year.",
+    "text": "Which year was Jalen Brunson drafted?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "In what year was Jalen Brunson drafted into the NBA?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "draft_year"
     }
   },
@@ -3363,15 +3363,7 @@
     "text": "What round was Stephen Curry drafted in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "I want to know Stephen Curry's draft round.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "draft_round"
     }
   },
@@ -3379,15 +3371,23 @@
     "text": "Which draft round was Stephen Curry selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "draft_round"
     }
   },
   {
-    "text": "What round was LeBron James drafted in?",
+    "text": "Tell me Stephen Curry's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "Stephen Curry",
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Tell me LeBron James's draft round.",
+    "intent": "player_info",
+    "slots": {
+      "input": "LeBron James",
       "attribute": "draft_round"
     }
   },
@@ -3395,7 +3395,7 @@
     "text": "Which draft round was LeBron James selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "draft_round"
     }
   },
@@ -3403,7 +3403,7 @@
     "text": "I want to know LeBron James's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "draft_round"
     }
   },
@@ -3411,7 +3411,15 @@
     "text": "Tell me Giannis Antetokounmpo's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "What round was Giannis Antetokounmpo drafted in?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Giannis Antetokounmpo",
       "attribute": "draft_round"
     }
   },
@@ -3419,23 +3427,7 @@
     "text": "Which draft round was Giannis Antetokounmpo selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "I want to know Giannis Antetokounmpo's draft round.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Giannis Antetokounmpo",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "Tell me Luka Doncic's draft round.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Giannis Antetokounmpo",
       "attribute": "draft_round"
     }
   },
@@ -3443,7 +3435,7 @@
     "text": "What round was Luka Doncic drafted in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "draft_round"
     }
   },
@@ -3451,23 +3443,15 @@
     "text": "Which draft round was Luka Doncic selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "draft_round"
     }
   },
   {
-    "text": "Which draft round was Kevin Durant selected in?",
+    "text": "Which draft round was Luka Doncic selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "I want to know Kevin Durant's draft round.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Luka Doncic",
       "attribute": "draft_round"
     }
   },
@@ -3475,7 +3459,23 @@
     "text": "What round was Kevin Durant drafted in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Tell me Kevin Durant's draft round.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kevin Durant",
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "I want to know Kevin Durant's draft round.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kevin Durant",
       "attribute": "draft_round"
     }
   },
@@ -3483,7 +3483,7 @@
     "text": "Tell me Nikola Jokic's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "draft_round"
     }
   },
@@ -3491,15 +3491,15 @@
     "text": "Which draft round was Nikola Jokic selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "draft_round"
     }
   },
   {
-    "text": "What round was Nikola Jokic drafted in?",
+    "text": "I want to know Nikola Jokic's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "draft_round"
     }
   },
@@ -3507,15 +3507,7 @@
     "text": "I want to know Jayson Tatum's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "Which draft round was Jayson Tatum selected in?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
       "attribute": "draft_round"
     }
   },
@@ -3523,7 +3515,15 @@
     "text": "Tell me Jayson Tatum's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Which draft round was Jayson Tatum selected in?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jayson Tatum",
       "attribute": "draft_round"
     }
   },
@@ -3531,23 +3531,23 @@
     "text": "Which draft round was Devin Booker selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "draft_round"
     }
   },
   {
-    "text": "Tell me Devin Booker's draft round.",
+    "text": "What round was Devin Booker drafted in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "draft_round"
     }
   },
   {
-    "text": "I want to know Devin Booker's draft round.",
+    "text": "Which draft round was Devin Booker selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "draft_round"
     }
   },
@@ -3555,15 +3555,7 @@
     "text": "I want to know Jimmy Butler's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "Tell me Jimmy Butler's draft round.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
       "attribute": "draft_round"
     }
   },
@@ -3571,15 +3563,23 @@
     "text": "What round was Jimmy Butler drafted in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
       "attribute": "draft_round"
     }
   },
   {
-    "text": "I want to know Joel Embiid's draft round.",
+    "text": "Which draft round was Jimmy Butler selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Jimmy Butler",
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "What round was Joel Embiid drafted in?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Joel Embiid",
       "attribute": "draft_round"
     }
   },
@@ -3587,7 +3587,7 @@
     "text": "Which draft round was Joel Embiid selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "draft_round"
     }
   },
@@ -3595,7 +3595,7 @@
     "text": "Tell me Joel Embiid's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "draft_round"
     }
   },
@@ -3603,7 +3603,7 @@
     "text": "Which draft round was Kyrie Irving selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "draft_round"
     }
   },
@@ -3611,7 +3611,7 @@
     "text": "I want to know Kyrie Irving's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "draft_round"
     }
   },
@@ -3619,7 +3619,15 @@
     "text": "Tell me Kyrie Irving's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "What round was Anthony Davis drafted in?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Anthony Davis",
       "attribute": "draft_round"
     }
   },
@@ -3627,15 +3635,7 @@
     "text": "I want to know Anthony Davis's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "Which draft round was Anthony Davis selected in?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "draft_round"
     }
   },
@@ -3643,15 +3643,7 @@
     "text": "Tell me Anthony Davis's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "Which draft round was Damian Lillard selected in?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Anthony Davis",
       "attribute": "draft_round"
     }
   },
@@ -3659,23 +3651,23 @@
     "text": "What round was Damian Lillard drafted in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "draft_round"
     }
   },
   {
-    "text": "Tell me Damian Lillard's draft round.",
+    "text": "I want to know Damian Lillard's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "draft_round"
     }
   },
   {
-    "text": "What round was Ja Morant drafted in?",
+    "text": "Which draft round was Damian Lillard selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Damian Lillard",
       "attribute": "draft_round"
     }
   },
@@ -3683,7 +3675,7 @@
     "text": "Tell me Ja Morant's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "draft_round"
     }
   },
@@ -3691,7 +3683,15 @@
     "text": "Which draft round was Ja Morant selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Which draft round was Ja Morant selected in?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Ja Morant",
       "attribute": "draft_round"
     }
   },
@@ -3699,7 +3699,7 @@
     "text": "Which draft round was Trae Young selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "draft_round"
     }
   },
@@ -3707,15 +3707,15 @@
     "text": "Tell me Trae Young's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "draft_round"
     }
   },
   {
-    "text": "Which draft round was Trae Young selected in?",
+    "text": "I want to know Trae Young's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "draft_round"
     }
   },
@@ -3723,7 +3723,7 @@
     "text": "Tell me Donovan Mitchell's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "draft_round"
     }
   },
@@ -3731,23 +3731,15 @@
     "text": "Which draft round was Donovan Mitchell selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "draft_round"
     }
   },
   {
-    "text": "I want to know Donovan Mitchell's draft round.",
+    "text": "Which draft round was Donovan Mitchell selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "What round was Shai Gilgeous-Alexander drafted in?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Donovan Mitchell",
       "attribute": "draft_round"
     }
   },
@@ -3755,7 +3747,15 @@
     "text": "Tell me Shai Gilgeous-Alexander's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "I want to know Shai Gilgeous-Alexander's draft round.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "draft_round"
     }
   },
@@ -3763,7 +3763,7 @@
     "text": "Which draft round was Shai Gilgeous-Alexander selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "draft_round"
     }
   },
@@ -3771,15 +3771,15 @@
     "text": "I want to know Zion Williamson's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
       "attribute": "draft_round"
     }
   },
   {
-    "text": "Tell me Zion Williamson's draft round.",
+    "text": "What round was Zion Williamson drafted in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
       "attribute": "draft_round"
     }
   },
@@ -3787,15 +3787,7 @@
     "text": "Which draft round was Zion Williamson selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "Which draft round was Jaylen Brown selected in?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Zion Williamson",
       "attribute": "draft_round"
     }
   },
@@ -3803,7 +3795,15 @@
     "text": "Tell me Jaylen Brown's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "What round was Jaylen Brown drafted in?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jaylen Brown",
       "attribute": "draft_round"
     }
   },
@@ -3811,23 +3811,7 @@
     "text": "Which draft round was Jaylen Brown selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "What round was Jalen Brunson drafted in?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jalen Brunson",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "Which draft round was Jalen Brunson selected in?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jaylen Brown",
       "attribute": "draft_round"
     }
   },
@@ -3835,7 +3819,23 @@
     "text": "Tell me Jalen Brunson's draft round.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "What round was Jalen Brunson drafted in?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jalen Brunson",
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Which draft round was Jalen Brunson selected in?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jalen Brunson",
       "attribute": "draft_round"
     }
   },
@@ -3843,7 +3843,7 @@
     "text": "I want to know Stephen Curry's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "draft_number"
     }
   },
@@ -3851,15 +3851,15 @@
     "text": "Tell me Stephen Curry's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "At what pick was Stephen Curry selected?",
+    "text": "What pick number was Stephen Curry in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "draft_number"
     }
   },
@@ -3867,15 +3867,15 @@
     "text": "Tell me LeBron James's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "At what pick was LeBron James selected?",
+    "text": "I want to know LeBron James's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "draft_number"
     }
   },
@@ -3883,7 +3883,7 @@
     "text": "What pick number was LeBron James in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "draft_number"
     }
   },
@@ -3891,15 +3891,7 @@
     "text": "Which pick was Giannis Antetokounmpo selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "What pick number was Giannis Antetokounmpo in the draft?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "draft_number"
     }
   },
@@ -3907,15 +3899,23 @@
     "text": "Tell me Giannis Antetokounmpo's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "Tell me Luka Doncic's draft pick number.",
+    "text": "I want to know Giannis Antetokounmpo's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Giannis Antetokounmpo",
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "What pick number was Luka Doncic in the draft?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Luka Doncic",
       "attribute": "draft_number"
     }
   },
@@ -3923,23 +3923,23 @@
     "text": "At what pick was Luka Doncic selected?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "Which pick was Luka Doncic selected in?",
+    "text": "I want to know Luka Doncic's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "Which pick was Kevin Durant selected in?",
+    "text": "What pick number was Kevin Durant in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
       "attribute": "draft_number"
     }
   },
@@ -3947,31 +3947,15 @@
     "text": "At what pick was Kevin Durant selected?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "I want to know Kevin Durant's draft pick number.",
+    "text": "Tell me Kevin Durant's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "Which pick was Nikola Jokic selected in?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Nikola Jokic",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "At what pick was Nikola Jokic selected?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Kevin Durant",
       "attribute": "draft_number"
     }
   },
@@ -3979,15 +3963,39 @@
     "text": "I want to know Nikola Jokic's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "Tell me Jayson Tatum's draft pick number.",
+    "text": "What pick number was Nikola Jokic in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Nikola Jokic",
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "At what pick was Nikola Jokic selected?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Nikola Jokic",
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "I want to know Jayson Tatum's draft pick number.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jayson Tatum",
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Which pick was Jayson Tatum selected in?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jayson Tatum",
       "attribute": "draft_number"
     }
   },
@@ -3995,23 +4003,15 @@
     "text": "What pick number was Jayson Tatum in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "At what pick was Jayson Tatum selected?",
+    "text": "Tell me Devin Booker's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "I want to know Devin Booker's draft pick number.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "draft_number"
     }
   },
@@ -4019,23 +4019,15 @@
     "text": "What pick number was Devin Booker in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "Which pick was Devin Booker selected in?",
+    "text": "I want to know Devin Booker's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "I want to know Jimmy Butler's draft pick number.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Devin Booker",
       "attribute": "draft_number"
     }
   },
@@ -4043,7 +4035,7 @@
     "text": "At what pick was Jimmy Butler selected?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
       "attribute": "draft_number"
     }
   },
@@ -4051,23 +4043,15 @@
     "text": "What pick number was Jimmy Butler in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "What pick number was Joel Embiid in the draft?",
+    "text": "Tell me Jimmy Butler's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "Tell me Joel Embiid's draft pick number.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Jimmy Butler",
       "attribute": "draft_number"
     }
   },
@@ -4075,15 +4059,23 @@
     "text": "Which pick was Joel Embiid selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "What pick number was Kyrie Irving in the draft?",
+    "text": "What pick number was Joel Embiid in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Joel Embiid",
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "I want to know Joel Embiid's draft pick number.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Joel Embiid",
       "attribute": "draft_number"
     }
   },
@@ -4091,7 +4083,15 @@
     "text": "Tell me Kyrie Irving's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "I want to know Kyrie Irving's draft pick number.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kyrie Irving",
       "attribute": "draft_number"
     }
   },
@@ -4099,15 +4099,15 @@
     "text": "At what pick was Kyrie Irving selected?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "Tell me Anthony Davis's draft pick number.",
+    "text": "What pick number was Anthony Davis in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "draft_number"
     }
   },
@@ -4115,31 +4115,23 @@
     "text": "I want to know Anthony Davis's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "At what pick was Anthony Davis selected?",
+    "text": "Tell me Anthony Davis's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "I want to know Damian Lillard's draft pick number.",
+    "text": "Which pick was Damian Lillard selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "At what pick was Damian Lillard selected?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "draft_number"
     }
   },
@@ -4147,15 +4139,23 @@
     "text": "Tell me Damian Lillard's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "Which pick was Ja Morant selected in?",
+    "text": "What pick number was Damian Lillard in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Damian Lillard",
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "At what pick was Ja Morant selected?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Ja Morant",
       "attribute": "draft_number"
     }
   },
@@ -4163,7 +4163,7 @@
     "text": "What pick number was Ja Morant in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "draft_number"
     }
   },
@@ -4171,23 +4171,15 @@
     "text": "Tell me Ja Morant's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "What pick number was Trae Young in the draft?",
+    "text": "Tell me Trae Young's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "Which pick was Trae Young selected in?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "draft_number"
     }
   },
@@ -4195,7 +4187,23 @@
     "text": "At what pick was Trae Young selected?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Which pick was Trae Young selected in?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Trae Young",
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Tell me Donovan Mitchell's draft pick number.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Donovan Mitchell",
       "attribute": "draft_number"
     }
   },
@@ -4203,31 +4211,15 @@
     "text": "Which pick was Donovan Mitchell selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
+      "input": "Donovan Mitchell",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "At what pick was Donovan Mitchell selected?",
+    "text": "What pick number was Donovan Mitchell in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "I want to know Donovan Mitchell's draft pick number.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Donovan Mitchell",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "Which pick was Shai Gilgeous-Alexander selected in?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Donovan Mitchell",
       "attribute": "draft_number"
     }
   },
@@ -4235,31 +4227,23 @@
     "text": "What pick number was Shai Gilgeous-Alexander in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "Tell me Shai Gilgeous-Alexander's draft pick number.",
+    "text": "Which pick was Shai Gilgeous-Alexander selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "Which pick was Zion Williamson selected in?",
+    "text": "I want to know Shai Gilgeous-Alexander's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "At what pick was Zion Williamson selected?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "draft_number"
     }
   },
@@ -4267,23 +4251,31 @@
     "text": "I want to know Zion Williamson's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "Which pick was Jaylen Brown selected in?",
+    "text": "Tell me Zion Williamson's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Zion Williamson",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "What pick number was Jaylen Brown in the draft?",
+    "text": "What pick number was Zion Williamson in the draft?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Zion Williamson",
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "At what pick was Jaylen Brown selected?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jaylen Brown",
       "attribute": "draft_number"
     }
   },
@@ -4291,7 +4283,23 @@
     "text": "I want to know Jaylen Brown's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "What pick number was Jaylen Brown in the draft?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jaylen Brown",
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "What pick number was Jalen Brunson in the draft?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jalen Brunson",
       "attribute": "draft_number"
     }
   },
@@ -4299,39 +4307,31 @@
     "text": "Which pick was Jalen Brunson selected in?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "Tell me Jalen Brunson's draft pick number.",
+    "text": "I want to know Jalen Brunson's draft pick number.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "draft_number"
     }
   },
   {
-    "text": "At what pick was Jalen Brunson selected?",
+    "text": "Who does Stephen Curry play for right now?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "I want to know Stephen Curry's current NBA team.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "team"
     }
   },
   {
-    "text": "Tell me Stephen Curry's current NBA team.",
+    "text": "Tell me Stephen Curry's last NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
       "attribute": "team"
     }
   },
@@ -4339,7 +4339,15 @@
     "text": "Which team did Stephen Curry last play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Stephen Curry",
+      "input": "Stephen Curry",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "I want to know LeBron James's current NBA team.",
+    "intent": "player_info",
+    "slots": {
+      "input": "LeBron James",
       "attribute": "team"
     }
   },
@@ -4347,39 +4355,15 @@
     "text": "Which team did LeBron James last play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
+      "input": "LeBron James",
       "attribute": "team"
     }
   },
   {
-    "text": "Which team does LeBron James play for?",
+    "text": "Tell me LeBron James's last NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "LeBron James",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Which team did LeBron James play for?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "LeBron James",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Which team did Giannis Antetokounmpo play for?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Giannis Antetokounmpo",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Tell me Giannis Antetokounmpo's last NBA team.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "LeBron James",
       "attribute": "team"
     }
   },
@@ -4387,15 +4371,23 @@
     "text": "Tell me Giannis Antetokounmpo's previous NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Giannis Antetokounmpo",
+      "input": "Giannis Antetokounmpo",
       "attribute": "team"
     }
   },
   {
-    "text": "Tell me Luka Doncic's current NBA team.",
+    "text": "Which team did Giannis Antetokounmpo last play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Giannis Antetokounmpo",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Which team does Giannis Antetokounmpo play for?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Giannis Antetokounmpo",
       "attribute": "team"
     }
   },
@@ -4403,31 +4395,39 @@
     "text": "Which team did Luka Doncic play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "team"
     }
   },
   {
-    "text": "Tell me Luka Doncic's previous NBA team.",
+    "text": "Who does Luka Doncic play for right now?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Luka Doncic",
+      "input": "Luka Doncic",
       "attribute": "team"
     }
   },
   {
-    "text": "I want to know Kevin Durant's current NBA team.",
+    "text": "Which team does Luka Doncic play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Luka Doncic",
       "attribute": "team"
     }
   },
   {
-    "text": "Which team does Kevin Durant play for?",
+    "text": "Tell me Kevin Durant's current NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Which team did Kevin Durant last play for?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kevin Durant",
       "attribute": "team"
     }
   },
@@ -4435,15 +4435,15 @@
     "text": "Tell me Kevin Durant's last NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kevin Durant",
+      "input": "Kevin Durant",
       "attribute": "team"
     }
   },
   {
-    "text": "Which team did Nikola Jokic last play for?",
+    "text": "Tell me Nikola Jokic's current NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "team"
     }
   },
@@ -4451,15 +4451,15 @@
     "text": "Which team does Nikola Jokic play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "team"
     }
   },
   {
-    "text": "Tell me Nikola Jokic's last NBA team.",
+    "text": "Who does Nikola Jokic play for right now?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Nikola Jokic",
+      "input": "Nikola Jokic",
       "attribute": "team"
     }
   },
@@ -4467,15 +4467,7 @@
     "text": "Tell me Jayson Tatum's previous NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Which team did Jayson Tatum play for?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
       "attribute": "team"
     }
   },
@@ -4483,7 +4475,23 @@
     "text": "Which team did Jayson Tatum last play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jayson Tatum",
+      "input": "Jayson Tatum",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Tell me Jayson Tatum's last NBA team.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jayson Tatum",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "I want to know Devin Booker's current NBA team.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Devin Booker",
       "attribute": "team"
     }
   },
@@ -4491,7 +4499,7 @@
     "text": "Tell me Devin Booker's current NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "team"
     }
   },
@@ -4499,15 +4507,7 @@
     "text": "Which team does Devin Booker play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Devin Booker",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Which team did Devin Booker last play for?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Devin Booker",
+      "input": "Devin Booker",
       "attribute": "team"
     }
   },
@@ -4515,15 +4515,7 @@
     "text": "Which team did Jimmy Butler last play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Which team did Jimmy Butler last play for?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
       "attribute": "team"
     }
   },
@@ -4531,7 +4523,15 @@
     "text": "I want to know Jimmy Butler's current NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jimmy Butler",
+      "input": "Jimmy Butler",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Tell me Jimmy Butler's current NBA team.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jimmy Butler",
       "attribute": "team"
     }
   },
@@ -4539,31 +4539,23 @@
     "text": "Which team does Joel Embiid play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "team"
     }
   },
   {
-    "text": "Which team did Joel Embiid play for?",
+    "text": "Who does Joel Embiid play for right now?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
+      "input": "Joel Embiid",
       "attribute": "team"
     }
   },
   {
-    "text": "I want to know Joel Embiid's current NBA team.",
+    "text": "Tell me Joel Embiid's previous NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Joel Embiid",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Tell me Kyrie Irving's current NBA team.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Joel Embiid",
       "attribute": "team"
     }
   },
@@ -4571,15 +4563,31 @@
     "text": "Which team does Kyrie Irving play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
       "attribute": "team"
     }
   },
   {
-    "text": "Which team did Kyrie Irving play for?",
+    "text": "Which team did Kyrie Irving last play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Kyrie Irving",
+      "input": "Kyrie Irving",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "I want to know Kyrie Irving's current NBA team.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Kyrie Irving",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Which team does Anthony Davis play for?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Anthony Davis",
       "attribute": "team"
     }
   },
@@ -4587,31 +4595,31 @@
     "text": "Which team did Anthony Davis last play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "team"
     }
   },
   {
-    "text": "Tell me Anthony Davis's last NBA team.",
+    "text": "Tell me Anthony Davis's current NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Anthony Davis",
       "attribute": "team"
     }
   },
   {
-    "text": "Which team did Anthony Davis last play for?",
+    "text": "Which team does Damian Lillard play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Anthony Davis",
+      "input": "Damian Lillard",
       "attribute": "team"
     }
   },
   {
-    "text": "I want to know Damian Lillard's current NBA team.",
+    "text": "Which team did Damian Lillard last play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "team"
     }
   },
@@ -4619,23 +4627,23 @@
     "text": "Tell me Damian Lillard's last NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Damian Lillard",
       "attribute": "team"
     }
   },
   {
-    "text": "Tell me Damian Lillard's previous NBA team.",
+    "text": "Who does Ja Morant play for right now?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Damian Lillard",
+      "input": "Ja Morant",
       "attribute": "team"
     }
   },
   {
-    "text": "Tell me Ja Morant's last NBA team.",
+    "text": "Which team did Ja Morant last play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "team"
     }
   },
@@ -4643,31 +4651,23 @@
     "text": "I want to know Ja Morant's current NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Ja Morant",
       "attribute": "team"
     }
   },
   {
-    "text": "Tell me Ja Morant's previous NBA team.",
+    "text": "Who does Trae Young play for right now?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Ja Morant",
+      "input": "Trae Young",
       "attribute": "team"
     }
   },
   {
-    "text": "I want to know Trae Young's current NBA team.",
+    "text": "Tell me Trae Young's current NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Tell me Trae Young's previous NBA team.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
       "attribute": "team"
     }
   },
@@ -4675,7 +4675,23 @@
     "text": "Which team does Trae Young play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Trae Young",
+      "input": "Trae Young",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Tell me Donovan Mitchell's previous NBA team.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Donovan Mitchell",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "I want to know Donovan Mitchell's current NBA team.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Donovan Mitchell",
       "attribute": "team"
     }
   },
@@ -4683,39 +4699,7 @@
     "text": "Which team does Donovan Mitchell play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Donovan Mitchell",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Which team did Donovan Mitchell last play for?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Donovan Mitchell",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Which team did Donovan Mitchell last play for?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Donovan Mitchell",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Which team did Shai Gilgeous-Alexander last play for?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Who does Shai Gilgeous-Alexander play for right now?",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Donovan Mitchell",
       "attribute": "team"
     }
   },
@@ -4723,31 +4707,55 @@
     "text": "Tell me Shai Gilgeous-Alexander's last NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Shai Gilgeous-Alexander",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "team"
     }
   },
   {
-    "text": "Which team did Zion Williamson play for?",
+    "text": "Which team does Shai Gilgeous-Alexander play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "team"
     }
   },
   {
-    "text": "Tell me Zion Williamson's current NBA team.",
+    "text": "Tell me Shai Gilgeous-Alexander's previous NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Shai Gilgeous-Alexander",
       "attribute": "team"
     }
   },
   {
-    "text": "Who does Zion Williamson play for right now?",
+    "text": "Which team did Zion Williamson last play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Zion Williamson",
+      "input": "Zion Williamson",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "I want to know Zion Williamson's current NBA team.",
+    "intent": "player_info",
+    "slots": {
+      "input": "Zion Williamson",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Which team does Zion Williamson play for?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Zion Williamson",
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Which team did Jaylen Brown play for?",
+    "intent": "player_info",
+    "slots": {
+      "input": "Jaylen Brown",
       "attribute": "team"
     }
   },
@@ -4755,23 +4763,15 @@
     "text": "Which team does Jaylen Brown play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "team"
     }
   },
   {
-    "text": "Who does Jaylen Brown play for right now?",
+    "text": "Which team did Jaylen Brown last play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jaylen Brown",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Tell me Jaylen Brown's last NBA team.",
-    "intent": "player_info",
-    "slots": {
-      "player_name": "Jaylen Brown",
+      "input": "Jaylen Brown",
       "attribute": "team"
     }
   },
@@ -4779,7 +4779,7 @@
     "text": "Who does Jalen Brunson play for right now?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "team"
     }
   },
@@ -4787,15 +4787,15 @@
     "text": "Tell me Jalen Brunson's previous NBA team.",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "team"
     }
   },
   {
-    "text": "Tell me Jalen Brunson's last NBA team.",
+    "text": "Which team does Jalen Brunson play for?",
     "intent": "player_info",
     "slots": {
-      "player_name": "Jalen Brunson",
+      "input": "Jalen Brunson",
       "attribute": "team"
     }
   }
