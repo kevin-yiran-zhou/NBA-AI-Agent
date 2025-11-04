@@ -10,7 +10,7 @@ import torch.nn as nn
 import os
 
 # ----------------------------------------------------
-# 1. Load data (train + dev)
+# 1. Load data (train + val + test)
 # ----------------------------------------------------
 def load_data(path):
     with open(path, "r") as f:
@@ -105,24 +105,27 @@ def evaluate(model, loader, device, intent_encoder, attr_encoder):
 # ----------------------------------------------------
 if __name__ == "__main__":
     # Load data
-    train_texts, train_intents, train_attrs = load_data("dataset/train.json")
-    dev_texts, dev_intents, dev_attrs = load_data("dataset/dev.json")
+    train_texts, train_intents, train_attrs = load_data("../../dataset/train.json")
+    val_texts, val_intents, val_attrs = load_data("../../dataset/val.json")
+    test_texts, test_intents, test_attrs = load_data("../../dataset/test.json")
 
     # Encode labels
     intent_encoder = LabelEncoder()
     attr_encoder = LabelEncoder()
-    intent_encoder.fit(train_intents + dev_intents)
-    attr_encoder.fit(train_attrs + dev_attrs)
+    intent_encoder.fit(train_intents + val_intents + test_intents)
+    attr_encoder.fit(train_attrs + val_attrs + test_attrs)
 
     num_intents = len(intent_encoder.classes_)
     num_attrs = len(attr_encoder.classes_)
 
     y_intent_train = intent_encoder.transform(train_intents)
-    y_intent_dev = intent_encoder.transform(dev_intents)
+    y_intent_val = intent_encoder.transform(val_intents)
+    y_intent_test = intent_encoder.transform(test_intents)
     y_attr_train = attr_encoder.transform(train_attrs)
-    y_attr_dev = attr_encoder.transform(dev_attrs)
+    y_attr_val = attr_encoder.transform(val_attrs)
+    y_attr_test = attr_encoder.transform(test_attrs)
 
-    print(f"✅ Loaded {len(train_texts)} train, {len(dev_texts)} dev samples")
+    print(f"✅ Loaded {len(train_texts)} train, {len(val_texts)} val, {len(test_texts)} test samples")
     print(f"Intents: {list(intent_encoder.classes_)}")
     print(f"Attributes: {list(attr_encoder.classes_)}")
 
@@ -131,9 +134,11 @@ if __name__ == "__main__":
 
     # Create datasets and loaders
     train_ds = MultiTaskDataset(train_texts, y_intent_train, y_attr_train, tokenizer)
-    dev_ds   = MultiTaskDataset(dev_texts,   y_intent_dev,   y_attr_dev,   tokenizer)
+    val_ds   = MultiTaskDataset(val_texts,   y_intent_val,   y_attr_val,   tokenizer)
+    test_ds  = MultiTaskDataset(test_texts,  y_intent_test,  y_attr_test,  tokenizer)
     train_loader = DataLoader(train_ds, batch_size=16, shuffle=True)
-    dev_loader   = DataLoader(dev_ds,   batch_size=32)
+    val_loader   = DataLoader(val_ds,   batch_size=32)
+    test_loader  = DataLoader(test_ds,  batch_size=32)
 
     # Create model
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -167,14 +172,20 @@ if __name__ == "__main__":
             pbar.set_postfix({"loss": f"{loss.item():.4f}"})
 
         print(f"\nEpoch {epoch+1} average loss: {total_loss/len(train_loader):.4f}")
-        print("Dev evaluation:")
-        evaluate(model, dev_loader, device, intent_encoder, attr_encoder)
+        print("Val evaluation:")
+        evaluate(model, val_loader, device, intent_encoder, attr_encoder)
+
+    # Final test evaluation
+    print("\n" + "="*50)
+    print("Final Test Evaluation:")
+    print("="*50)
+    evaluate(model, test_loader, device, intent_encoder, attr_encoder)
 
     # Save model + encoders
-    os.makedirs("models/bert_multi", exist_ok=True)
-    torch.save(model.state_dict(), "models/bert_multi/model.pt")
-    tokenizer.save_pretrained("models/bert_multi")
-    np.save("models/bert_multi/intent_encoder.npy", intent_encoder.classes_)
-    np.save("models/bert_multi/attr_encoder.npy", attr_encoder.classes_)
+    os.makedirs("../../models/bert_multi", exist_ok=True)
+    torch.save(model.state_dict(), "../../models/bert_multi/model.pt")
+    tokenizer.save_pretrained("../../models/bert_multi")
+    np.save("../../models/bert_multi/intent_encoder.npy", intent_encoder.classes_)
+    np.save("../../models/bert_multi/attr_encoder.npy", attr_encoder.classes_)
 
     print("\n✅ Model saved to models/bert_multi/model.pt")

@@ -4,8 +4,9 @@ import json, random, os
 input_files = ["team.json", "player.json"]
 output_all = "combined.json"
 output_train = "train.json"
-output_dev = "dev.json"
-split_ratio = (0.8, 0.2)
+output_val = "val.json"
+output_test = "test.json"
+split_ratio = (0.8, 0.1, 0.1)
 
 def load_json(path):
     with open(path, "r") as f:
@@ -24,14 +25,18 @@ with open(output_all, "w") as f:
     json.dump(dataset, f, indent=2)
 print(f"Combined dataset saved to {output_all} with {len(dataset)} examples.")
 
-# Split into train/dev
+# Split into train/val/test (80-10-10)
 n = len(dataset)
 n_train = int(n * split_ratio[0])
+n_val = int(n * split_ratio[1])
 train = dataset[:n_train]
-dev = dataset[n_train:]
+val = dataset[n_train:n_train + n_val]
+test = dataset[n_train + n_val:]
 
 with open(output_train, "w") as f:
     json.dump(train, f, indent=2)
-with open(output_dev, "w") as f:
-    json.dump(dev, f, indent=2)
-print(f"Train: {len(train)} | Dev: {len(dev)}")
+with open(output_val, "w") as f:
+    json.dump(val, f, indent=2)
+with open(output_test, "w") as f:
+    json.dump(test, f, indent=2)
+print(f"Train: {len(train)} | Val: {len(val)} | Test: {len(test)}")
