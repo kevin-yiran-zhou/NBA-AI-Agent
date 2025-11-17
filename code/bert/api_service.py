@@ -1,0 +1,562 @@
+"""
+NBA API Service Module
+
+This module provides a clean interface to the BALLDONTLIE NBA API.
+Currently implements Free tier endpoints: Teams, Players, and Games.
+"""
+
+from typing import Optional, List, Dict, Any
+from balldontlie import BalldontlieAPI
+from balldontlie.exceptions import (
+    AuthenticationError,
+    NotFoundError,
+    RateLimitError,
+    ValidationError,
+    ServerError,
+    BallDontLieException
+)
+import os
+
+
+class NBAApiService:
+    """
+    Service class for interacting with the BALLDONTLIE NBA API.
+    
+    This class wraps the balldontlie library and provides a clean interface
+    for accessing NBA data. Currently supports Free tier endpoints only.
+    """
+    
+    def __init__(self, api_key_path: str = 'API_KEY.txt'):
+        """
+        Initialize the NBA API service.
+        
+        Args:
+            api_key_path: Path to the file containing the API key
+            
+        Raises:
+            FileNotFoundError: If the API key file is not found
+            ValueError: If the API key is empty
+        """
+        if not os.path.exists(api_key_path):
+            raise FileNotFoundError(f"API key file not found: {api_key_path}")
+        
+        with open(api_key_path, 'r') as f:
+            api_key = f.read().strip()
+        
+        if not api_key:
+            raise ValueError("API key is empty")
+        
+        self.client = BalldontlieAPI(api_key=api_key)
+        self._teams_cache: Optional[List[Dict[str, Any]]] = None
+    
+    def _handle_api_error(self, error: Exception, operation: str) -> None:
+        """
+        Handle API errors and raise appropriate exceptions.
+        
+        Args:
+            error: The exception that occurred
+            operation: Description of the operation that failed
+            
+        Raises:
+            The original exception with additional context
+        """
+        if isinstance(error, AuthenticationError):
+            raise AuthenticationError(
+                f"Authentication failed for {operation}. "
+                f"Please check your API key. Status: {error.status_code}"
+            ) from error
+        elif isinstance(error, RateLimitError):
+            raise RateLimitError(
+                f"Rate limit exceeded for {operation}. "
+                f"Please wait before retrying. Status: {error.status_code}"
+            ) from error
+        elif isinstance(error, NotFoundError):
+            raise NotFoundError(
+                f"Resource not found for {operation}. "
+                f"Status: {error.status_code}"
+            ) from error
+        elif isinstance(error, ValidationError):
+            raise ValidationError(
+                f"Invalid request parameters for {operation}. "
+                f"Status: {error.status_code}"
+            ) from error
+        elif isinstance(error, ServerError):
+            raise ServerError(
+                f"API server error for {operation}. "
+                f"Please try again later. Status: {error.status_code}"
+            ) from error
+        else:
+            raise BallDontLieException(
+                f"Unexpected error during {operation}: {str(error)}"
+            ) from error
+    
+    # ==================== Team Methods ====================
+    
+    def list_all_teams(self, division: Optional[str] = None, 
+                      conference: Optional[str] = None) -> List[Dict[str, Any]]:
+        """
+        Get all NBA teams.
+        
+        Args:
+            division: Optional division filter (e.g., "Southeast", "Pacific")
+            conference: Optional conference filter ("East" or "West")
+            
+        Returns:
+            List of team dictionaries with keys: id, conference, division,
+            city, name, full_name, abbreviation
+            
+        Raises:
+            AuthenticationError: If API key is invalid
+            RateLimitError: If rate limit is exceeded
+            ServerError: If API server error occurs
+        """
+        try:
+            response = self.client.nba.teams.list(
+                division=division,
+                conference=conference
+            )
+            teams = []
+            for team in response.data:
+                teams.append({
+                    'id': team.id,
+                    'conference': team.conference,
+                    'division': team.division,
+                    'city': team.city,
+                    'name': team.name,
+                    'full_name': team.full_name,
+                    'abbreviation': team.abbreviation
+                })
+            return teams
+        except BallDontLieException as e:
+            self._handle_api_error(e, "list_all_teams")
+        except Exception as e:
+            raise BallDontLieException(f"Unexpected error in list_all_teams: {str(e)}") from e
+    
+    def get_team_by_id(self, team_id: int) -> Optional[Dict[str, Any]]:
+        """
+        Get a specific team by ID.
+        
+        Args:
+            team_id: The team ID
+            
+        Returns:
+            Team dictionary with keys: id, conference, division, city,
+            name, full_name, abbreviation. Returns None if not found.
+            
+        Raises:
+            AuthenticationError: If API key is invalid
+            NotFoundError: If team ID is not found
+            RateLimitError: If rate limit is exceeded
+        """
+        try:
+            response = self.client.nba.teams.get(team_id)
+            team = response.data
+            return {
+                'id': team.id,
+                'conference': team.conference,
+                'division': team.division,
+                'city': team.city,
+                'name': team.name,
+                'full_name': team.full_name,
+                'abbreviation': team.abbreviation
+            }
+        except NotFoundError:
+            return None
+        except BallDontLieException as e:
+            self._handle_api_error(e, f"get_team_by_id({team_id})")
+        except Exception as e:
+            raise BallDontLieException(f"Unexpected error in get_team_by_id: {str(e)}") from e
+    
+    def get_team_by_name(self, team_name: str) -> Optional[Dict[str, Any]]:
+        """
+        Get a team by name (searches full_name, name, abbreviation, city+name).
+        
+        Args:
+            team_name: Team name to search for (case-insensitive)
+            
+        Returns:
+            Team dictionary if found, None otherwise
+        """
+        try:
+            teams = self.list_all_teams()
+            team_name_lower = team_name.lower().strip()
+            
+            for team in teams:
+                # Check full_name, name, abbreviation, city+name
+                if (team_name_lower == team['full_name'].lower() or
+                    team_name_lower == team['name'].lower() or
+                    team_name_lower == team['abbreviation'].lower() or
+                    team_name_lower == f"{team['city']} {team['name']}".lower()):
+                    return team
+            
+            return None
+        except Exception as e:
+            raise BallDontLieException(f"Error in get_team_by_name: {str(e)}") from e
+    
+    # ==================== Player Methods ====================
+    
+    def list_players(self, per_page: int = 25, cursor: Optional[int] = None,
+                    search: Optional[str] = None,
+                    first_name: Optional[str] = None,
+                    last_name: Optional[str] = None,
+                    team_ids: Optional[List[int]] = None) -> Dict[str, Any]:
+        """
+        Get a list of players with optional filters.
+        
+        Args:
+            per_page: Number of results per page (default: 25, max: 100)
+            cursor: Cursor for pagination
+            search: Search term for first or last name
+            first_name: Filter by first name
+            last_name: Filter by last name
+            team_ids: Filter by team IDs (list)
+            
+        Returns:
+            Dictionary with 'data' (list of players) and 'meta' (pagination info)
+            
+        Raises:
+            AuthenticationError: If API key is invalid
+            RateLimitError: If rate limit is exceeded
+            ValidationError: If parameters are invalid
+        """
+        try:
+            response = self.client.nba.players.list(
+                per_page=per_page,
+                cursor=cursor,
+                search=search,
+                first_name=first_name,
+                last_name=last_name,
+                team_ids=team_ids
+            )
+            
+            players = []
+            for player in response.data:
+                player_dict = {
+                    'id': player.id,
+                    'first_name': player.first_name,
+                    'last_name': player.last_name,
+                    'position': player.position,
+                    'height': player.height,
+                    'weight': player.weight,
+                    'jersey_number': player.jersey_number,
+                    'college': player.college,
+                    'country': player.country,
+                    'draft_year': player.draft_year,
+                    'draft_round': player.draft_round,
+                    'draft_number': player.draft_number
+                }
+                # Add team info if available
+                if hasattr(player, 'team') and player.team:
+                    player_dict['team'] = {
+                        'id': player.team.id,
+                        'conference': player.team.conference,
+                        'division': player.team.division,
+                        'city': player.team.city,
+                        'name': player.team.name,
+                        'full_name': player.team.full_name,
+                        'abbreviation': player.team.abbreviation
+                    }
+                players.append(player_dict)
+            
+            meta = {
+                'next_cursor': response.meta.next_cursor if hasattr(response.meta, 'next_cursor') else None,
+                'per_page': response.meta.per_page if hasattr(response.meta, 'per_page') else per_page
+            }
+            
+            return {'data': players, 'meta': meta}
+        except BallDontLieException as e:
+            self._handle_api_error(e, "list_players")
+        except Exception as e:
+            raise BallDontLieException(f"Unexpected error in list_players: {str(e)}") from e
+    
+    def get_player_by_id(self, player_id: int) -> Optional[Dict[str, Any]]:
+        """
+        Get a specific player by ID.
+        
+        Args:
+            player_id: The player ID
+            
+        Returns:
+            Player dictionary with all player information, or None if not found
+            
+        Raises:
+            AuthenticationError: If API key is invalid
+            NotFoundError: If player ID is not found
+            RateLimitError: If rate limit is exceeded
+        """
+        try:
+            response = self.client.nba.players.get(player_id)
+            player = response.data
+            
+            player_dict = {
+                'id': player.id,
+                'first_name': player.first_name,
+                'last_name': player.last_name,
+                'position': player.position,
+                'height': player.height,
+                'weight': player.weight,
+                'jersey_number': player.jersey_number,
+                'college': player.college,
+                'country': player.country,
+                'draft_year': player.draft_year,
+                'draft_round': player.draft_round,
+                'draft_number': player.draft_number
+            }
+            
+            # Add team info if available
+            if hasattr(player, 'team') and player.team:
+                player_dict['team'] = {
+                    'id': player.team.id,
+                    'conference': player.team.conference,
+                    'division': player.team.division,
+                    'city': player.team.city,
+                    'name': player.team.name,
+                    'full_name': player.team.full_name,
+                    'abbreviation': player.team.abbreviation
+                }
+            
+            return player_dict
+        except NotFoundError:
+            return None
+        except BallDontLieException as e:
+            self._handle_api_error(e, f"get_player_by_id({player_id})")
+        except Exception as e:
+            raise BallDontLieException(f"Unexpected error in get_player_by_id: {str(e)}") from e
+    
+    def search_players(self, query: str, per_page: int = 25) -> List[Dict[str, Any]]:
+        """
+        Search for players by name.
+        
+        Args:
+            query: Search term (searches first and last name)
+            per_page: Number of results per page (default: 25, max: 100)
+            
+        Returns:
+            List of player dictionaries matching the search query
+        """
+        try:
+            result = self.list_players(search=query, per_page=per_page)
+            return result['data']
+        except Exception as e:
+            raise BallDontLieException(f"Error in search_players: {str(e)}") from e
+    
+    def get_player_by_name(self, first_name: Optional[str] = None,
+                          last_name: Optional[str] = None,
+                          full_name: Optional[str] = None) -> Optional[Dict[str, Any]]:
+        """
+        Get a player by name (first name, last name, or full name).
+        
+        Args:
+            first_name: Player's first name
+            last_name: Player's last name
+            full_name: Player's full name (e.g., "Stephen Curry")
+            
+        Returns:
+            Player dictionary if found, None otherwise
+        """
+        try:
+            if full_name:
+                # Try to split full name
+                parts = full_name.strip().split()
+                if len(parts) >= 2:
+                    first_name = parts[0]
+                    last_name = ' '.join(parts[1:])
+                else:
+                    # If single word, search as last name
+                    last_name = parts[0]
+            
+            result = self.list_players(
+                first_name=first_name,
+                last_name=last_name,
+                per_page=100
+            )
+            
+            players = result['data']
+            if not players:
+                return None
+            
+            # If we have exact matches, return the first one
+            # Otherwise, return the first result
+            return players[0] if players else None
+        except Exception as e:
+            raise BallDontLieException(f"Error in get_player_by_name: {str(e)}") from e
+    
+    # ==================== Game Methods ====================
+    
+    def list_games(self, per_page: int = 25, cursor: Optional[int] = None,
+                  dates: Optional[List[str]] = None,
+                  seasons: Optional[List[int]] = None,
+                  team_ids: Optional[List[int]] = None,
+                  postseason: Optional[bool] = None,
+                  start_date: Optional[str] = None,
+                  end_date: Optional[str] = None) -> Dict[str, Any]:
+        """
+        Get a list of games with optional filters.
+        
+        Args:
+            per_page: Number of results per page (default: 25, max: 100)
+            cursor: Cursor for pagination
+            dates: List of dates in YYYY-MM-DD format
+            seasons: List of season years (e.g., [2023, 2024])
+            team_ids: Filter by team IDs (list)
+            postseason: Filter by postseason (True/False)
+            start_date: Start date in YYYY-MM-DD format
+            end_date: End date in YYYY-MM-DD format
+            
+        Returns:
+            Dictionary with 'data' (list of games) and 'meta' (pagination info)
+            
+        Raises:
+            AuthenticationError: If API key is invalid
+            RateLimitError: If rate limit is exceeded
+            ValidationError: If parameters are invalid
+        """
+        try:
+            response = self.client.nba.games.list(
+                per_page=per_page,
+                cursor=cursor,
+                dates=dates,
+                seasons=seasons,
+                team_ids=team_ids,
+                postseason=postseason,
+                start_date=start_date,
+                end_date=end_date
+            )
+            
+            games = []
+            for game in response.data:
+                game_dict = {
+                    'id': game.id,
+                    'date': game.date,
+                    'season': game.season,
+                    'status': game.status,
+                    'period': game.period,
+                    'time': game.time,
+                    'postseason': game.postseason,
+                    'home_team_score': game.home_team_score,
+                    'visitor_team_score': game.visitor_team_score,
+                    'datetime': getattr(game, 'datetime', None)
+                }
+                
+                # Add team info
+                if hasattr(game, 'home_team') and game.home_team:
+                    game_dict['home_team'] = {
+                        'id': game.home_team.id,
+                        'conference': game.home_team.conference,
+                        'division': game.home_team.division,
+                        'city': game.home_team.city,
+                        'name': game.home_team.name,
+                        'full_name': game.home_team.full_name,
+                        'abbreviation': game.home_team.abbreviation
+                    }
+                
+                if hasattr(game, 'visitor_team') and game.visitor_team:
+                    game_dict['visitor_team'] = {
+                        'id': game.visitor_team.id,
+                        'conference': game.visitor_team.conference,
+                        'division': game.visitor_team.division,
+                        'city': game.visitor_team.city,
+                        'name': game.visitor_team.name,
+                        'full_name': game.visitor_team.full_name,
+                        'abbreviation': game.visitor_team.abbreviation
+                    }
+                
+                games.append(game_dict)
+            
+            meta = {
+                'next_cursor': response.meta.next_cursor if hasattr(response.meta, 'next_cursor') else None,
+                'per_page': response.meta.per_page if hasattr(response.meta, 'per_page') else per_page
+            }
+            
+            return {'data': games, 'meta': meta}
+        except BallDontLieException as e:
+            self._handle_api_error(e, "list_games")
+        except Exception as e:
+            raise BallDontLieException(f"Unexpected error in list_games: {str(e)}") from e
+    
+    def get_game_by_id(self, game_id: int) -> Optional[Dict[str, Any]]:
+        """
+        Get a specific game by ID.
+        
+        Args:
+            game_id: The game ID
+            
+        Returns:
+            Game dictionary with all game information, or None if not found
+            
+        Raises:
+            AuthenticationError: If API key is invalid
+            NotFoundError: If game ID is not found
+            RateLimitError: If rate limit is exceeded
+        """
+        try:
+            response = self.client.nba.games.get(game_id)
+            game = response.data
+            
+            game_dict = {
+                'id': game.id,
+                'date': game.date,
+                'season': game.season,
+                'status': game.status,
+                'period': game.period,
+                'time': game.time,
+                'postseason': game.postseason,
+                'home_team_score': game.home_team_score,
+                'visitor_team_score': game.visitor_team_score,
+                'datetime': getattr(game, 'datetime', None)
+            }
+            
+            # Add team info
+            if hasattr(game, 'home_team') and game.home_team:
+                game_dict['home_team'] = {
+                    'id': game.home_team.id,
+                    'conference': game.home_team.conference,
+                    'division': game.home_team.division,
+                    'city': game.home_team.city,
+                    'name': game.home_team.name,
+                    'full_name': game.home_team.full_name,
+                    'abbreviation': game.home_team.abbreviation
+                }
+            
+            if hasattr(game, 'visitor_team') and game.visitor_team:
+                game_dict['visitor_team'] = {
+                    'id': game.visitor_team.id,
+                    'conference': game.visitor_team.conference,
+                    'division': game.visitor_team.division,
+                    'city': game.visitor_team.city,
+                    'name': game.visitor_team.name,
+                    'full_name': game.visitor_team.full_name,
+                    'abbreviation': game.visitor_team.abbreviation
+                }
+            
+            return game_dict
+        except NotFoundError:
+            return None
+        except BallDontLieException as e:
+            self._handle_api_error(e, f"get_game_by_id({game_id})")
+        except Exception as e:
+            raise BallDontLieException(f"Unexpected error in get_game_by_id: {str(e)}") from e
+    
+    def get_games_by_date(self, date: str, per_page: int = 100) -> List[Dict[str, Any]]:
+        """
+        Get all games for a specific date.
+        
+        Args:
+            date: Date in YYYY-MM-DD format
+            per_page: Number of results per page (default: 100, max: 100)
+            
+        Returns:
+            List of game dictionaries for the specified date
+        """
+        try:
+            result = self.list_games(dates=[date], per_page=per_page)
+            return result['data']
+        except Exception as e:
+            raise BallDontLieException(f"Error in get_games_by_date: {str(e)}") from e
+    
+    def clear_cache(self) -> None:
+        """
+        Clear any cached data (currently only teams cache).
+        """
+        self._teams_cache = None
+
