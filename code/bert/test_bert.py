@@ -53,8 +53,6 @@ if __name__ == "__main__":
     print("BERT Model Evaluation on Test Set")
     print("="*60)
     print(f"Test samples: {len(test_texts)}")
-    print(f"Intent classes: {list(intent_encoder.classes_)} ({len(intent_encoder.classes_)} classes)")
-    print(f"Attribute classes: {list(attr_encoder.classes_)} ({len(attr_encoder.classes_)} classes)")
     print()
 
     # Initialize predictor
