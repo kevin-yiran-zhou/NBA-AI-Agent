@@ -2,9 +2,18 @@
 Test script for API Router module.
 """
 
-from api_service import NBAApiService
-from entity_linker import EntityLinker
-from api_router import APIRouter
+try:
+    from .api_service import NBAApiService
+    from .entity_linker import EntityLinker
+    from .api_router import APIRouter
+except ImportError:
+    # Allow running as script
+    import sys
+    import os
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from api_service import NBAApiService
+    from entity_linker import EntityLinker
+    from api_router import APIRouter
 
 
 def test_team_info():

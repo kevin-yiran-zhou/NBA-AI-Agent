@@ -7,7 +7,11 @@ to their corresponding API IDs using fuzzy matching and alias handling.
 
 from typing import Optional, Dict, List, Any
 from difflib import SequenceMatcher
-from api_service import NBAApiService
+try:
+    from .api_service import NBAApiService
+except ImportError:
+    # Allow running as script
+    from api_service import NBAApiService
 
 
 class EntityLinker:

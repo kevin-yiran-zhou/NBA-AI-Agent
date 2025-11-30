@@ -26,17 +26,21 @@ class NBAApiService:
     for accessing NBA data. Currently supports Free tier endpoints only.
     """
     
-    def __init__(self, api_key_path: str = 'API_KEY.txt'):
+    def __init__(self, api_key_path: str = None):
         """
         Initialize the NBA API service.
         
         Args:
-            api_key_path: Path to the file containing the API key
+            api_key_path: Path to the file containing the API key (default: API_KEY.txt in same directory)
             
         Raises:
             FileNotFoundError: If the API key file is not found
             ValueError: If the API key is empty
         """
+        if api_key_path is None:
+            # Default to API_KEY.txt in the same directory as this file
+            api_key_path = os.path.join(os.path.dirname(__file__), 'API_KEY.txt')
+        
         if not os.path.exists(api_key_path):
             raise FileNotFoundError(f"API key file not found: {api_key_path}")
         

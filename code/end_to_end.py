@@ -8,14 +8,27 @@ into a complete pipeline.
 from typing import Dict, Any, Tuple, Optional
 import torch
 import numpy as np
+import time
 from transformers import BertTokenizer
+import spacy
 
-from api_service import NBAApiService
-from entity_linker import EntityLinker
-from api_router import APIRouter
-from response_formatter import ResponseFormatter
-from train_bert import BertForIntentAndAttr
-from mock_predictor import MockPredictor
+import sys
+import os
+# Add current directory to path for imports
+_current_dir = os.path.dirname(os.path.abspath(__file__))
+if _current_dir not in sys.path:
+    sys.path.insert(0, _current_dir)
+
+from API.api_service import NBAApiService
+from API.entity_linker import EntityLinker
+from API.api_router import APIRouter
+from API.response_formatter import ResponseFormatter
+
+# Import train_bert from bert package
+from bert.train_bert import BertForIntentAndAttr
+
+# Import mock_predictor from mock package
+from mock.mock_predictor import MockPredictor
 
 
 class EndToEndAgent:
@@ -86,7 +99,7 @@ class EndToEndAgent:
             self.tokenizer = tokenizer
             self.intent_labels = intent_labels
             self.attr_labels = attr_labels
-            self.input_labels = input_labels
+            self.input_labels = input_labels  # Keep for compatibility but won't use for prediction
             
             if device is None:
                 self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -95,6 +108,9 @@ class EndToEndAgent:
             
             self.model.to(self.device)
             self.model.eval()
+            
+            # Load spaCy NER for entity extraction
+            self.nlp = spacy.load("en_core_web_trf")
         else:
             raise ValueError(
                 "Must provide either (model, tokenizer, labels) or mock_predictor. "
@@ -143,9 +159,30 @@ class EndToEndAgent:
             "formatted_response": formatted_response
         }
     
+    def extract_entity_spacy(self, text: str, intent: str) -> str:
+        """
+        Extract entity from text using spaCy NER based on intent.
+        
+        Args:
+            text: Input text
+            intent: Predicted intent (used to filter entity types)
+            
+        Returns:
+            Extracted entity text
+        """
+        doc = self.nlp(text)
+        if "player" in str(intent).lower():
+            ents = [ent.text for ent in doc.ents if ent.label_ == "PERSON"]
+        elif "team" in str(intent).lower():
+            ents = [ent.text for ent in doc.ents if ent.label_ in ["ORG", "GPE"]]
+        else:
+            ents = [ent.text for ent in doc.ents]
+        return ents[0] if ents else "Unknown"
+    
     def predict(self, text: str) -> Tuple[str, Dict[str, Any]]:
         """
         Use the model or mock predictor to predict intent and slots from text.
+        Uses BERT for intent/attribute prediction and spaCy for entity extraction.
         
         Args:
             text: Input text query
@@ -158,7 +195,7 @@ class EndToEndAgent:
             # Use mock predictor
             return self.mock_predictor.predict(text)
         else:
-            # Use trained model
+            # Use trained model for intent and attribute
             # Tokenize input
             enc = self.tokenizer(
                 text,
@@ -168,9 +205,9 @@ class EndToEndAgent:
                 max_length=64
             ).to(self.device)
             
-            # Get predictions
+            # Get predictions (only intent and attribute, not input)
             with torch.no_grad():
-                intent_logits, attr_logits, input_logits, _ = self.model(
+                intent_logits, attr_logits, _, _ = self.model(
                     enc["input_ids"],
                     enc["attention_mask"]
                 )
@@ -178,11 +215,12 @@ class EndToEndAgent:
             # Decode predictions
             intent_idx = torch.argmax(intent_logits, dim=1).item()
             attr_idx = torch.argmax(attr_logits, dim=1).item()
-            input_idx = torch.argmax(input_logits, dim=1).item()
             
             intent = self.intent_labels[intent_idx]
             attr = self.attr_labels[attr_idx]
-            input_val = self.input_labels[input_idx]
+            
+            # Use spaCy for entity extraction
+            input_val = self.extract_entity_spacy(text, intent)
             
             # Construct slots dictionary
             slots = {

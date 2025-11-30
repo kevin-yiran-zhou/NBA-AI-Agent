@@ -4,7 +4,9 @@ from balldontlie.exceptions import (
     NotFoundError,
 )
 
-with open('API_KEY.txt', 'r') as f:
+import os
+api_key_path = os.path.join(os.path.dirname(__file__), 'API_KEY.txt')
+with open(api_key_path, 'r') as f:
     api_key = f.read().strip()
 client = BalldontlieAPI(api_key=api_key)
 

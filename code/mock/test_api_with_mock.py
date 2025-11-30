@@ -5,11 +5,18 @@ This script tests the API integration without requiring a trained model.
 It uses a mock predictor that uses simple rule-based matching.
 """
 
+import sys
+import os
+# Add parent directory to path for imports
+_parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _parent_dir not in sys.path:
+    sys.path.insert(0, _parent_dir)
+
 from end_to_end import EndToEndAgent
-from api_service import NBAApiService
-from entity_linker import EntityLinker
-from api_router import APIRouter
-from response_formatter import ResponseFormatter
+from API.api_service import NBAApiService
+from API.entity_linker import EntityLinker
+from API.api_router import APIRouter
+from API.response_formatter import ResponseFormatter
 
 
 def test_api_with_mock():

@@ -4,8 +4,16 @@ Test script for entity_linker.py
 This script tests the EntityLinker class to ensure entity linking works correctly.
 """
 
-from api_service import NBAApiService
-from entity_linker import EntityLinker
+try:
+    from .api_service import NBAApiService
+    from .entity_linker import EntityLinker
+except ImportError:
+    # Allow running as script
+    import sys
+    import os
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from api_service import NBAApiService
+    from entity_linker import EntityLinker
 
 
 def test_team_linking(linker: EntityLinker):

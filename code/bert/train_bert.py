@@ -113,30 +113,38 @@ def evaluate(model, loader, device, intent_encoder, attr_encoder, input_encoder)
 # Main training script (only runs when executed directly)
 # ----------------------------------------------------
 if __name__ == "__main__":
+    # Set up paths - script is in code/bert/, dataset and models are at project root
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(os.path.dirname(script_dir))
+    dataset_dir = os.path.join(project_root, "dataset")
+    models_dir = os.path.join(project_root, "models", "bert_multi")
+    
     # Load data
-    train_texts, train_intents, train_attrs, train_inputs = load_data("dataset/train.json")
-    dev_texts, dev_intents, dev_attrs, dev_inputs = load_data("dataset/dev.json")
+    train_path = os.path.join(dataset_dir, "train.json")
+    val_path = os.path.join(dataset_dir, "val.json")
+    train_texts, train_intents, train_attrs, train_inputs = load_data(train_path)
+    val_texts, val_intents, val_attrs, val_inputs = load_data(val_path)
 
     # Encode labels
     intent_encoder = LabelEncoder()
     attr_encoder = LabelEncoder()
     input_encoder = LabelEncoder()
-    intent_encoder.fit(train_intents + dev_intents)
-    attr_encoder.fit(train_attrs + dev_attrs)
-    input_encoder.fit(train_inputs + dev_inputs)
+    intent_encoder.fit(train_intents + val_intents)
+    attr_encoder.fit(train_attrs + val_attrs)
+    input_encoder.fit(train_inputs + val_inputs)
 
     num_intents = len(intent_encoder.classes_)
     num_attrs = len(attr_encoder.classes_)
     num_inputs = len(input_encoder.classes_)
 
     y_intent_train = intent_encoder.transform(train_intents)
-    y_intent_dev = intent_encoder.transform(dev_intents)
+    y_intent_val = intent_encoder.transform(val_intents)
     y_attr_train = attr_encoder.transform(train_attrs)
-    y_attr_dev = attr_encoder.transform(dev_attrs)
+    y_attr_val = attr_encoder.transform(val_attrs)
     y_input_train = input_encoder.transform(train_inputs)
-    y_input_dev = input_encoder.transform(dev_inputs)
+    y_input_val = input_encoder.transform(val_inputs)
 
-    print(f"✅ Loaded {len(train_texts)} train, {len(dev_texts)} dev samples")
+    print(f"✅ Loaded {len(train_texts)} train, {len(val_texts)} val samples")
     print(f"Intents: {list(intent_encoder.classes_)}")
     print(f"Attributes: {list(attr_encoder.classes_)}")
     print(f"Inputs: {list(input_encoder.classes_)}")
@@ -146,9 +154,9 @@ if __name__ == "__main__":
 
     # Create datasets and loaders
     train_ds = MultiTaskDataset(train_texts, y_intent_train, y_attr_train, y_input_train, tokenizer)
-    dev_ds   = MultiTaskDataset(dev_texts,   y_intent_dev,   y_attr_dev,   y_input_dev,   tokenizer)
+    val_ds   = MultiTaskDataset(val_texts,   y_intent_val,   y_attr_val,   y_input_val,   tokenizer)
     train_loader = DataLoader(train_ds, batch_size=16, shuffle=True)
-    dev_loader   = DataLoader(dev_ds,   batch_size=32)
+    val_loader   = DataLoader(val_ds,   batch_size=32)
 
     # Create model
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -181,15 +189,15 @@ if __name__ == "__main__":
             pbar.set_postfix({"loss": f"{loss.item():.4f}"})
 
         print(f"\nEpoch {epoch+1} average loss: {total_loss/len(train_loader):.4f}")
-        print("Dev evaluation:")
-        evaluate(model, dev_loader, device, intent_encoder, attr_encoder, input_encoder)
+        print("Val evaluation:")
+        evaluate(model, val_loader, device, intent_encoder, attr_encoder, input_encoder)
 
     # Save model + encoders
-    os.makedirs("models/bert_multi", exist_ok=True)
-    torch.save(model.state_dict(), "models/bert_multi/model.pt")
-    tokenizer.save_pretrained("models/bert_multi")
-    np.save("models/bert_multi/intent_encoder.npy", intent_encoder.classes_)
-    np.save("models/bert_multi/attr_encoder.npy", attr_encoder.classes_)
-    np.save("models/bert_multi/input_encoder.npy", input_encoder.classes_)
+    os.makedirs(models_dir, exist_ok=True)
+    torch.save(model.state_dict(), os.path.join(models_dir, "model.pt"))
+    tokenizer.save_pretrained(models_dir)
+    np.save(os.path.join(models_dir, "intent_encoder.npy"), intent_encoder.classes_)
+    np.save(os.path.join(models_dir, "attr_encoder.npy"), attr_encoder.classes_)
+    np.save(os.path.join(models_dir, "input_encoder.npy"), input_encoder.classes_)
 
-    print("\n✅ Model saved to models/bert_multi/model.pt")
+    print(f"\n✅ Model saved to {models_dir}/model.pt")

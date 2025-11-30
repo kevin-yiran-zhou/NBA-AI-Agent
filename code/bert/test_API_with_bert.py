@@ -3,22 +3,32 @@ Test script for End-to-End Agent.
 """
 
 import os
+import sys
+# Add parent directory to path for imports
+_parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _parent_dir not in sys.path:
+    sys.path.insert(0, _parent_dir)
+
 from end_to_end import EndToEndAgent
-from api_service import NBAApiService
-from entity_linker import EntityLinker
-from api_router import APIRouter
-from response_formatter import ResponseFormatter
+from API.api_service import NBAApiService
+from API.entity_linker import EntityLinker
+from API.api_router import APIRouter
+from API.response_formatter import ResponseFormatter
 
 
-def test_end_to_end():
+def test_API_with_bert():
     """Test the complete end-to-end pipeline."""
     print("="*60)
     print("End-to-End Agent Test")
     print("="*60)
     
+    # Set up paths - script is in code/bert/, models are at project root
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(os.path.dirname(script_dir))
+    model_dir = os.path.join(project_root, "models", "bert_multi")
+    
     # Check if model exists
-    model_dir = "models/bert_multi"
-    if not os.path.exists(f"{model_dir}/model.pt"):
+    if not os.path.exists(os.path.join(model_dir, "model.pt")):
         print(f"[ERROR] Model not found at {model_dir}/model.pt")
         print("Please train the model first using train_bert.py")
         return
@@ -113,4 +123,4 @@ def test_end_to_end():
 
 
 if __name__ == "__main__":
-    test_end_to_end()
+    test_API_with_bert()

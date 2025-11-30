@@ -12,26 +12,28 @@ The system has two major parts:
 ## 🏗️ Project Structure
 
 ```
-NBA-AI-Agent/
-├── Training
+code/
+├── bert/                      # BERT model training and inference
 │   ├── train_bert.py          # Model training
 │   ├── test_bert.py           # Inference-only sanity checks
+│   ├── test_end_to_end.py     # Requires a trained model
 │   └── dataset/               # Dataset builders and JSON files
 │
-├── API Integration
-│   ├── api_service.py         # Wrapper for Ball Don’t Lie API
+├── API/                       # API integration components
+│   ├── api_service.py         # Wrapper for Ball Don't Lie API
 │   ├── entity_linker.py       # Name → ID entity linking
 │   ├── api_router.py          # Maps intents/slots to API calls
 │   ├── response_formatter.py  # Natural-language responses
-│   ├── end_to_end.py          # Full pipeline orchestration
-│   └── mock_predictor.py      # Rule-based predictor for testing
+│   ├── test_api_service.py
+│   ├── test_entity_linker.py
+│   └── test_api_router.py
 │
-└── Tests
-    ├── test_api_service.py
-    ├── test_entity_linker.py
-    ├── test_api_router.py
-    ├── test_end_to_end.py     # Requires a trained model
-    └── test_api_with_mock.py  # Uses the mock predictor
+├── mock/                      # Mock/testing components
+│   ├── mock_predictor.py      # Rule-based predictor for testing
+│   ├── test_api_with_mock.py  # Uses the mock predictor
+│   └── compare_mock_vs_trained.py
+│
+└── end_to_end.py              # Full pipeline orchestration (shared)
 ```
 
 See `PROJECT_STRUCTURE.md` for a more detailed breakdown.

@@ -1,4 +1,5 @@
 import json
+import os
 import numpy as np
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.preprocessing import LabelEncoder
@@ -34,10 +35,19 @@ def load_data(path):
     return texts, intents, attributes, inputs
 
 if __name__ == "__main__":
+    # Set up paths - script is in code/bert/, dataset is at project root
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(os.path.dirname(script_dir))
+    dataset_dir = os.path.join(project_root, "dataset")
+    
     # Load all splits to get all possible classes (for encoder)
-    train_texts, train_intents, train_attrs, train_inputs = load_data("../../dataset/train.json")
-    val_texts, val_intents, val_attrs, val_inputs = load_data("../../dataset/val.json")
-    test_texts, test_intents, test_attrs, test_inputs = load_data("../../dataset/test.json")
+    train_path = os.path.join(dataset_dir, "train.json")
+    val_path = os.path.join(dataset_dir, "val.json")
+    test_path = os.path.join(dataset_dir, "test.json")
+    
+    train_texts, train_intents, train_attrs, train_inputs = load_data(train_path)
+    val_texts, val_intents, val_attrs, val_inputs = load_data(val_path)
+    test_texts, test_intents, test_attrs, test_inputs = load_data(test_path)
 
     # Create encoders and fit on all data
     intent_encoder = LabelEncoder()

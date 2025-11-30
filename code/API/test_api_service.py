@@ -4,7 +4,14 @@ Test script for api_service.py
 This script tests the NBAApiService class to ensure all methods work correctly.
 """
 
-from api_service import NBAApiService
+try:
+    from .api_service import NBAApiService
+except ImportError:
+    # Allow running as script
+    import sys
+    import os
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from api_service import NBAApiService
 from balldontlie.exceptions import (
     AuthenticationError,
     NotFoundError,
@@ -183,7 +190,7 @@ def main():
         print("\n✓ API service initialized successfully")
     except FileNotFoundError as e:
         print(f"\n✗ Failed to initialize API service: {e}")
-        print("   Please ensure API_KEY.txt exists in the current directory")
+        print("   Please ensure API_KEY.txt exists in the API directory")
         return
     except Exception as e:
         print(f"\n✗ Failed to initialize API service: {e}")

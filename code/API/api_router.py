@@ -6,8 +6,13 @@ It acts as a bridge between the NLP model predictions and the API service.
 """
 
 from typing import Optional, Dict, Any, List
-from api_service import NBAApiService
-from entity_linker import EntityLinker
+try:
+    from .api_service import NBAApiService
+    from .entity_linker import EntityLinker
+except ImportError:
+    # Allow running as script
+    from api_service import NBAApiService
+    from entity_linker import EntityLinker
 
 
 class APIRouter:

@@ -6,12 +6,21 @@ by testing queries from the training data.
 """
 
 import json
+import sys
+import os
+# Add parent directory to path for imports
+_parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _parent_dir not in sys.path:
+    sys.path.insert(0, _parent_dir)
+
 from end_to_end import EndToEndAgent
 
 
 def load_training_queries(n=10):
     """Load sample queries from training data."""
-    with open('dataset/train.json', 'r', encoding='utf-8') as f:
+    # Dataset is in bert/dataset/ relative to code/ directory
+    dataset_path = os.path.join(_parent_dir, 'bert', 'dataset', 'train.json')
+    with open(dataset_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data[:n]
 
@@ -71,7 +80,8 @@ def show_training_data_examples():
     print("Examples of DIVERSE EXPRESSIONS in Training Data")
     print("="*70)
     
-    with open('dataset/train.json', 'r', encoding='utf-8') as f:
+    dataset_path = os.path.join(_parent_dir, 'bert', 'dataset', 'train.json')
+    with open(dataset_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     # Group by intent and attribute
