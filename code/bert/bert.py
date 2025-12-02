@@ -1,9 +1,16 @@
+"""
+BERT Predictor for intent and attribute classification.
+Preprocesses text by replacing entities with <name> placeholder before prediction.
+"""
 from transformers import BertTokenizer
 import torch
 import numpy as np
 import time
 import spacy
-from train_bert import BertForIntentAndAttr
+try:
+    from .train_bert import BertForIntentAndAttr
+except ImportError:
+    from train_bert import BertForIntentAndAttr
 
 
 class BertPredictor:
@@ -34,10 +41,32 @@ class BertPredictor:
         self.model.eval()
         self.model.to(self.device)
         
-        # Load spaCy NER
+        # Load spaCy NER for entity extraction and preprocessing
         self.nlp = spacy.load("en_core_web_trf")
     
-    def extract_entity_spacy(self, text, intent):
+    def preprocess_text(self, text: str) -> str:
+        """
+        Preprocess text by replacing entities with <name> placeholder.
+        This matches the training data format.
+        
+        Args:
+            text: Input text with real entity names
+            
+        Returns:
+            Text with entities replaced by <name>
+        """
+        doc = self.nlp(text)
+        processed_text = text
+        
+        # Replace entities with <name> (in reverse order to preserve indices)
+        entities = sorted(doc.ents, key=lambda e: e.start_char, reverse=True)
+        for ent in entities:
+            # Replace entity with <name>
+            processed_text = processed_text[:ent.start_char] + "<name>" + processed_text[ent.end_char:]
+        
+        return processed_text
+    
+    def extract_entity_spacy(self, text: str, intent: str) -> tuple:
         """
         Extract entity from text using spaCy NER based on intent.
         
@@ -59,13 +88,14 @@ class BertPredictor:
         spacy_ms = (time.perf_counter() - t0) * 1000.0
         return (ents[0] if ents else "Unknown"), spacy_ms
     
-    def predict(self, text, extract_entity=True):
+    def predict(self, text: str, extract_entity: bool = True, preprocess: bool = True):
         """
         Predict intent and attribute for given text.
         
         Args:
-            text: Input text to predict
+            text: Input text to predict (can contain real entity names)
             extract_entity: Whether to extract entity using spaCy (default: True)
+            preprocess: Whether to preprocess text (replace entities with <name>) (default: True)
             
         Returns:
             dict: {
@@ -76,15 +106,21 @@ class BertPredictor:
                 'spacy_ms': spaCy inference time in milliseconds (if extract_entity=True)
             }
         """
+        # Preprocess text: replace entities with <name>
+        if preprocess:
+            processed_text = self.preprocess_text(text)
+        else:
+            processed_text = text
+        
         # Tokenize and encode
-        enc = self.tokenizer(text, return_tensors="pt", truncation=True, padding=True).to(self.device)
+        enc = self.tokenizer(processed_text, return_tensors="pt", truncation=True, padding=True, max_length=64).to(self.device)
         
         # BERT inference
         if torch.cuda.is_available():
             torch.cuda.synchronize()
         t0 = time.perf_counter()
         with torch.no_grad():
-            intent_logits, attr_logits, _ = self.model(enc["input_ids"], enc["attention_mask"])
+            intent_logits, attr_logits, _, _ = self.model(enc["input_ids"], enc["attention_mask"])
         if torch.cuda.is_available():
             torch.cuda.synchronize()
         bert_ms = (time.perf_counter() - t0) * 1000.0
@@ -101,7 +137,7 @@ class BertPredictor:
             'bert_ms': bert_ms
         }
         
-        # Extract entity if requested
+        # Extract entity if requested (use original text, not preprocessed)
         if extract_entity:
             extracted_input, spacy_ms = self.extract_entity_spacy(text, intent)
             result['input'] = extracted_input

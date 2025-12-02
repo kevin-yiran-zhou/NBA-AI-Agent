@@ -1,842 +1,212 @@
 [
   {
-    "text": "In what year was Jaylen Brown drafted into the NBA?",
+    "text": "Which university did <name> attend?",
     "intent": "player_info",
     "slots": {
-      "input": "Jaylen Brown",
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "What's <name>'s alma mater?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Which nation is <name> from?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "What's <name>'s home country?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Which pick did <name> go?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "What was <name>'s draft position?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Which round was <name> picked in?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "What round did <name> go in?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Which year did <name> get drafted?",
+    "intent": "player_info",
+    "slots": {
       "attribute": "draft_year"
     }
   },
   {
-    "text": "How do you say the full team name of the Jazz?",
-    "intent": "team_info",
+    "text": "What year was <name> selected in the draft?",
+    "intent": "player_info",
     "slots": {
-      "input": "Jazz",
-      "attribute": "full_name"
+      "attribute": "draft_year"
     }
   },
   {
-    "text": "How tall is Joel Embiid?",
+    "text": "How tall is <name> exactly?",
     "intent": "player_info",
     "slots": {
-      "input": "Joel Embiid",
       "attribute": "height"
     }
   },
   {
-    "text": "Give me the full official name of the Clippers.",
-    "intent": "team_info",
+    "text": "What's the height of <name>?",
+    "intent": "player_info",
     "slots": {
-      "input": "Clippers",
-      "attribute": "full_name"
+      "attribute": "height"
     }
   },
   {
-    "text": "What number does Devin Booker wear?",
+    "text": "What number is on <name>'s jersey?",
     "intent": "player_info",
     "slots": {
-      "input": "Devin Booker",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "Which team does Jalen Brunson play for?",
+    "text": "Which jersey number does <name> have?",
     "intent": "player_info",
     "slots": {
-      "input": "Jalen Brunson",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Tell me the full name of the Bucks.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Bucks",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "Which position is Shai Gilgeous-Alexander known for?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Shai Gilgeous-Alexander",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "Where are the Hornets from?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Hornets",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Which pick was Donovan Mitchell selected in?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Donovan Mitchell",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "What division do the Spurs belong to?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Spurs",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "What conference do the Nets play in?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Nets",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "I want to know LeBron James's current NBA team.",
-    "intent": "player_info",
-    "slots": {
-      "input": "LeBron James",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Tell me Donovan Mitchell's college.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Donovan Mitchell",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Which country does Stephen Curry represent?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Stephen Curry",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "What position does Devin Booker play?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Devin Booker",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "At what pick was Kevin Durant selected?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Kevin Durant",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "I'd like to know which division the Lakers are part of.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Lakers",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "I want to know Jayson Tatum's college.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Jayson Tatum",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Give me the short abbreviation of the Lakers.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Lakers",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "Where is Trae Young from?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Trae Young",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "What city do the Thunder represent?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Thunder",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Where are the Hawks from?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Hawks",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "What round was Giannis Antetokounmpo drafted in?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Giannis Antetokounmpo",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "Tell me Nikola Jokic's draft round.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Nikola Jokic",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "What is the abbreviation for the Nuggets?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Nuggets",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "Give me the short abbreviation of the Trail Blazers.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Trail Blazers",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "Can you tell me how tall Shai Gilgeous-Alexander is?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Shai Gilgeous-Alexander",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "Can you tell me how tall Joel Embiid is?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Joel Embiid",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "At what pick was Kyrie Irving selected?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Kyrie Irving",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "Tell me Damian Lillard's playing position.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Damian Lillard",
-      "attribute": "position"
-    }
-  },
-  {
-    "text": "What country is Devin Booker from?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Devin Booker",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Which jersey number does Kevin Durant wear?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Kevin Durant",
       "attribute": "jersey_number"
     }
   },
   {
-    "text": "What pick number was Zion Williamson in the draft?",
+    "text": "Can you give me <name>'s position?",
     "intent": "player_info",
     "slots": {
-      "input": "Zion Williamson",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "What is the full name of the Thunder?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Thunder",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "I want to know Trae Young's country.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Trae Young",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Which draft round was Nikola Jokic selected in?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Nikola Jokic",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "What is the abbreviation for the Hawks?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Hawks",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "I'd like to know which division the Nuggets are part of.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Nuggets",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "I want to know Jimmy Butler's country.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Jimmy Butler",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Are the Jazz in the Western or Eastern Conference?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Jazz",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "What division do the Heat belong to?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Heat",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "What division do the Pistons belong to?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Pistons",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "Tell me Ja Morant's playing position.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Ja Morant",
       "attribute": "position"
     }
   },
   {
-    "text": "I want to know the conference for the Spurs.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Spurs",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Give me the full official name of the Raptors.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Raptors",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "Which team did Zion Williamson last play for?",
+    "text": "Which position does <name> occupy?",
     "intent": "player_info",
     "slots": {
-      "input": "Zion Williamson",
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Which team is <name> a member of?",
+    "intent": "player_info",
+    "slots": {
       "attribute": "team"
     }
   },
   {
-    "text": "I want to know the home city of the Grizzlies.",
-    "intent": "team_info",
+    "text": "What team does <name> belong to?",
+    "intent": "player_info",
     "slots": {
-      "input": "Grizzlies",
-      "attribute": "city"
+      "attribute": "team"
     }
   },
   {
-    "text": "Which college did Jayson Tatum play?",
+    "text": "How heavy is <name>?",
     "intent": "player_info",
     "slots": {
-      "input": "Jayson Tatum",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Tell me Giannis Antetokounmpo's weight in pounds.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Giannis Antetokounmpo",
       "attribute": "weight"
     }
   },
   {
-    "text": "Which college did Shai Gilgeous-Alexander attend?",
+    "text": "What's the weight of <name>?",
     "intent": "player_info",
     "slots": {
-      "input": "Shai Gilgeous-Alexander",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Tell me the division of the Grizzlies.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Grizzlies",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "What's the complete team name for the Pelicans?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Pelicans",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "What's Stephen Curry's weight?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Stephen Curry",
       "attribute": "weight"
     }
   },
   {
-    "text": "I want to know the three-letter code for the Magic.",
+    "text": "Can you provide the abbreviation of the <name>?",
     "intent": "team_info",
     "slots": {
-      "input": "Magic",
       "attribute": "abbreviation"
     }
   },
   {
-    "text": "Which division are the Nets in?",
+    "text": "What is the three-letter abbreviation for the <name>?",
     "intent": "team_info",
     "slots": {
-      "input": "Nets",
-      "attribute": "division"
+      "attribute": "abbreviation"
     }
   },
   {
-    "text": "Tell me which conference the Cavaliers belong to.",
+    "text": "Help me find the city for the <name>.",
     "intent": "team_info",
     "slots": {
-      "input": "Cavaliers",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Which conference are the Nuggets in?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Nuggets",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Which draft round was Luka Doncic selected in?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Luka Doncic",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "What division do the Rockets belong to?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Rockets",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "Tell me the division of the Jazz.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Jazz",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "Tell me which city the Nets are located in.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Nets",
       "attribute": "city"
     }
   },
   {
-    "text": "Which jersey number does Stephen Curry use?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Stephen Curry",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "Which college did Ja Morant attend?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Ja Morant",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Which pick was Joel Embiid selected in?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Joel Embiid",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "How do you say the full team name of the Hornets?",
+    "text": "Which city is home to the <name>?",
     "intent": "team_info",
     "slots": {
-      "input": "Hornets",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "In what year was Trae Young drafted into the NBA?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Trae Young",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "I want to know LeBron James's draft pick number.",
-    "intent": "player_info",
-    "slots": {
-      "input": "LeBron James",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "Which college did Jalen Brunson play?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Jalen Brunson",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "I want to know Nikola Jokic's draft round.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Nikola Jokic",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "Where did Zion Williamson play college basketball?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Zion Williamson",
-      "attribute": "college"
-    }
-  },
-  {
-    "text": "Tell me the division of the Nets.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Nets",
-      "attribute": "division"
-    }
-  },
-  {
-    "text": "What city do the Hawks represent?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Hawks",
       "attribute": "city"
     }
   },
   {
-    "text": "Tell me Stephen Curry's draft pick number.",
-    "intent": "player_info",
+    "text": "What conference does the <name> play in the NBA?",
+    "intent": "team_info",
     "slots": {
-      "input": "Stephen Curry",
-      "attribute": "draft_number"
+      "attribute": "conference"
     }
   },
   {
-    "text": "I want to know the three-letter code for the Knicks.",
+    "text": "Help me find the conference for the <name>.",
     "intent": "team_info",
     "slots": {
-      "input": "Knicks",
-      "attribute": "abbreviation"
+      "attribute": "conference"
     }
   },
   {
-    "text": "In what division do the Nuggets compete?",
+    "text": "Help me find the division for the <name>.",
     "intent": "team_info",
     "slots": {
-      "input": "Nuggets",
       "attribute": "division"
     }
   },
   {
-    "text": "I want to know the three-letter code for the Heat.",
+    "text": "Which division does the <name> play in?",
     "intent": "team_info",
     "slots": {
-      "input": "Heat",
-      "attribute": "abbreviation"
+      "attribute": "division"
     }
   },
   {
-    "text": "Which pick was Jayson Tatum selected in?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Jayson Tatum",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "At what pick was Jaylen Brown selected?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Jaylen Brown",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "In what year was LeBron James drafted into the NBA?",
-    "intent": "player_info",
-    "slots": {
-      "input": "LeBron James",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "When was Kyrie Irving drafted?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Kyrie Irving",
-      "attribute": "draft_year"
-    }
-  },
-  {
-    "text": "I want to know Stephen Curry's country.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Stephen Curry",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Tell me the abbreviation used for the Celtics.",
+    "text": "What is the <name>'s full name?",
     "intent": "team_info",
     "slots": {
-      "input": "Celtics",
-      "attribute": "abbreviation"
-    }
-  },
-  {
-    "text": "Which team did Jaylen Brown play for?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Jaylen Brown",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Which pick was Damian Lillard selected in?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Damian Lillard",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "Tell me which city the Timberwolves are located in.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Timberwolves",
-      "attribute": "city"
-    }
-  },
-  {
-    "text": "Tell me which conference the Wizards belong to.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Wizards",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "I want to know Trae Young's height.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Trae Young",
-      "attribute": "height"
-    }
-  },
-  {
-    "text": "I want to know Stephen Curry's draft pick number.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Stephen Curry",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "What's the complete team name for the Heat?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Heat",
       "attribute": "full_name"
     }
   },
   {
-    "text": "Which pick was Jalen Brunson selected in?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Jalen Brunson",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "What pick number was Jayson Tatum in the draft?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Jayson Tatum",
-      "attribute": "draft_number"
-    }
-  },
-  {
-    "text": "Tell me which conference the Trail Blazers belong to.",
+    "text": "Can you provide the full official name of the <name>?",
     "intent": "team_info",
     "slots": {
-      "input": "Trail Blazers",
-      "attribute": "conference"
-    }
-  },
-  {
-    "text": "Which country does Jimmy Butler represent?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Jimmy Butler",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "What is the full name of the Hawks?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Hawks",
       "attribute": "full_name"
-    }
-  },
-  {
-    "text": "Tell me Jayson Tatum's jersey number.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Jayson Tatum",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "Which team did Stephen Curry last play for?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Stephen Curry",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "I want to know Jaylen Brown's country.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Jaylen Brown",
-      "attribute": "country"
-    }
-  },
-  {
-    "text": "Tell me Damian Lillard's last NBA team.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Damian Lillard",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Which jersey number does Jalen Brunson use?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Jalen Brunson",
-      "attribute": "jersey_number"
-    }
-  },
-  {
-    "text": "What's the complete team name for the 76ers?",
-    "intent": "team_info",
-    "slots": {
-      "input": "76ers",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "What's the complete team name for the Bulls?",
-    "intent": "team_info",
-    "slots": {
-      "input": "Bulls",
-      "attribute": "full_name"
-    }
-  },
-  {
-    "text": "Tell me Stephen Curry's draft round.",
-    "intent": "player_info",
-    "slots": {
-      "input": "Stephen Curry",
-      "attribute": "draft_round"
-    }
-  },
-  {
-    "text": "Who does Ja Morant play for right now?",
-    "intent": "player_info",
-    "slots": {
-      "input": "Ja Morant",
-      "attribute": "team"
-    }
-  },
-  {
-    "text": "Tell me the abbreviation used for the Cavaliers.",
-    "intent": "team_info",
-    "slots": {
-      "input": "Cavaliers",
-      "attribute": "abbreviation"
     }
   }
 ]

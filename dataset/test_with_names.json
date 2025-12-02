@@ -1,0 +1,242 @@
+[
+  {
+    "text": "Which university did Stephen Curry attend?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college",
+      "entity": "Stephen Curry"
+    }
+  },
+  {
+    "text": "What's LeBron James's alma mater?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college",
+      "entity": "LeBron James"
+    }
+  },
+  {
+    "text": "Which nation is Kevin Durant from?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country",
+      "entity": "Kevin Durant"
+    }
+  },
+  {
+    "text": "What's Giannis Antetokounmpo's home country?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country",
+      "entity": "Giannis Antetokounmpo"
+    }
+  },
+  {
+    "text": "Which pick did Luka Doncic go?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number",
+      "entity": "Luka Doncic"
+    }
+  },
+  {
+    "text": "What was Jayson Tatum's draft position?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number",
+      "entity": "Jayson Tatum"
+    }
+  },
+  {
+    "text": "Which round was Joel Embiid picked in?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round",
+      "entity": "Joel Embiid"
+    }
+  },
+  {
+    "text": "What round did Nikola Jokic go in?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round",
+      "entity": "Nikola Jokic"
+    }
+  },
+  {
+    "text": "Which year did Kawhi Leonard get drafted?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year",
+      "entity": "Kawhi Leonard"
+    }
+  },
+  {
+    "text": "What year was Paul George selected in the draft?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year",
+      "entity": "Paul George"
+    }
+  },
+  {
+    "text": "How tall is Damian Lillard exactly?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height",
+      "entity": "Damian Lillard"
+    }
+  },
+  {
+    "text": "What's the height of Devin Booker?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height",
+      "entity": "Devin Booker"
+    }
+  },
+  {
+    "text": "What number is on Anthony Davis's jersey?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number",
+      "entity": "Anthony Davis"
+    }
+  },
+  {
+    "text": "Which jersey number does Jimmy Butler have?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number",
+      "entity": "Jimmy Butler"
+    }
+  },
+  {
+    "text": "Can you give me Kyrie Irving's position?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position",
+      "entity": "Kyrie Irving"
+    }
+  },
+  {
+    "text": "Which position does Russell Westbrook occupy?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position",
+      "entity": "Russell Westbrook"
+    }
+  },
+  {
+    "text": "Which team is Chris Paul a member of?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team",
+      "entity": "Chris Paul"
+    }
+  },
+  {
+    "text": "What team does James Harden belong to?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team",
+      "entity": "James Harden"
+    }
+  },
+  {
+    "text": "How heavy is Klay Thompson?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight",
+      "entity": "Klay Thompson"
+    }
+  },
+  {
+    "text": "What's the weight of Draymond Green?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight",
+      "entity": "Draymond Green"
+    }
+  },
+  {
+    "text": "Can you provide the abbreviation of the Warriors?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation",
+      "entity": "Warriors"
+    }
+  },
+  {
+    "text": "What is the three-letter abbreviation for the Lakers?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation",
+      "entity": "Lakers"
+    }
+  },
+  {
+    "text": "Help me find the city for the Celtics.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city",
+      "entity": "Celtics"
+    }
+  },
+  {
+    "text": "Which city is home to the Heat?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city",
+      "entity": "Heat"
+    }
+  },
+  {
+    "text": "What conference does the Bucks play in the NBA?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference",
+      "entity": "Bucks"
+    }
+  },
+  {
+    "text": "Help me find the conference for the Nuggets.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference",
+      "entity": "Nuggets"
+    }
+  },
+  {
+    "text": "Help me find the division for the Mavericks.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division",
+      "entity": "Mavericks"
+    }
+  },
+  {
+    "text": "Which division does the Suns play in?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division",
+      "entity": "Suns"
+    }
+  },
+  {
+    "text": "What is the Clippers's full name?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name",
+      "entity": "Clippers"
+    }
+  },
+  {
+    "text": "Can you provide the full official name of the 76ers?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name",
+      "entity": "76ers"
+    }
+  }
+]

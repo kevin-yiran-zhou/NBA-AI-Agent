@@ -120,6 +120,15 @@ class ResponseFormatter:
                 return f"{player_name} was drafted as the {int(value)} pick."
             else:
                 return f"{player_name} was not drafted."
+        elif attribute == "team":
+            # Handle team attribute - value is a team object
+            if isinstance(value, dict):
+                team_full_name = value.get("full_name", value.get("name", "Unknown"))
+                return f"{player_name}'s team is {team_full_name}."
+            elif value:
+                return f"{player_name}'s team is {value}."
+            else:
+                return f"{player_name} is not currently on a team."
         else:
             return f"{player_name}'s {attribute} is {value}."
     

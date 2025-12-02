@@ -1,0 +1,2102 @@
+[
+  {
+    "text": "Which conference are the <name> in?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Are the <name> in the Western or Eastern Conference?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "What conference do the <name> play in?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Tell me which conference the <name> belong to.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "I want to know the conference for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "What's the conference of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Can you tell me the <name>'s conference?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Which conference does the <name> compete in?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "I need to know what conference the <name> are in.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Show me the conference for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "What conference is the <name> part of?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Do the <name> play in the Eastern or Western Conference?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "I'm curious about the <name>'s conference.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Which NBA conference do the <name> belong to?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Can you identify the conference of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "What conference are the <name> assigned to?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Tell me the conference affiliation of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "I'd like to find out the <name>'s conference.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "What conference does the <name> play in the NBA?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Help me find the conference for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "conference"
+    }
+  },
+  {
+    "text": "Which division are the <name> in?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "What division do the <name> belong to?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Tell me the division of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "In what division do the <name> compete?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "I'd like to know which division the <name> are part of.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "What's the division of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Can you tell me the <name>'s division?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Which division does the <name> play in?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "I need to know what division the <name> are in.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Show me the division for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "What division is the <name> in?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Which NBA division do the <name> compete in?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "I'm curious about the <name>'s division.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Can you identify the division of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "What division are the <name> assigned to?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Tell me the division affiliation of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "I'd like to find out the <name>'s division.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "What division does the <name> belong to in the NBA?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Help me find the division for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Which division does the <name> play in?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "division"
+    }
+  },
+  {
+    "text": "Which city are the <name> based in?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Where are the <name> from?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "What city do the <name> represent?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Tell me which city the <name> are located in.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "I want to know the home city of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "What's the city of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Can you tell me where the <name> are from?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Which city does the <name> call home?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "I need to know what city the <name> are based in.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Show me the city for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "What city is the <name> from?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Where do the <name> play their home games?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "I'm curious about the <name>'s home city.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Can you identify the city of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "What city are the <name> located in?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Tell me the home city of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "I'd like to find out where the <name> are from.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "What city does the <name> represent in the NBA?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Help me find the city for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "Which city is home to the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "city"
+    }
+  },
+  {
+    "text": "What is the full name of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Tell me the full name of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What's the complete team name for the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Give me the full official name of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "How do you say the full team name of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What's the official full name of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Can you tell me the complete name of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "I want to know the full name of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Show me the full team name for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What is the <name>'s complete official name?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What's the full official name of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "I need the complete name of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Can you give me the full name of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What is the entire name of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Tell me the complete official name for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "I'm looking for the full name of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What's the <name>'s full official team name?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Help me find the complete name of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What is the <name>'s full name?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "Can you provide the full official name of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "full_name"
+    }
+  },
+  {
+    "text": "What is the abbreviation for the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What's the team code for the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Give me the short abbreviation of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Tell me the abbreviation used for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "I want to know the three-letter code for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What's the abbreviation of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Can you tell me the <name>'s team code?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Which abbreviation does the <name> use?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "I need to know the short code for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Show me the abbreviation for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What is the <name>'s abbreviation?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Can you give me the abbreviation of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What's the short code for the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Tell me the team abbreviation for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "I'm looking for the abbreviation of the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What abbreviation is used for the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Help me find the abbreviation for the <name>.",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What's the <name>'s team abbreviation?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "Can you provide the abbreviation of the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What is the three-letter abbreviation for the <name>?",
+    "intent": "team_info",
+    "slots": {
+      "attribute": "abbreviation"
+    }
+  },
+  {
+    "text": "What position does <name> play?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Which position is <name> known for?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Tell me <name>'s playing position.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "I want to know <name>'s position.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "What's <name>'s position?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Can you tell me what position <name> plays?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "What position is <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "I need to know <name>'s playing position.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Show me <name>'s position.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Which position does <name> play on the court?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "What's <name>'s primary position?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Can you identify <name>'s position?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "What position is <name> listed as?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Tell me what position <name> plays.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "I'm curious about <name>'s position.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "What position does <name> typically play?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Help me find <name>'s position.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "What's the position of <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Can you give me <name>'s position?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "Which position does <name> occupy?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "position"
+    }
+  },
+  {
+    "text": "How tall is <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "What's <name>'s height?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Can you tell me how tall <name> is?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Tell me <name>'s height in feet.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "I want to know <name>'s height.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "What is <name>'s height?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "How many feet tall is <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Can you give me <name>'s height?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "I need to know how tall <name> is.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Show me <name>'s height.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "What's the height of <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "How tall is <name> in feet?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Can you tell me <name>'s height?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "I'm curious about <name>'s height.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "What is <name>'s height in feet and inches?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Help me find <name>'s height.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "What's <name>'s height measurement?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "Can you provide <name>'s height?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "How tall is <name> exactly?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "What's the height of <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "height"
+    }
+  },
+  {
+    "text": "How much does <name> weigh?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "What's <name>'s weight?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "Tell me <name>'s weight in pounds.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "Can you tell me how heavy <name> is?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "I want to know <name>'s weight.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "What is <name>'s weight?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "How many pounds does <name> weigh?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "Can you give me <name>'s weight?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "I need to know <name>'s weight.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "Show me <name>'s weight.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "What's the weight of <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "How much does <name> weigh in pounds?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "Can you tell me <name>'s weight?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "I'm curious about <name>'s weight.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "What is <name>'s weight measurement?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "Help me find <name>'s weight.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "What's <name>'s weight in pounds?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "Can you provide <name>'s weight?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "How heavy is <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "What's the weight of <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "weight"
+    }
+  },
+  {
+    "text": "What number does <name> wear?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Which jersey number does <name> use?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Tell me <name>'s jersey number.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "I want to know <name>'s jersey number.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "What's <name>'s jersey number?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Can you tell me what number <name> wears?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "What number is <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "I need to know <name>'s jersey number.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Show me <name>'s jersey number.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Which number does <name> wear?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "What's the jersey number of <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Can you give me <name>'s jersey number?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "What number does <name> have?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Tell me what number <name> wears.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "I'm curious about <name>'s jersey number.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "What's <name>'s number?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Help me find <name>'s jersey number.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Can you provide <name>'s jersey number?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "What number is on <name>'s jersey?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Which jersey number does <name> have?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "jersey_number"
+    }
+  },
+  {
+    "text": "Which college did <name> attend?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Where did <name> play college basketball?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Tell me <name>'s college.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "I want to know <name>'s college.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "What's <name>'s college?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Can you tell me where <name> went to college?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "What college did <name> go to?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "I need to know <name>'s college.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Show me <name>'s college.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Which college did <name> play for?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "What's the college of <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Can you give me <name>'s college?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Where did <name> attend college?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Tell me where <name> played college ball.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "I'm curious about <name>'s college.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "What college is <name> from?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Help me find <name>'s college.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Can you provide <name>'s college?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "Which university did <name> attend?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "What's <name>'s alma mater?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "college"
+    }
+  },
+  {
+    "text": "What country is <name> from?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Where is <name> from?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Which country does <name> represent?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "I want to know <name>'s country.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "What's <name>'s country?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Can you tell me what country <name> is from?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "What country does <name> come from?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "I need to know <name>'s country.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Show me <name>'s country.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Which country is <name> from?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "What's the country of <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Can you give me <name>'s country?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Where is <name> originally from?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Tell me what country <name> represents.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "I'm curious about <name>'s country.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "What country does <name> hail from?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Help me find <name>'s country.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Can you provide <name>'s country?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "Which nation is <name> from?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "What's <name>'s home country?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "country"
+    }
+  },
+  {
+    "text": "When was <name> drafted?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "In what year was <name> drafted into the NBA?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Tell me <name>'s draft year.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "I want to know <name>'s draft year.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Which year was <name> drafted?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "What's <name>'s draft year?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Can you tell me when <name> was drafted?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "What year did <name> get drafted?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "I need to know <name>'s draft year.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Show me <name>'s draft year.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "What year was <name> drafted?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Can you give me <name>'s draft year?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "When did <name> enter the NBA draft?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Tell me the year <name> was drafted.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "I'm curious about <name>'s draft year.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "What's the draft year of <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Help me find <name>'s draft year.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Can you provide <name>'s draft year?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "Which year did <name> get drafted?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "What year was <name> selected in the draft?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_year"
+    }
+  },
+  {
+    "text": "What round was <name> drafted in?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Which draft round was <name> selected in?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Tell me <name>'s draft round.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "I want to know <name>'s draft round.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "What's <name>'s draft round?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Can you tell me what round <name> was drafted in?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "In which round was <name> drafted?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "I need to know <name>'s draft round.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Show me <name>'s draft round.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Which round did <name> get drafted in?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "What's the draft round of <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Can you give me <name>'s draft round?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "What round was <name> selected in?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Tell me the round <name> was drafted in.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "I'm curious about <name>'s draft round.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "In what round was <name> drafted?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Help me find <name>'s draft round.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Can you provide <name>'s draft round?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "Which round was <name> picked in?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "What round did <name> go in?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_round"
+    }
+  },
+  {
+    "text": "What pick number was <name> in the draft?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "At what pick was <name> selected?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Tell me <name>'s draft pick number.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "I want to know <name>'s draft pick number.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Which pick was <name> selected in?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "What's <name>'s draft pick?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Can you tell me what pick <name> was?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "What draft pick was <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "I need to know <name>'s draft pick number.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Show me <name>'s draft pick number.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "What pick was <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Can you give me <name>'s draft pick?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "What number pick was <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Tell me the pick number for <name>.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "I'm curious about <name>'s draft pick.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "What's the draft pick of <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Help me find <name>'s draft pick number.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Can you provide <name>'s draft pick?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Which pick did <name> go?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "What was <name>'s draft position?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "draft_number"
+    }
+  },
+  {
+    "text": "Which team does <name> play for?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Who does <name> play for right now?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Tell me <name>'s current NBA team.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "I want to know <name>'s current NBA team.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "What's <name>'s team?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Can you tell me which team <name> plays for?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "What team is <name> on?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Which team is <name> currently with?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "I need to know <name>'s team.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Show me <name>'s current team.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "What team does <name> play for?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Can you give me <name>'s team?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Which NBA team is <name> on?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Tell me what team <name> plays for.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "I'm curious about <name>'s team.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "What's the team of <name>?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Help me find <name>'s team.",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Can you provide <name>'s current team?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "Which team is <name> a member of?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  },
+  {
+    "text": "What team does <name> belong to?",
+    "intent": "player_info",
+    "slots": {
+      "attribute": "team"
+    }
+  }
+]

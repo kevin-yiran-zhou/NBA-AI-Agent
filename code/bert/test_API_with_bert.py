@@ -1,7 +1,7 @@
 """
-Test script for End-to-End Agent.
+Test script for End-to-End Agent with BERT model.
+Tests the complete pipeline: BERT prediction -> Entity Linking -> API Call -> Response Formatting
 """
-
 import os
 import sys
 # Add parent directory to path for imports
@@ -19,7 +19,7 @@ from API.response_formatter import ResponseFormatter
 def test_API_with_bert():
     """Test the complete end-to-end pipeline."""
     print("="*60)
-    print("End-to-End Agent Test")
+    print("End-to-End Agent Test with BERT")
     print("="*60)
     
     # Set up paths - script is in code/bert/, models are at project root
@@ -57,43 +57,7 @@ def test_API_with_bert():
         )
         print("✓ Model loaded successfully!\n")
         
-        # Test queries
-        test_queries = [
-            "Which conference are the Lakers in?",
-            "What position does Stephen Curry play?",
-            "How tall is LeBron James?",
-            "What's the abbreviation for the Warriors?",
-            "Which division are the Celtics in?",
-            "What's Joel Embiid's weight?",
-        ]
-        
         print("="*60)
-        print("Testing End-to-End Pipeline")
-        print("="*60)
-        
-        for i, query in enumerate(test_queries, 1):
-            print(f"\n[Test {i}] Query: {query}")
-            print("-" * 60)
-            
-            try:
-                result = agent.process_query(query)
-                
-                print(f"Intent: {result['intent']}")
-                print(f"Slots: {result['slots']}")
-                
-                if result['api_result']['success']:
-                    print(f"✓ API Call: Success")
-                    print(f"Response: {result['formatted_response']}")
-                else:
-                    print(f"✗ API Call: Failed")
-                    print(f"Error: {result['api_result'].get('error', 'Unknown error')}")
-                
-            except Exception as e:
-                print(f"✗ Error processing query: {e}")
-                import traceback
-                traceback.print_exc()
-        
-        print("\n" + "="*60)
         print("Interactive Mode")
         print("="*60)
         print("Enter queries to test the agent (type 'exit' to quit):\n")
@@ -124,3 +88,4 @@ def test_API_with_bert():
 
 if __name__ == "__main__":
     test_API_with_bert()
+

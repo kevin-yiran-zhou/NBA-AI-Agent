@@ -38,7 +38,7 @@ class EndToEndAgent:
     """
     
     def __init__(self, model=None, tokenizer=None, intent_labels=None, 
-                 attr_labels=None, input_labels=None,
+                 attr_labels=None, input_labels=None,  # input_labels kept for compatibility but not used
                  api_service: Optional[NBAApiService] = None,
                  entity_linker: Optional[EntityLinker] = None,
                  api_router: Optional[APIRouter] = None,
@@ -159,6 +159,28 @@ class EndToEndAgent:
             "formatted_response": formatted_response
         }
     
+    def preprocess_text(self, text: str) -> str:
+        """
+        Preprocess text by replacing entities with <name> placeholder.
+        This matches the training data format.
+        
+        Args:
+            text: Input text with real entity names
+            
+        Returns:
+            Text with entities replaced by <name>
+        """
+        doc = self.nlp(text)
+        processed_text = text
+        
+        # Replace entities with <name> (in reverse order to preserve indices)
+        entities = sorted(doc.ents, key=lambda e: e.start_char, reverse=True)
+        for ent in entities:
+            # Replace entity with <name>
+            processed_text = processed_text[:ent.start_char] + "<name>" + processed_text[ent.end_char:]
+        
+        return processed_text
+    
     def extract_entity_spacy(self, text: str, intent: str) -> str:
         """
         Extract entity from text using spaCy NER based on intent.
@@ -196,9 +218,12 @@ class EndToEndAgent:
             return self.mock_predictor.predict(text)
         else:
             # Use trained model for intent and attribute
+            # Preprocess text: replace entities with <name> to match training data format
+            processed_text = self.preprocess_text(text)
+            
             # Tokenize input
             enc = self.tokenizer(
-                text,
+                processed_text,
                 return_tensors="pt",
                 truncation=True,
                 padding=True,
@@ -288,13 +313,11 @@ class EndToEndAgent:
         tokenizer = BertTokenizer.from_pretrained(model_dir)
         intent_labels = np.load(f"{model_dir}/intent_encoder.npy", allow_pickle=True)
         attr_labels = np.load(f"{model_dir}/attr_encoder.npy", allow_pickle=True)
-        input_labels = np.load(f"{model_dir}/input_encoder.npy", allow_pickle=True)
         
-        # Load model
+        # Load model (simplified version - no input prediction)
         model = BertForIntentAndAttr(
             num_intents=len(intent_labels),
-            num_attrs=len(attr_labels),
-            num_inputs=len(input_labels)
+            num_attrs=len(attr_labels)
         )
         model.load_state_dict(torch.load(f"{model_dir}/model.pt", map_location="cpu"))
         model.eval()
@@ -314,7 +337,7 @@ class EndToEndAgent:
             tokenizer=tokenizer,
             intent_labels=intent_labels,
             attr_labels=attr_labels,
-            input_labels=input_labels,
+            input_labels=None,  # Not used in new model
             api_service=api_service,
             entity_linker=entity_linker,
             api_router=api_router,

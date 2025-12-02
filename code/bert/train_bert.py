@@ -1,3 +1,7 @@
+"""
+Train BERT model for intent and attribute classification.
+Simplified version: only predicts intent and attribute (no input prediction).
+"""
 import json
 import torch
 from torch.utils.data import Dataset, DataLoader
@@ -10,27 +14,25 @@ import torch.nn as nn
 import os
 
 # ----------------------------------------------------
-# 1. Load data (train + dev)
+# 1. Load data
 # ----------------------------------------------------
 def load_data(path):
+    """Load data from JSON file."""
     with open(path, "r") as f:
         data = json.load(f)
     texts = [ex["text"] for ex in data]
     intents = [ex["intent"] for ex in data]
     attributes = [ex["slots"]["attribute"] for ex in data]
-    inputs = [ex["slots"]["input"] for ex in data]
-    return texts, intents, attributes, inputs
+    return texts, intents, attributes
 
 # ----------------------------------------------------
 # 2. Dataset class
 # ----------------------------------------------------
-
 class MultiTaskDataset(Dataset):
-    def __init__(self, texts, intents, attrs, inputs, tokenizer, max_len=64):
+    def __init__(self, texts, intents, attrs, tokenizer, max_len=64):
         self.texts = texts
         self.intents = intents
         self.attrs = attrs
-        self.inputs = inputs
         self.tokenizer = tokenizer
         self.max_len = max_len
 
@@ -49,68 +51,64 @@ class MultiTaskDataset(Dataset):
             "input_ids": enc["input_ids"].squeeze(0),
             "attention_mask": enc["attention_mask"].squeeze(0),
             "intent_label": torch.tensor(self.intents[idx], dtype=torch.long),
-            "attr_label": torch.tensor(self.attrs[idx], dtype=torch.long),
-            "input_label": torch.tensor(self.inputs[idx], dtype=torch.long)
+            "attr_label": torch.tensor(self.attrs[idx], dtype=torch.long)
         }
 
-
 # ----------------------------------------------------
-# 3. Multi-task model definition
+# 3. Multi-task model definition (Intent + Attribute only)
 # ----------------------------------------------------
 class BertForIntentAndAttr(nn.Module):
-    def __init__(self, num_intents, num_attrs, num_inputs):
+    def __init__(self, num_intents, num_attrs):
         super().__init__()
         self.bert = BertModel.from_pretrained("bert-base-uncased")
         hidden_size = self.bert.config.hidden_size
         self.dropout = nn.Dropout(0.2)
         self.intent_head = nn.Linear(hidden_size, num_intents)
         self.attr_head = nn.Linear(hidden_size, num_attrs)
-        self.input_head = nn.Linear(hidden_size, num_inputs)
         self.loss_fn = nn.CrossEntropyLoss()
 
-    def forward(self, input_ids, attention_mask, intent_labels=None, attr_labels=None, input_labels=None):
+    def forward(self, input_ids, attention_mask, intent_labels=None, attr_labels=None):
         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
         pooled = self.dropout(outputs.pooler_output)
 
         intent_logits = self.intent_head(pooled)
         attr_logits = self.attr_head(pooled)
-        input_logits = self.input_head(pooled)
 
         loss = None
-        if intent_labels is not None and attr_labels is not None and input_labels is not None:
+        if intent_labels is not None and attr_labels is not None:
             loss_intent = self.loss_fn(intent_logits, intent_labels)
             loss_attr = self.loss_fn(attr_logits, attr_labels)
-            loss_input = self.loss_fn(input_logits, input_labels)
-            loss = loss_intent + loss_attr + loss_input  # equal weighting
-        return intent_logits, attr_logits, input_logits, loss
+            loss = loss_intent + loss_attr  # equal weighting
+        # Return 4 values for compatibility with end_to_end.py (which expects input_logits as 3rd arg)
+        return intent_logits, attr_logits, None, loss
 
 # ----------------------------------------------------
 # 4. Evaluation
 # ----------------------------------------------------
-def evaluate(model, loader, device, intent_encoder, attr_encoder, input_encoder):
+def evaluate(model, loader, device, intent_encoder, attr_encoder):
     model.eval()
-    preds_intent, preds_attr, preds_input, trues_intent, trues_attr, trues_input = [], [], [], [], [], []
+    preds_intent, preds_attr, trues_intent, trues_attr = [], [], [], []
     with torch.no_grad():
         for batch in loader:
             input_ids = batch["input_ids"].to(device)
             mask = batch["attention_mask"].to(device)
-            out_intent, out_attr, out_input, _ = model(input_ids, mask)
+            out_intent, out_attr, _, _ = model(input_ids, mask)
             preds_intent.extend(out_intent.argmax(1).cpu().numpy())
             preds_attr.extend(out_attr.argmax(1).cpu().numpy())
-            preds_input.extend(out_input.argmax(1).cpu().numpy())
             trues_intent.extend(batch["intent_label"].numpy())
             trues_attr.extend(batch["attr_label"].numpy())
-            trues_input.extend(batch["input_label"].numpy())
 
+    print("\n" + "="*60)
     print("Intent classification:")
+    print("="*60)
     print(classification_report(trues_intent, preds_intent, target_names=intent_encoder.classes_, digits=4, zero_division=0))
+    print("\n" + "="*60)
     print("Attribute classification:")
+    print("="*60)
     print(classification_report(trues_attr, preds_attr, target_names=attr_encoder.classes_, digits=4, zero_division=0))
-    print("Input classification:")
-    print(classification_report(trues_input, preds_input, target_names=input_encoder.classes_, digits=4, zero_division=0, labels=range(len(input_encoder.classes_))))
 
 # ----------------------------------------------------
-# Main training script (only runs when executed directly)
+# Main training script
 # ----------------------------------------------------
 if __name__ == "__main__":
     # Set up paths - script is in code/bert/, dataset and models are at project root
@@ -122,52 +120,54 @@ if __name__ == "__main__":
     # Load data
     train_path = os.path.join(dataset_dir, "train.json")
     val_path = os.path.join(dataset_dir, "val.json")
-    train_texts, train_intents, train_attrs, train_inputs = load_data(train_path)
-    val_texts, val_intents, val_attrs, val_inputs = load_data(val_path)
+    
+    if not os.path.exists(train_path) or not os.path.exists(val_path):
+        print("❌ Error: train.json or val.json not found!")
+        print("   Run preprocess_data.py first to create train/val/test splits.")
+        exit(1)
+    
+    train_texts, train_intents, train_attrs = load_data(train_path)
+    val_texts, val_intents, val_attrs = load_data(val_path)
 
     # Encode labels
     intent_encoder = LabelEncoder()
     attr_encoder = LabelEncoder()
-    input_encoder = LabelEncoder()
     intent_encoder.fit(train_intents + val_intents)
     attr_encoder.fit(train_attrs + val_attrs)
-    input_encoder.fit(train_inputs + val_inputs)
 
     num_intents = len(intent_encoder.classes_)
     num_attrs = len(attr_encoder.classes_)
-    num_inputs = len(input_encoder.classes_)
 
     y_intent_train = intent_encoder.transform(train_intents)
     y_intent_val = intent_encoder.transform(val_intents)
     y_attr_train = attr_encoder.transform(train_attrs)
     y_attr_val = attr_encoder.transform(val_attrs)
-    y_input_train = input_encoder.transform(train_inputs)
-    y_input_val = input_encoder.transform(val_inputs)
 
     print(f"✅ Loaded {len(train_texts)} train, {len(val_texts)} val samples")
     print(f"Intents: {list(intent_encoder.classes_)}")
     print(f"Attributes: {list(attr_encoder.classes_)}")
-    print(f"Inputs: {list(input_encoder.classes_)}")
 
     # Initialize tokenizer
     tokenizer = BertTokenizer.from_pretrained("bert-base-uncased", do_lower_case=True)
 
     # Create datasets and loaders
-    train_ds = MultiTaskDataset(train_texts, y_intent_train, y_attr_train, y_input_train, tokenizer)
-    val_ds   = MultiTaskDataset(val_texts,   y_intent_val,   y_attr_val,   y_input_val,   tokenizer)
+    train_ds = MultiTaskDataset(train_texts, y_intent_train, y_attr_train, tokenizer)
+    val_ds   = MultiTaskDataset(val_texts,   y_intent_val,   y_attr_val,   tokenizer)
     train_loader = DataLoader(train_ds, batch_size=16, shuffle=True)
     val_loader   = DataLoader(val_ds,   batch_size=32)
 
     # Create model
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = BertForIntentAndAttr(num_intents, num_attrs, num_inputs).to(device)
+    print(f"\n🚀 Using device: {device}")
+    model = BertForIntentAndAttr(num_intents, num_attrs).to(device)
 
-    optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
-    epochs = 3
+    optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5, weight_decay=0.01)
+    epochs = 15
     total_steps = len(train_loader) * epochs
-    scheduler = get_linear_schedule_with_warmup(optimizer, 0, total_steps)
+    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=int(0.1 * total_steps), num_training_steps=total_steps)
 
     # Training loop
+    print(f"\n📊 Training for {epochs} epochs...")
     for epoch in range(epochs):
         model.train()
         total_loss = 0
@@ -177,10 +177,9 @@ if __name__ == "__main__":
             mask = batch["attention_mask"].to(device)
             intent_labels = batch["intent_label"].to(device)
             attr_labels = batch["attr_label"].to(device)
-            input_labels = batch["input_label"].to(device)
 
             optimizer.zero_grad()
-            _, _, _, loss = model(input_ids, mask, intent_labels, attr_labels, input_labels)
+            _, _, _, loss = model(input_ids, mask, intent_labels, attr_labels)
             loss.backward()
             optimizer.step()
             scheduler.step()
@@ -190,7 +189,7 @@ if __name__ == "__main__":
 
         print(f"\nEpoch {epoch+1} average loss: {total_loss/len(train_loader):.4f}")
         print("Val evaluation:")
-        evaluate(model, val_loader, device, intent_encoder, attr_encoder, input_encoder)
+        evaluate(model, val_loader, device, intent_encoder, attr_encoder)
 
     # Save model + encoders
     os.makedirs(models_dir, exist_ok=True)
@@ -198,6 +197,6 @@ if __name__ == "__main__":
     tokenizer.save_pretrained(models_dir)
     np.save(os.path.join(models_dir, "intent_encoder.npy"), intent_encoder.classes_)
     np.save(os.path.join(models_dir, "attr_encoder.npy"), attr_encoder.classes_)
-    np.save(os.path.join(models_dir, "input_encoder.npy"), input_encoder.classes_)
 
     print(f"\n✅ Model saved to {models_dir}/model.pt")
+

@@ -1,5 +1,8 @@
 """
-BERT module for NBA AI Agent
-Contains BERT model training, prediction, and end-to-end pipeline
+BERT module for intent and attribute classification.
 """
+from .bert import BertPredictor
+from .train_bert import BertForIntentAndAttr
+
+__all__ = ['BertPredictor', 'BertForIntentAndAttr']
 
