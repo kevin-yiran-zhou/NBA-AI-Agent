@@ -81,9 +81,14 @@ class LLMEndToEndAgent:
                 - "api_result": API call result
                 - "formatted_response": Natural language response
                 - "llm_result": Raw LLM prediction result
+                - "llm_time_ms": LLM inference time in milliseconds
+                - "api_time_ms": API call time in milliseconds
         """
+        import time
+        
         # Step 1: LLM prediction
         llm_result = self.llm_predictor.predict(user_query)
+        llm_time_ms = llm_result['llm_ms']
         
         intent = llm_result['intent']
         slots = {
@@ -94,8 +99,10 @@ class LLMEndToEndAgent:
         # Step 2: Entity Linking (handled by APIRouter internally)
         linked_slots = slots.copy()
         
-        # Step 3: API call
+        # Step 3: API call (with timing)
+        api_start = time.perf_counter()
         api_result = self.api_router.route(intent, linked_slots)
+        api_time_ms = (time.perf_counter() - api_start) * 1000.0
         
         # Step 4: Format response
         formatted_response = self.response_formatter.format(intent, api_result, slots)
@@ -106,7 +113,9 @@ class LLMEndToEndAgent:
             "linked_slots": linked_slots,
             "api_result": api_result,
             "formatted_response": formatted_response,
-            "llm_result": llm_result
+            "llm_result": llm_result,
+            "llm_time_ms": llm_time_ms,
+            "api_time_ms": api_time_ms
         }
 
 
@@ -158,7 +167,8 @@ def test_API_with_llm():
                     continue
                 
                 result = agent.process_query(query)
-                print(f"🤖 {result['formatted_response']}\n")
+                print(f"🤖 {result['formatted_response']}")
+                print(f"⏱️  Model: {result['llm_time_ms']:.2f}ms | API: {result['api_time_ms']:.2f}ms\n")
                 
             except KeyboardInterrupt:
                 print("\n\nExiting...")

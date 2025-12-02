@@ -14,6 +14,8 @@ from API.api_service import NBAApiService
 from API.entity_linker import EntityLinker
 from API.api_router import APIRouter
 from API.response_formatter import ResponseFormatter
+from bert.bert import BertPredictor
+import time
 
 
 def test_API_with_bert():
@@ -55,6 +57,8 @@ def test_API_with_bert():
             api_router=api_router,
             response_formatter=response_formatter
         )
+        # Also load BertPredictor for timing
+        bert_predictor = BertPredictor(model_dir=model_dir)
         print("✓ Model loaded successfully!\n")
         
         print("="*60)
@@ -71,8 +75,18 @@ def test_API_with_bert():
                 if not query:
                     continue
                 
+                # Track model timing (BERT + spaCy)
+                model_start = time.perf_counter()
+                bert_result = bert_predictor.predict(query, extract_entity=True, preprocess=True)
+                model_time_ms = bert_result['bert_ms'] + bert_result.get('spacy_ms', 0.0)
+                
+                # Track API timing (entity linking + API call + formatting)
+                api_start = time.perf_counter()
                 result = agent.process_query(query)
-                print(f"🤖 {result['formatted_response']}\n")
+                api_time_ms = (time.perf_counter() - api_start) * 1000.0
+                
+                print(f"🤖 {result['formatted_response']}")
+                print(f"⏱️  Model: {model_time_ms:.2f}ms | API: {api_time_ms:.2f}ms\n")
                 
             except KeyboardInterrupt:
                 print("\n\nExiting...")
