@@ -1,0 +1,299 @@
+📦 Loading Mock Predictor...
+
+🔮 Testing on 30 examples...
+
+================================================================================
+Example 1/30
+Input text: Which university did Stephen Curry attend?
+Extracted - Intent: player_info, Attribute: college, Name: Stephen Curry
+Expected - Intent: player_info, Attribute: college, Name: Stephen Curry
+Result: ✅ (Correct)
+
+================================================================================
+Example 2/30
+Input text: What's LeBron James's alma mater?
+Extracted - Intent: player_info, Attribute: position, Name: LeBron James
+Expected - Intent: player_info, Attribute: college, Name: LeBron James
+Result: ❌ (Wrong)
+
+================================================================================
+Example 3/30
+Input text: Which nation is Kevin Durant from?
+Extracted - Intent: player_info, Attribute: country, Name: Kevin Durant
+Expected - Intent: player_info, Attribute: country, Name: Kevin Durant
+Result: ✅ (Correct)
+
+================================================================================
+Example 4/30
+Input text: What's Giannis Antetokounmpo's home country?
+Extracted - Intent: player_info, Attribute: country, Name: Giannis Antetokounmpo
+Expected - Intent: player_info, Attribute: country, Name: Giannis Antetokounmpo
+Result: ✅ (Correct)
+
+================================================================================
+Example 5/30
+Input text: Which pick did Luka Doncic go?
+Extracted - Intent: player_info, Attribute: position, Name: Luka Doncic
+Expected - Intent: player_info, Attribute: draft_number, Name: Luka Doncic
+Result: ❌ (Wrong)
+
+================================================================================
+Example 6/30
+Input text: What was Jayson Tatum's draft position?
+Extracted - Intent: player_info, Attribute: position, Name: Jayson Tatum
+Expected - Intent: player_info, Attribute: draft_number, Name: Jayson Tatum
+Result: ❌ (Wrong)
+
+================================================================================
+Example 7/30
+Input text: Which round was Joel Embiid picked in?
+Extracted - Intent: player_info, Attribute: position, Name: Joel Embiid
+Expected - Intent: player_info, Attribute: draft_round, Name: Joel Embiid
+Result: ❌ (Wrong)
+
+================================================================================
+Example 8/30
+Input text: What round did Nikola Jokic go in?
+Extracted - Intent: player_info, Attribute: position, Name: Nikola Jokic
+Expected - Intent: player_info, Attribute: draft_round, Name: Nikola Jokic
+Result: ❌ (Wrong)
+
+================================================================================
+Example 9/30
+Input text: Which year did Kawhi Leonard get drafted?
+Extracted - Intent: team_info, Attribute: position, Name: Unknown
+Expected - Intent: player_info, Attribute: draft_year, Name: Kawhi Leonard
+Result: ❌ (Wrong)
+
+================================================================================
+Example 10/30
+Input text: What year was Paul George selected in the draft?
+Extracted - Intent: team_info, Attribute: position, Name: Unknown
+Expected - Intent: player_info, Attribute: draft_year, Name: Paul George
+Result: ❌ (Wrong)
+
+================================================================================
+Example 11/30
+Input text: How tall is Damian Lillard exactly?
+Extracted - Intent: player_info, Attribute: height, Name: Lillard
+Expected - Intent: player_info, Attribute: height, Name: Damian Lillard
+Result: ❌ (Wrong)
+
+================================================================================
+Example 12/30
+Input text: What's the height of Devin Booker?
+Extracted - Intent: player_info, Attribute: height, Name: Devin Booker
+Expected - Intent: player_info, Attribute: height, Name: Devin Booker
+Result: ✅ (Correct)
+
+================================================================================
+Example 13/30
+Input text: What number is on Anthony Davis's jersey?
+Extracted - Intent: player_info, Attribute: jersey_number, Name: Davis
+Expected - Intent: player_info, Attribute: jersey_number, Name: Anthony Davis
+Result: ❌ (Wrong)
+
+================================================================================
+Example 14/30
+Input text: Which jersey number does Jimmy Butler have?
+Extracted - Intent: player_info, Attribute: jersey_number, Name: Jimmy Butler
+Expected - Intent: player_info, Attribute: jersey_number, Name: Jimmy Butler
+Result: ✅ (Correct)
+
+================================================================================
+Example 15/30
+Input text: Can you give me Kyrie Irving's position?
+Extracted - Intent: player_info, Attribute: position, Name: Irving
+Expected - Intent: player_info, Attribute: position, Name: Kyrie Irving
+Result: ❌ (Wrong)
+
+================================================================================
+Example 16/30
+Input text: Which position does Russell Westbrook occupy?
+Extracted - Intent: player_info, Attribute: position, Name: Unknown
+Expected - Intent: player_info, Attribute: position, Name: Russell Westbrook
+Result: ❌ (Wrong)
+
+================================================================================
+Example 17/30
+Input text: Which team is Chris Paul a member of?
+Extracted - Intent: team_info, Attribute: conference, Name: Unknown
+Expected - Intent: player_info, Attribute: team, Name: Chris Paul
+Result: ❌ (Wrong)
+
+================================================================================
+Example 18/30
+Input text: What team does James Harden belong to?
+Extracted - Intent: player_info, Attribute: conference, Name: LeBron James
+Expected - Intent: player_info, Attribute: team, Name: James Harden
+Result: ❌ (Wrong)
+
+================================================================================
+Example 19/30
+Input text: How heavy is Klay Thompson?
+Extracted - Intent: player_info, Attribute: weight, Name: Unknown
+Expected - Intent: player_info, Attribute: weight, Name: Klay Thompson
+Result: ❌ (Wrong)
+
+================================================================================
+Example 20/30
+Input text: What's the weight of Draymond Green?
+Extracted - Intent: team_info, Attribute: weight, Name: Unknown
+Expected - Intent: player_info, Attribute: weight, Name: Draymond Green
+Result: ❌ (Wrong)
+
+================================================================================
+Example 21/30
+Input text: Can you provide the abbreviation of the Warriors?
+Extracted - Intent: team_info, Attribute: abbreviation, Name: Warriors
+Expected - Intent: team_info, Attribute: abbreviation, Name: Warriors
+Result: ✅ (Correct)
+
+================================================================================
+Example 22/30
+Input text: What is the three-letter abbreviation for the Lakers?
+Extracted - Intent: team_info, Attribute: abbreviation, Name: Lakers
+Expected - Intent: team_info, Attribute: abbreviation, Name: Lakers
+Result: ✅ (Correct)
+
+================================================================================
+Example 23/30
+Input text: Help me find the city for the Celtics.
+Extracted - Intent: team_info, Attribute: city, Name: Celtics
+Expected - Intent: team_info, Attribute: city, Name: Celtics
+Result: ✅ (Correct)
+
+================================================================================
+Example 24/30
+Input text: Which city is home to the Heat?
+Extracted - Intent: team_info, Attribute: city, Name: Heat
+Expected - Intent: team_info, Attribute: city, Name: Heat
+Result: ✅ (Correct)
+
+================================================================================
+Example 25/30
+Input text: What conference does the Bucks play in the NBA?
+Extracted - Intent: team_info, Attribute: conference, Name: Bucks
+Expected - Intent: team_info, Attribute: conference, Name: Bucks
+Result: ✅ (Correct)
+
+================================================================================
+Example 26/30
+Input text: Help me find the conference for the Nuggets.
+Extracted - Intent: team_info, Attribute: conference, Name: Nuggets
+Expected - Intent: team_info, Attribute: conference, Name: Nuggets
+Result: ✅ (Correct)
+
+================================================================================
+Example 27/30
+Input text: Help me find the division for the Mavericks.
+Extracted - Intent: team_info, Attribute: division, Name: Mavericks
+Expected - Intent: team_info, Attribute: division, Name: Mavericks
+Result: ✅ (Correct)
+
+================================================================================
+Example 28/30
+Input text: Which division does the Suns play in?
+Extracted - Intent: team_info, Attribute: division, Name: Suns
+Expected - Intent: team_info, Attribute: division, Name: Suns
+Result: ✅ (Correct)
+
+================================================================================
+Example 29/30
+Input text: What is the Clippers's full name?
+Extracted - Intent: team_info, Attribute: full_name, Name: Clippers
+Expected - Intent: team_info, Attribute: full_name, Name: Clippers
+Result: ✅ (Correct)
+
+================================================================================
+Example 30/30
+Input text: Can you provide the full official name of the 76ers?
+Extracted - Intent: team_info, Attribute: conference, Name: 76ers
+Expected - Intent: team_info, Attribute: full_name, Name: 76ers
+Result: ❌ (Wrong)
+
+
+============================================================
+Intent Classification - Summary
+============================================================
+Accuracy: 0.8667
+
+Per-class metrics:
+  player_info          - Precision: 1.0000, Recall: 0.8000, F1: 0.8889
+  team_info            - Precision: 0.7143, Recall: 1.0000, F1: 0.8333
+
+Macro avg - Precision: 0.8571, Recall: 0.9000, F1: 0.8611
+Weighted avg - Precision: 0.9048, Recall: 0.8667, F1: 0.8704
+
+============================================================
+Attribute Classification - Summary
+============================================================
+Accuracy: 0.6667
+
+Per-class metrics:
+  abbreviation         - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  city                 - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  college              - Precision: 1.0000, Recall: 0.5000, F1: 0.6667
+  conference           - Precision: 0.4000, Recall: 1.0000, F1: 0.5714
+  country              - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  division             - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  draft_number         - Precision: 0.0000, Recall: 0.0000, F1: 0.0000
+  draft_round          - Precision: 0.0000, Recall: 0.0000, F1: 0.0000
+  draft_year           - Precision: 0.0000, Recall: 0.0000, F1: 0.0000
+  full_name            - Precision: 1.0000, Recall: 0.5000, F1: 0.6667
+  height               - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  jersey_number        - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+  position             - Precision: 0.2222, Recall: 1.0000, F1: 0.3636
+  team                 - Precision: 0.0000, Recall: 0.0000, F1: 0.0000
+  weight               - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+
+Macro avg - Precision: 0.6415, Recall: 0.6667, F1: 0.6179
+Weighted avg - Precision: 0.6415, Recall: 0.6667, F1: 0.6179
+
+============================================================
+Intent Classification - Detailed Report
+============================================================
+              precision    recall  f1-score   support
+
+ player_info     1.0000    0.8000    0.8889        20
+   team_info     0.7143    1.0000    0.8333        10
+
+    accuracy                         0.8667        30
+   macro avg     0.8571    0.9000    0.8611        30
+weighted avg     0.9048    0.8667    0.8704        30
+
+
+============================================================
+Attribute Classification - Detailed Report
+============================================================
+               precision    recall  f1-score   support
+
+ abbreviation     1.0000    1.0000    1.0000         2
+         city     1.0000    1.0000    1.0000         2
+      college     1.0000    0.5000    0.6667         2
+   conference     0.4000    1.0000    0.5714         2
+      country     1.0000    1.0000    1.0000         2
+     division     1.0000    1.0000    1.0000         2
+ draft_number     0.0000    0.0000    0.0000         2
+  draft_round     0.0000    0.0000    0.0000         2
+   draft_year     0.0000    0.0000    0.0000         2
+    full_name     1.0000    0.5000    0.6667         2
+       height     1.0000    1.0000    1.0000         2
+jersey_number     1.0000    1.0000    1.0000         2
+     position     0.2222    1.0000    0.3636         2
+         team     0.0000    0.0000    0.0000         2
+       weight     1.0000    1.0000    1.0000         2
+
+     accuracy                         0.6667        30
+    macro avg     0.6415    0.6667    0.6179        30
+ weighted avg     0.6415    0.6667    0.6179        30
+
+
+============================================================
+Entity Extraction (Rule-based)
+============================================================
+Accuracy: 0.6667 (20/30)
+
+⏱️  Timing Summary:
+   Total Mock time: 1.25 ms (0.00 s)
+   Average per example: 0.04 ms

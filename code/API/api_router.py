@@ -1,56 +1,21 @@
-"""
-API Router Module
-
-This module routes intent and slots to the appropriate API calls.
-It acts as a bridge between the NLP model predictions and the API service.
-"""
-
 from typing import Optional, Dict, Any, List
 try:
     from .api_service import NBAApiService
     from .entity_linker import EntityLinker
 except ImportError:
-    # Allow running as script
     from api_service import NBAApiService
     from entity_linker import EntityLinker
 
 
 class APIRouter:
-    """
-    Routes intent and slots to appropriate API calls.
-    
-    This class takes the predicted intent and slots from the NLP model,
-    uses EntityLinker to resolve entity names to IDs, and then calls
-    the appropriate API methods.
-    """
+    """Routes intent and slots to appropriate API calls."""
     
     def __init__(self, api_service: NBAApiService, entity_linker: EntityLinker):
-        """
-        Initialize the API router.
-        
-        Args:
-            api_service: Instance of NBAApiService for API calls
-            entity_linker: Instance of EntityLinker for entity resolution
-        """
         self.api_service = api_service
         self.entity_linker = entity_linker
     
     def route(self, intent: str, slots: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Route intent and slots to the appropriate API handler.
-        
-        Args:
-            intent: The predicted intent (e.g., "team_info", "player_info")
-            slots: The predicted slots (e.g., {"input": "Lakers", "attribute": "conference"})
-            
-        Returns:
-            Dictionary containing:
-                - "success": bool indicating if the API call succeeded
-                - "data": The API response data (if successful)
-                - "error": Error message (if failed)
-                - "intent": The intent that was processed
-                - "slots": The slots that were used
-        """
+        """Route intent and slots to the appropriate API handler."""
         try:
             # Route to appropriate handler based on intent
             if intent == "team_info":
@@ -87,19 +52,7 @@ class APIRouter:
             }
     
     def handle_team_info(self, slots: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Handle team_info intent.
-        
-        Required slots:
-            - input: Team name (e.g., "Lakers", "Los Angeles Lakers")
-            - attribute: The attribute to retrieve (e.g., "conference", "division", "city", "full_name", "abbreviation")
-        
-        Args:
-            slots: Dictionary containing "input" (team name) and "attribute"
-            
-        Returns:
-            Dictionary with API result containing the requested attribute
-        """
+        """Handle team_info intent."""
         # Validate required slots
         if "input" not in slots or not slots["input"]:
             return {
@@ -162,19 +115,7 @@ class APIRouter:
         }
     
     def handle_player_info(self, slots: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Handle player_info intent.
-        
-        Required slots:
-            - input: Player name (e.g., "Stephen Curry", "LeBron James")
-            - attribute: The attribute to retrieve (e.g., "position", "height", "weight", "jersey_number", "college", "country", "draft_year", etc.)
-        
-        Args:
-            slots: Dictionary containing "input" (player name) and "attribute"
-            
-        Returns:
-            Dictionary with API result containing the requested attribute
-        """
+        """Handle player_info intent."""
         # Validate required slots
         if "input" not in slots or not slots["input"]:
             return {
@@ -237,19 +178,7 @@ class APIRouter:
         }
     
     def handle_game_lookup(self, slots: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Handle game_lookup intent.
-        
-        Required slots (one of):
-            - date: Date in YYYY-MM-DD format
-            - game_id: Game ID
-        
-        Args:
-            slots: Dictionary containing "date" or "game_id"
-            
-        Returns:
-            Dictionary with game data
-        """
+        """Handle game_lookup intent."""
         if "game_id" in slots and slots["game_id"]:
             # Get game by ID
             game_id = slots["game_id"]
@@ -311,19 +240,7 @@ class APIRouter:
             }
     
     def handle_standings(self, slots: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Handle standings intent.
-        
-        Optional slots:
-            - season: Season year (e.g., 2023)
-        
-        Args:
-            slots: Dictionary optionally containing "season"
-            
-        Returns:
-            Dictionary with standings data
-        """
-        # Note: This endpoint may not be available in the Free tier
+        """Handle standings intent."""
         # Placeholder implementation
         season = slots.get("season", 2023)
         
@@ -335,20 +252,7 @@ class APIRouter:
         }
     
     def handle_leaders(self, slots: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Handle leaders intent.
-        
-        Required slots:
-            - stat_type: Type of statistic (e.g., "pts", "reb", "ast")
-            - season: Season year (e.g., 2023)
-        
-        Args:
-            slots: Dictionary containing "stat_type" and "season"
-            
-        Returns:
-            Dictionary with leaders data
-        """
-        # Note: This endpoint may not be available in the Free tier
+        """Handle leaders intent."""
         # Placeholder implementation
         stat_type = slots.get("stat_type")
         season = slots.get("season", 2023)
@@ -369,20 +273,7 @@ class APIRouter:
         }
     
     def handle_season_averages(self, slots: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Handle season_averages intent.
-        
-        Required slots:
-            - input: Player name
-            - season: Season year (e.g., 2023)
-        
-        Args:
-            slots: Dictionary containing "input" (player name) and "season"
-            
-        Returns:
-            Dictionary with season averages data
-        """
-        # Note: This endpoint may not be available in the Free tier
+        """Handle season_averages intent."""
         # Placeholder implementation
         player_name = slots.get("input")
         season = slots.get("season", 2023)
@@ -413,19 +304,7 @@ class APIRouter:
         }
     
     def handle_box_scores(self, slots: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Handle box_scores intent.
-        
-        Required slots:
-            - date: Date in YYYY-MM-DD format
-        
-        Args:
-            slots: Dictionary containing "date"
-            
-        Returns:
-            Dictionary with box scores data
-        """
-        # Note: This endpoint may not be available in the Free tier
+        """Handle box_scores intent."""
         # Placeholder implementation
         date = slots.get("date")
         
@@ -445,18 +324,7 @@ class APIRouter:
         }
     
     def handle_injuries(self, slots: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Handle injuries intent.
-        
-        No required slots.
-        
-        Args:
-            slots: Dictionary (may be empty)
-            
-        Returns:
-            Dictionary with injuries data
-        """
-        # Note: This endpoint may not be available in the Free tier
+        """Handle injuries intent."""
         # Placeholder implementation
         return {
             "success": False,
@@ -466,19 +334,7 @@ class APIRouter:
         }
     
     def handle_odds(self, slots: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Handle odds intent.
-        
-        Required slots:
-            - date: Date in YYYY-MM-DD format
-        
-        Args:
-            slots: Dictionary containing "date"
-            
-        Returns:
-            Dictionary with odds data
-        """
-        # Note: This endpoint may not be available in the Free tier
+        """Handle odds intent."""
         # Placeholder implementation
         date = slots.get("date")
         

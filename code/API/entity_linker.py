@@ -1,29 +1,13 @@
-"""
-Entity Linking Module
-
-This module links entity names (teams/players) recognized by the model
-to their corresponding API IDs using fuzzy matching and alias handling.
-"""
-
 from typing import Optional, Dict, List, Any
 from difflib import SequenceMatcher
 try:
     from .api_service import NBAApiService
 except ImportError:
-    # Allow running as script
     from api_service import NBAApiService
 
 
 class EntityLinker:
-    """
-    Links entity names to API IDs using fuzzy matching and alias resolution.
-    
-    This class handles:
-    - Team name variations (e.g., "Lakers" -> "Los Angeles Lakers")
-    - Player name matching (full names, partial names)
-    - Fuzzy matching for typos and variations
-    - Caching for performance
-    """
+    """Links entity names to API IDs using fuzzy matching."""
     
     # Common team aliases and variations
     TEAM_ALIASES = {
@@ -95,12 +79,6 @@ class EntityLinker:
     }
     
     def __init__(self, api_service: NBAApiService):
-        """
-        Initialize the EntityLinker.
-        
-        Args:
-            api_service: An instance of NBAApiService for API calls
-        """
         self.api_service = api_service
         self._teams_cache: Optional[List[Dict[str, Any]]] = None
         self._players_cache: Optional[List[Dict[str, Any]]] = None
@@ -113,14 +91,10 @@ class EntityLinker:
         return self._teams_cache
     
     def _get_players_cache(self) -> List[Dict[str, Any]]:
-        """Get or load players cache (limited to first 1000 for performance)."""
+        """Get or load players cache (limited to first 2000 for performance)."""
         if self._players_cache is None:
-            # Load a reasonable number of players for caching
-            # In production, you might want to load all players or use a more sophisticated caching strategy
             result = self.api_service.list_players(per_page=1000)
             self._players_cache = result['data']
-            # Also try to load more players if needed (up to 2000)
-            # This helps ensure we have popular players in cache
             if result.get('meta', {}).get('next_cursor'):
                 try:
                     result2 = self.api_service.list_players(per_page=1000, cursor=result['meta']['next_cursor'])
@@ -138,20 +112,7 @@ class EntityLinker:
         return SequenceMatcher(None, s1.lower(), s2.lower()).ratio()
     
     def link_team(self, team_name: str) -> Optional[int]:
-        """
-        Link a team name to its team_id.
-        
-        Handles:
-        - Exact matches (full_name, name, abbreviation)
-        - Alias matching (e.g., "Lakers" -> "Los Angeles Lakers")
-        - Fuzzy matching for typos
-        
-        Args:
-            team_name: The team name to link
-            
-        Returns:
-            team_id if found, None otherwise
-        """
+        """Link a team name to its team_id."""
         if not team_name or not team_name.strip():
             return None
         
@@ -216,20 +177,7 @@ class EntityLinker:
         return None
     
     def link_player(self, player_name: str) -> Optional[int]:
-        """
-        Link a player name to its player_id.
-        
-        Handles:
-        - Full name matching (e.g., "Stephen Curry")
-        - Partial name matching (e.g., "Curry", "Stephen")
-        - Fuzzy matching for typos
-        
-        Args:
-            player_name: The player name to link (can be full name or partial)
-            
-        Returns:
-            player_id if found, None otherwise
-        """
+        """Link a player name to its player_id."""
         if not player_name or not player_name.strip():
             return None
         
@@ -353,16 +301,7 @@ class EntityLinker:
         return None
     
     def link_entity(self, entity_type: str, entity_name: str) -> Optional[int]:
-        """
-        Generic entity linking interface.
-        
-        Args:
-            entity_type: Type of entity ("team" or "player")
-            entity_name: Name of the entity
-            
-        Returns:
-            entity_id if found, None otherwise
-        """
+        """Generic entity linking interface."""
         if entity_type.lower() == "team":
             return self.link_team(entity_name)
         elif entity_type.lower() == "player":

@@ -1,6 +1,3 @@
-"""
-LLM Predictor for intent, attribute, and entity extraction using Qwen model.
-"""
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 import re
@@ -9,7 +6,7 @@ from typing import Dict, Optional
 
 
 class LLMPredictor:
-    """LLM-based predictor using Qwen model."""
+    """LLM predictor using Qwen model."""
     
     VALID_INTENTS = ['player_info', 'team_info']
     VALID_ATTRIBUTES = [
@@ -38,7 +35,7 @@ class LLMPredictor:
         print("✅ Model loaded successfully!")
     
     def predict(self, text: str) -> Dict:
-        """Predict intent, attribute, and entity name. Returns dict with 'intent', 'attr', 'input', 'llm_ms', 'raw_response'."""
+        """Predict intent, attribute, and entity name."""
         import time
         
         # Group attributes by intent
@@ -113,14 +110,10 @@ class LLMPredictor:
                         attr = valid
                         break
                 
-                # Validate combination - fix if invalid
+                # Validate combination
                 if intent == 'player_info' and attr not in player_attrs:
-                    # Invalid: player_info with team attribute, try to infer correct attribute from text
-                    # Default to first player attribute
                     attr = player_attrs[0]
                 elif intent == 'team_info' and attr not in team_attrs:
-                    # Invalid: team_info with player attribute, try to infer correct attribute from text
-                    # Default to first team attribute
                     attr = team_attrs[0]
                     
             except (json.JSONDecodeError, AttributeError):

@@ -1,10 +1,3 @@
-"""
-NBA API Service Module
-
-This module provides a clean interface to the BALLDONTLIE NBA API.
-Currently implements Free tier endpoints: Teams, Players, and Games.
-"""
-
 from typing import Optional, List, Dict, Any
 from balldontlie import BalldontlieAPI
 from balldontlie.exceptions import (
@@ -19,24 +12,9 @@ import os
 
 
 class NBAApiService:
-    """
-    Service class for interacting with the BALLDONTLIE NBA API.
-    
-    This class wraps the balldontlie library and provides a clean interface
-    for accessing NBA data. Currently supports Free tier endpoints only.
-    """
+    """Service class for interacting with the BALLDONTLIE NBA API."""
     
     def __init__(self, api_key_path: str = None):
-        """
-        Initialize the NBA API service.
-        
-        Args:
-            api_key_path: Path to the file containing the API key (default: API_KEY.txt in same directory)
-            
-        Raises:
-            FileNotFoundError: If the API key file is not found
-            ValueError: If the API key is empty
-        """
         if api_key_path is None:
             # Default to API_KEY.txt in the same directory as this file
             api_key_path = os.path.join(os.path.dirname(__file__), 'API_KEY.txt')
@@ -54,16 +32,7 @@ class NBAApiService:
         self._teams_cache: Optional[List[Dict[str, Any]]] = None
     
     def _handle_api_error(self, error: Exception, operation: str) -> None:
-        """
-        Handle API errors and raise appropriate exceptions.
-        
-        Args:
-            error: The exception that occurred
-            operation: Description of the operation that failed
-            
-        Raises:
-            The original exception with additional context
-        """
+        """Handle API errors and raise appropriate exceptions."""
         if isinstance(error, AuthenticationError):
             raise AuthenticationError(
                 f"Authentication failed for {operation}. "
@@ -98,22 +67,7 @@ class NBAApiService:
     
     def list_all_teams(self, division: Optional[str] = None, 
                       conference: Optional[str] = None) -> List[Dict[str, Any]]:
-        """
-        Get all NBA teams.
-        
-        Args:
-            division: Optional division filter (e.g., "Southeast", "Pacific")
-            conference: Optional conference filter ("East" or "West")
-            
-        Returns:
-            List of team dictionaries with keys: id, conference, division,
-            city, name, full_name, abbreviation
-            
-        Raises:
-            AuthenticationError: If API key is invalid
-            RateLimitError: If rate limit is exceeded
-            ServerError: If API server error occurs
-        """
+        """Get all NBA teams."""
         try:
             response = self.client.nba.teams.list(
                 division=division,
@@ -137,21 +91,7 @@ class NBAApiService:
             raise BallDontLieException(f"Unexpected error in list_all_teams: {str(e)}") from e
     
     def get_team_by_id(self, team_id: int) -> Optional[Dict[str, Any]]:
-        """
-        Get a specific team by ID.
-        
-        Args:
-            team_id: The team ID
-            
-        Returns:
-            Team dictionary with keys: id, conference, division, city,
-            name, full_name, abbreviation. Returns None if not found.
-            
-        Raises:
-            AuthenticationError: If API key is invalid
-            NotFoundError: If team ID is not found
-            RateLimitError: If rate limit is exceeded
-        """
+        """Get a specific team by ID."""
         try:
             response = self.client.nba.teams.get(team_id)
             team = response.data
@@ -172,15 +112,7 @@ class NBAApiService:
             raise BallDontLieException(f"Unexpected error in get_team_by_id: {str(e)}") from e
     
     def get_team_by_name(self, team_name: str) -> Optional[Dict[str, Any]]:
-        """
-        Get a team by name (searches full_name, name, abbreviation, city+name).
-        
-        Args:
-            team_name: Team name to search for (case-insensitive)
-            
-        Returns:
-            Team dictionary if found, None otherwise
-        """
+        """Get a team by name."""
         try:
             teams = self.list_all_teams()
             team_name_lower = team_name.lower().strip()
@@ -204,25 +136,7 @@ class NBAApiService:
                     first_name: Optional[str] = None,
                     last_name: Optional[str] = None,
                     team_ids: Optional[List[int]] = None) -> Dict[str, Any]:
-        """
-        Get a list of players with optional filters.
-        
-        Args:
-            per_page: Number of results per page (default: 25, max: 100)
-            cursor: Cursor for pagination
-            search: Search term for first or last name
-            first_name: Filter by first name
-            last_name: Filter by last name
-            team_ids: Filter by team IDs (list)
-            
-        Returns:
-            Dictionary with 'data' (list of players) and 'meta' (pagination info)
-            
-        Raises:
-            AuthenticationError: If API key is invalid
-            RateLimitError: If rate limit is exceeded
-            ValidationError: If parameters are invalid
-        """
+        """Get a list of players with optional filters."""
         try:
             response = self.client.nba.players.list(
                 per_page=per_page,
@@ -274,20 +188,7 @@ class NBAApiService:
             raise BallDontLieException(f"Unexpected error in list_players: {str(e)}") from e
     
     def get_player_by_id(self, player_id: int) -> Optional[Dict[str, Any]]:
-        """
-        Get a specific player by ID.
-        
-        Args:
-            player_id: The player ID
-            
-        Returns:
-            Player dictionary with all player information, or None if not found
-            
-        Raises:
-            AuthenticationError: If API key is invalid
-            NotFoundError: If player ID is not found
-            RateLimitError: If rate limit is exceeded
-        """
+        """Get a specific player by ID."""
         try:
             response = self.client.nba.players.get(player_id)
             player = response.data
@@ -328,16 +229,7 @@ class NBAApiService:
             raise BallDontLieException(f"Unexpected error in get_player_by_id: {str(e)}") from e
     
     def search_players(self, query: str, per_page: int = 25) -> List[Dict[str, Any]]:
-        """
-        Search for players by name.
-        
-        Args:
-            query: Search term (searches first and last name)
-            per_page: Number of results per page (default: 25, max: 100)
-            
-        Returns:
-            List of player dictionaries matching the search query
-        """
+        """Search for players by name."""
         try:
             result = self.list_players(search=query, per_page=per_page)
             return result['data']
@@ -347,17 +239,7 @@ class NBAApiService:
     def get_player_by_name(self, first_name: Optional[str] = None,
                           last_name: Optional[str] = None,
                           full_name: Optional[str] = None) -> Optional[Dict[str, Any]]:
-        """
-        Get a player by name (first name, last name, or full name).
-        
-        Args:
-            first_name: Player's first name
-            last_name: Player's last name
-            full_name: Player's full name (e.g., "Stephen Curry")
-            
-        Returns:
-            Player dictionary if found, None otherwise
-        """
+        """Get a player by name."""
         try:
             if full_name:
                 # Try to split full name
@@ -394,27 +276,7 @@ class NBAApiService:
                   postseason: Optional[bool] = None,
                   start_date: Optional[str] = None,
                   end_date: Optional[str] = None) -> Dict[str, Any]:
-        """
-        Get a list of games with optional filters.
-        
-        Args:
-            per_page: Number of results per page (default: 25, max: 100)
-            cursor: Cursor for pagination
-            dates: List of dates in YYYY-MM-DD format
-            seasons: List of season years (e.g., [2023, 2024])
-            team_ids: Filter by team IDs (list)
-            postseason: Filter by postseason (True/False)
-            start_date: Start date in YYYY-MM-DD format
-            end_date: End date in YYYY-MM-DD format
-            
-        Returns:
-            Dictionary with 'data' (list of games) and 'meta' (pagination info)
-            
-        Raises:
-            AuthenticationError: If API key is invalid
-            RateLimitError: If rate limit is exceeded
-            ValidationError: If parameters are invalid
-        """
+        """Get a list of games with optional filters."""
         try:
             response = self.client.nba.games.list(
                 per_page=per_page,
@@ -479,20 +341,7 @@ class NBAApiService:
             raise BallDontLieException(f"Unexpected error in list_games: {str(e)}") from e
     
     def get_game_by_id(self, game_id: int) -> Optional[Dict[str, Any]]:
-        """
-        Get a specific game by ID.
-        
-        Args:
-            game_id: The game ID
-            
-        Returns:
-            Game dictionary with all game information, or None if not found
-            
-        Raises:
-            AuthenticationError: If API key is invalid
-            NotFoundError: If game ID is not found
-            RateLimitError: If rate limit is exceeded
-        """
+        """Get a specific game by ID."""
         try:
             response = self.client.nba.games.get(game_id)
             game = response.data
@@ -542,16 +391,7 @@ class NBAApiService:
             raise BallDontLieException(f"Unexpected error in get_game_by_id: {str(e)}") from e
     
     def get_games_by_date(self, date: str, per_page: int = 100) -> List[Dict[str, Any]]:
-        """
-        Get all games for a specific date.
-        
-        Args:
-            date: Date in YYYY-MM-DD format
-            per_page: Number of results per page (default: 100, max: 100)
-            
-        Returns:
-            List of game dictionaries for the specified date
-        """
+        """Get all games for a specific date."""
         try:
             result = self.list_games(dates=[date], per_page=per_page)
             return result['data']
@@ -559,8 +399,6 @@ class NBAApiService:
             raise BallDontLieException(f"Error in get_games_by_date: {str(e)}") from e
     
     def clear_cache(self) -> None:
-        """
-        Clear any cached data (currently only teams cache).
-        """
+        """Clear any cached data."""
         self._teams_cache = None
 

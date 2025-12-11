@@ -1,24 +1,9 @@
-"""
-Preprocess dataset: Split all.json into train/val/test (0.8, 0.1, 0.1)
-Ensures each intent-attribute combination appears in all splits.
-For each combination (20 examples): 16 train, 2 val, 2 test
-"""
 import json
 import os
 from collections import defaultdict
 
 def preprocess_dataset(all_json_path, output_dir, train_per_combo=16, val_per_combo=2, test_per_combo=2):
-    """
-    Split dataset into train/val/test sets by intent-attribute combination.
-    Ensures each combination appears in all splits.
-    
-    Args:
-        all_json_path: Path to all.json
-        output_dir: Directory to save train.json, val.json, test.json
-        train_per_combo: Number of examples per combination for training (default: 16)
-        val_per_combo: Number of examples per combination for validation (default: 2)
-        test_per_combo: Number of examples per combination for test (default: 2)
-    """
+    """Split dataset into train/val/test sets by intent-attribute combination."""
     # Load all data
     with open(all_json_path, 'r') as f:
         data = json.load(f)
@@ -31,7 +16,7 @@ def preprocess_dataset(all_json_path, output_dir, train_per_combo=16, val_per_co
         key = (intent, attr)
         grouped[key].append(example)
     
-    # Split each group: first train_per_combo → train, next val_per_combo → val, last test_per_combo → test
+    # Split each group
     train_data = []
     val_data = []
     test_data = []
@@ -52,7 +37,7 @@ def preprocess_dataset(all_json_path, output_dir, train_per_combo=16, val_per_co
             actual_val = val_per_combo
             actual_test = test_per_combo
         
-        # Split by order (not random) to ensure consistent splits
+        # Split by order
         train_data.extend(examples[:actual_train])
         val_data.extend(examples[actual_train:actual_train + actual_val])
         test_data.extend(examples[actual_train + actual_val:actual_train + actual_val + actual_test])
@@ -112,7 +97,7 @@ def preprocess_dataset(all_json_path, output_dir, train_per_combo=16, val_per_co
     return train_path, val_path, test_path
 
 if __name__ == "__main__":
-    # Set up paths - script is in code/bert/, dataset is at project root
+    # Set up paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(os.path.dirname(script_dir))
     dataset_dir = os.path.join(project_root, "dataset")

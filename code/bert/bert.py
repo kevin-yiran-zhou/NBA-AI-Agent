@@ -1,7 +1,3 @@
-"""
-BERT Predictor for intent and attribute classification.
-Preprocesses text by replacing entities with <name> placeholder before prediction.
-"""
 from transformers import BertTokenizer
 import torch
 import numpy as np
@@ -14,16 +10,9 @@ except ImportError:
 
 
 class BertPredictor:
-    """BERT-based predictor for intent and attribute classification with spaCy entity extraction."""
+    """BERT predictor for intent and attribute classification."""
     
     def __init__(self, model_dir="../../models/bert_multi", device=None):
-        """
-        Initialize the BERT predictor.
-        
-        Args:
-            model_dir: Path to the model directory containing model.pt and encoders
-            device: torch device (auto-detected if None)
-        """
         self.model_dir = model_dir
         self.device = device if device is not None else torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
@@ -45,16 +34,7 @@ class BertPredictor:
         self.nlp = spacy.load("en_core_web_trf")
     
     def preprocess_text(self, text: str) -> str:
-        """
-        Preprocess text by replacing entities with <name> placeholder.
-        This matches the training data format.
-        
-        Args:
-            text: Input text with real entity names
-            
-        Returns:
-            Text with entities replaced by <name>
-        """
+        """Replace entities with <name> placeholder."""
         doc = self.nlp(text)
         processed_text = text
         
@@ -67,16 +47,7 @@ class BertPredictor:
         return processed_text
     
     def extract_entity_spacy(self, text: str, intent: str) -> tuple:
-        """
-        Extract entity from text using spaCy NER based on intent.
-        
-        Args:
-            text: Input text
-            intent: Predicted intent (used to filter entity types)
-            
-        Returns:
-            tuple: (entity_text, time_ms)
-        """
+        """Extract entity using spaCy NER."""
         t0 = time.perf_counter()
         doc = self.nlp(text)
         if "player" in str(intent).lower():
@@ -89,23 +60,7 @@ class BertPredictor:
         return (ents[0] if ents else "Unknown"), spacy_ms
     
     def predict(self, text: str, extract_entity: bool = True, preprocess: bool = True):
-        """
-        Predict intent and attribute for given text.
-        
-        Args:
-            text: Input text to predict (can contain real entity names)
-            extract_entity: Whether to extract entity using spaCy (default: True)
-            preprocess: Whether to preprocess text (replace entities with <name>) (default: True)
-            
-        Returns:
-            dict: {
-                'intent': predicted intent,
-                'attr': predicted attribute,
-                'input': extracted entity (if extract_entity=True),
-                'bert_ms': BERT inference time in milliseconds,
-                'spacy_ms': spaCy inference time in milliseconds (if extract_entity=True)
-            }
-        """
+        """Predict intent and attribute for given text."""
         # Preprocess text: replace entities with <name>
         if preprocess:
             processed_text = self.preprocess_text(text)

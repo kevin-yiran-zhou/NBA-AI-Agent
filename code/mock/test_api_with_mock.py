@@ -1,10 +1,3 @@
-"""
-Test API Integration with Mock Predictor
-
-This script tests the API integration without requiring a trained model.
-It uses a mock predictor that uses simple rule-based matching.
-"""
-
 import sys
 import os
 # Add parent directory to path for imports

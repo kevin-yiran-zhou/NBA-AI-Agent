@@ -1,7 +1,3 @@
-"""
-Test script for End-to-End Agent with LLM model.
-Tests the complete pipeline: LLM prediction -> Entity Linking -> API Call -> Response Formatting
-"""
 import os
 import sys
 # Add parent directory to path for imports
@@ -23,29 +19,16 @@ from API.response_formatter import ResponseFormatter
 
 
 class LLMEndToEndAgent:
-    """
-    End-to-end agent using LLM predictor.
-    Connects LLM predictions with API services.
-    """
+    """End-to-end agent using LLM predictor."""
     
     def __init__(self, llm_predictor: LLMPredictor,
                  api_service: NBAApiService = None,
                  entity_linker: EntityLinker = None,
                  api_router: APIRouter = None,
                  response_formatter: ResponseFormatter = None):
-        """
-        Initialize the LLM-based end-to-end agent.
-        
-        Args:
-            llm_predictor: LLMPredictor instance
-            api_service: NBAApiService instance (creates new if None)
-            entity_linker: EntityLinker instance (creates new if None)
-            api_router: APIRouter instance (creates new if None)
-            response_formatter: ResponseFormatter instance (creates new if None)
-        """
         self.llm_predictor = llm_predictor
         
-        # Initialize services (create if not provided)
+        # Initialize services
         if api_service is None:
             api_service = NBAApiService()
         if entity_linker is None:
@@ -61,29 +44,7 @@ class LLMEndToEndAgent:
         self.response_formatter = response_formatter
     
     def process_query(self, user_query: str):
-        """
-        Complete end-to-end processing pipeline.
-        
-        Steps:
-        1. LLM prediction (intent + attribute + entity)
-        2. Entity Linking (link entity names to IDs)
-        3. API call (via APIRouter)
-        4. Result formatting (natural language response)
-        
-        Args:
-            user_query: The user's natural language query
-            
-        Returns:
-            Dictionary containing:
-                - "intent": Predicted intent
-                - "slots": Predicted slots
-                - "linked_slots": Slots with entity IDs (if applicable)
-                - "api_result": API call result
-                - "formatted_response": Natural language response
-                - "llm_result": Raw LLM prediction result
-                - "llm_time_ms": LLM inference time in milliseconds
-                - "api_time_ms": API call time in milliseconds
-        """
+        """Process query through end-to-end pipeline."""
         import time
         
         # Step 1: LLM prediction
@@ -96,7 +57,7 @@ class LLMEndToEndAgent:
             "attribute": llm_result['attr']
         }
         
-        # Step 2: Entity Linking (handled by APIRouter internally)
+        # Step 2: Entity Linking
         linked_slots = slots.copy()
         
         # Step 3: API call (with timing)

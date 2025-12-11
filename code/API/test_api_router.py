@@ -1,7 +1,3 @@
-"""
-Test script for API Router module.
-"""
-
 try:
     from .api_service import NBAApiService
     from .entity_linker import EntityLinker

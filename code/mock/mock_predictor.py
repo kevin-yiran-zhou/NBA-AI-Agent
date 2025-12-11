@@ -1,20 +1,9 @@
-"""
-Mock Predictor Module
-
-This module provides a mock predictor that can be used to test the API integration
-without requiring a trained model. It uses simple rule-based matching to predict
-intent and slots.
-"""
-
 import re
 from typing import Dict, Any, Tuple
 
 
 class MockPredictor:
-    """
-    Mock predictor that uses simple rule-based matching to predict intent and slots.
-    This allows testing the API integration without a trained model.
-    """
+    """Rule-based predictor for intent and slot extraction."""
     
     # Team keywords
     TEAM_KEYWORDS = [
@@ -63,16 +52,7 @@ class MockPredictor:
     }
     
     def predict(self, text: str) -> Tuple[str, Dict[str, Any]]:
-        """
-        Predict intent and slots from text using simple rule-based matching.
-        
-        Args:
-            text: Input text query
-            
-        Returns:
-            Tuple of (intent, slots_dict)
-            slots_dict format: {"input": ..., "attribute": ...}
-        """
+        """Predict intent and slots from text."""
         text_lower = text.lower()
         
         # Determine intent
@@ -184,17 +164,8 @@ class MockPredictor:
         return "Unknown"
     
     def predict_with_confidence(self, text: str) -> Tuple[str, Dict[str, Any], float]:
-        """
-        Predict with confidence score (for compatibility with real model).
-        
-        Args:
-            text: Input text query
-            
-        Returns:
-            Tuple of (intent, slots_dict, confidence)
-        """
+        """Predict with confidence score."""
         intent, slots = self.predict(text)
-        # Mock confidence (always high for rule-based)
         confidence = 0.9
         return intent, slots, confidence
 

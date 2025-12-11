@@ -1,0 +1,296 @@
+📦 Loading LLM model...
+📦 Loading model Qwen/Qwen3-4B-Instruct-2507-FP8 on cuda...
+✅ Model loaded successfully!
+
+🔮 Testing on 30 examples...
+
+================================================================================
+Example 1/30
+Input text: Which university did Stephen Curry attend?
+LLM response: {"intent": "player_info", "attribute": "college", "entity": "Stephen Curry"}
+Extracted - Intent: player_info, Attribute: college, Name: Stephen Curry
+Expected - Intent: player_info, Attribute: college, Name: Stephen Curry
+Result: ✅ (Correct)
+
+================================================================================
+Example 2/30
+Input text: What's LeBron James's alma mater?
+LLM response: {"intent": "player_info", "attribute": "college", "entity": "LeBron James"}
+Extracted - Intent: player_info, Attribute: college, Name: LeBron James
+Expected - Intent: player_info, Attribute: college, Name: LeBron James
+Result: ✅ (Correct)
+
+================================================================================
+Example 3/30
+Input text: Which nation is Kevin Durant from?
+LLM response: {"intent": "player_info", "attribute": "country", "entity": "Kevin Durant"}
+Extracted - Intent: player_info, Attribute: country, Name: Kevin Durant
+Expected - Intent: player_info, Attribute: country, Name: Kevin Durant
+Result: ✅ (Correct)
+
+================================================================================
+Example 4/30
+Input text: What's Giannis Antetokounmpo's home country?
+LLM response: {"intent": "player_info", "attribute": "country", "entity": "Giannis Antetokounmpo"}
+Extracted - Intent: player_info, Attribute: country, Name: Giannis Antetokounmpo
+Expected - Intent: player_info, Attribute: country, Name: Giannis Antetokounmpo
+Result: ✅ (Correct)
+
+================================================================================
+Example 5/30
+Input text: Which pick did Luka Doncic go?
+LLM response: {"intent": "player_info", "attribute": "draft_number", "entity": "Luka Doncic"}
+Extracted - Intent: player_info, Attribute: draft_number, Name: Luka Doncic
+Expected - Intent: player_info, Attribute: draft_number, Name: Luka Doncic
+Result: ✅ (Correct)
+
+================================================================================
+Example 6/30
+Input text: What was Jayson Tatum's draft position?
+LLM response: {"intent": "player_info", "attribute": "draft_number", "entity": "Jayson Tatum"}
+Extracted - Intent: player_info, Attribute: draft_number, Name: Jayson Tatum
+Expected - Intent: player_info, Attribute: draft_number, Name: Jayson Tatum
+Result: ✅ (Correct)
+
+================================================================================
+Example 7/30
+Input text: Which round was Joel Embiid picked in?
+LLM response: {"intent": "player_info", "attribute": "draft_round", "entity": "Joel Embiid"}
+Extracted - Intent: player_info, Attribute: draft_round, Name: Joel Embiid
+Expected - Intent: player_info, Attribute: draft_round, Name: Joel Embiid
+Result: ✅ (Correct)
+
+================================================================================
+Example 8/30
+Input text: What round did Nikola Jokic go in?
+LLM response: {"intent": "player_info", "attribute": "draft_round", "entity": "Nikola Jokic"}
+Extracted - Intent: player_info, Attribute: draft_round, Name: Nikola Jokic
+Expected - Intent: player_info, Attribute: draft_round, Name: Nikola Jokic
+Result: ✅ (Correct)
+
+================================================================================
+Example 9/30
+Input text: Which year did Kawhi Leonard get drafted?
+LLM response: {"intent": "player_info", "attribute": "draft_year", "entity": "Kawhi Leonard"}
+Extracted - Intent: player_info, Attribute: draft_year, Name: Kawhi Leonard
+Expected - Intent: player_info, Attribute: draft_year, Name: Kawhi Leonard
+Result: ✅ (Correct)
+
+================================================================================
+Example 10/30
+Input text: What year was Paul George selected in the draft?
+LLM response: {"intent": "player_info", "attribute": "draft_year", "entity": "Paul George"}
+Extracted - Intent: player_info, Attribute: draft_year, Name: Paul George
+Expected - Intent: player_info, Attribute: draft_year, Name: Paul George
+Result: ✅ (Correct)
+
+================================================================================
+Example 11/30
+Input text: How tall is Damian Lillard exactly?
+LLM response: {"intent": "player_info", "attribute": "height", "entity": "Damian Lillard"}
+Extracted - Intent: player_info, Attribute: height, Name: Damian Lillard
+Expected - Intent: player_info, Attribute: height, Name: Damian Lillard
+Result: ✅ (Correct)
+
+================================================================================
+Example 12/30
+Input text: What's the height of Devin Booker?
+LLM response: {"intent": "player_info", "attribute": "height", "entity": "Devin Booker"}
+Extracted - Intent: player_info, Attribute: height, Name: Devin Booker
+Expected - Intent: player_info, Attribute: height, Name: Devin Booker
+Result: ✅ (Correct)
+
+================================================================================
+Example 13/30
+Input text: What number is on Anthony Davis's jersey?
+LLM response: {"intent": "player_info", "attribute": "jersey_number", "entity": "Anthony Davis"}
+Extracted - Intent: player_info, Attribute: jersey_number, Name: Anthony Davis
+Expected - Intent: player_info, Attribute: jersey_number, Name: Anthony Davis
+Result: ✅ (Correct)
+
+================================================================================
+Example 14/30
+Input text: Which jersey number does Jimmy Butler have?
+LLM response: {"intent": "player_info", "attribute": "jersey_number", "entity": "Jimmy Butler"}
+Extracted - Intent: player_info, Attribute: jersey_number, Name: Jimmy Butler
+Expected - Intent: player_info, Attribute: jersey_number, Name: Jimmy Butler
+Result: ✅ (Correct)
+
+================================================================================
+Example 15/30
+Input text: Can you give me Kyrie Irving's position?
+LLM response: {"intent": "player_info", "attribute": "position", "entity": "Kyrie Irving"}
+Extracted - Intent: player_info, Attribute: position, Name: Kyrie Irving
+Expected - Intent: player_info, Attribute: position, Name: Kyrie Irving
+Result: ✅ (Correct)
+
+================================================================================
+Example 16/30
+Input text: Which position does Russell Westbrook occupy?
+LLM response: {"intent": "player_info", "attribute": "position", "entity": "Russell Westbrook"}
+Extracted - Intent: player_info, Attribute: position, Name: Russell Westbrook
+Expected - Intent: player_info, Attribute: position, Name: Russell Westbrook
+Result: ✅ (Correct)
+
+================================================================================
+Example 17/30
+Input text: Which team is Chris Paul a member of?
+LLM response: {"intent": "player_info", "attribute": "team", "entity": "Chris Paul"}
+Extracted - Intent: player_info, Attribute: team, Name: Chris Paul
+Expected - Intent: player_info, Attribute: team, Name: Chris Paul
+Result: ✅ (Correct)
+
+================================================================================
+Example 18/30
+Input text: What team does James Harden belong to?
+LLM response: {"intent": "player_info", "attribute": "team", "entity": "James Harden"}
+Extracted - Intent: player_info, Attribute: team, Name: James Harden
+Expected - Intent: player_info, Attribute: team, Name: James Harden
+Result: ✅ (Correct)
+
+================================================================================
+Example 19/30
+Input text: How heavy is Klay Thompson?
+LLM response: {"intent": "player_info", "attribute": "weight", "entity": "Klay Thompson"}
+Extracted - Intent: player_info, Attribute: weight, Name: Klay Thompson
+Expected - Intent: player_info, Attribute: weight, Name: Klay Thompson
+Result: ✅ (Correct)
+
+================================================================================
+Example 20/30
+Input text: What's the weight of Draymond Green?
+LLM response: {"intent": "player_info", "attribute": "weight", "entity": "Draymond Green"}
+Extracted - Intent: player_info, Attribute: weight, Name: Draymond Green
+Expected - Intent: player_info, Attribute: weight, Name: Draymond Green
+Result: ✅ (Correct)
+
+================================================================================
+Example 21/30
+Input text: Can you provide the abbreviation of the Warriors?
+LLM response: {"intent": "team_info", "attribute": "abbreviation", "entity": "Warriors"}
+Extracted - Intent: team_info, Attribute: abbreviation, Name: Warriors
+Expected - Intent: team_info, Attribute: abbreviation, Name: Warriors
+Result: ✅ (Correct)
+
+================================================================================
+Example 22/30
+Input text: What is the three-letter abbreviation for the Lakers?
+LLM response: {"intent": "team_info", "attribute": "abbreviation", "entity": "Lakers"}
+Extracted - Intent: team_info, Attribute: abbreviation, Name: Lakers
+Expected - Intent: team_info, Attribute: abbreviation, Name: Lakers
+Result: ✅ (Correct)
+
+================================================================================
+Example 23/30
+Input text: Help me find the city for the Celtics.
+LLM response: {"intent": "team_info", "attribute": "city", "entity": "Celtics"}
+Extracted - Intent: team_info, Attribute: city, Name: Celtics
+Expected - Intent: team_info, Attribute: city, Name: Celtics
+Result: ✅ (Correct)
+
+================================================================================
+Example 24/30
+Input text: Which city is home to the Heat?
+LLM response: {"intent": "team_info", "attribute": "city", "entity": "Miami"}
+Extracted - Intent: team_info, Attribute: city, Name: Miami
+Expected - Intent: team_info, Attribute: city, Name: Heat
+Result: ❌ (Wrong)
+
+================================================================================
+Example 25/30
+Input text: What conference does the Bucks play in the NBA?
+LLM response: {"intent": "team_info", "attribute": "conference", "entity": "Bucks"}
+Extracted - Intent: team_info, Attribute: conference, Name: Bucks
+Expected - Intent: team_info, Attribute: conference, Name: Bucks
+Result: ✅ (Correct)
+
+================================================================================
+Example 26/30
+Input text: Help me find the conference for the Nuggets.
+LLM response: {"intent": "team_info", "attribute": "conference", "entity": "Nuggets"}
+Extracted - Intent: team_info, Attribute: conference, Name: Nuggets
+Expected - Intent: team_info, Attribute: conference, Name: Nuggets
+Result: ✅ (Correct)
+
+================================================================================
+Example 27/30
+Input text: Help me find the division for the Mavericks.
+LLM response: {"intent": "team_info", "attribute": "division", "entity": "Mavericks"}
+Extracted - Intent: team_info, Attribute: division, Name: Mavericks
+Expected - Intent: team_info, Attribute: division, Name: Mavericks
+Result: ✅ (Correct)
+
+================================================================================
+Example 28/30
+Input text: Which division does the Suns play in?
+LLM response: {"intent": "team_info", "attribute": "division", "entity": "Suns"}
+Extracted - Intent: team_info, Attribute: division, Name: Suns
+Expected - Intent: team_info, Attribute: division, Name: Suns
+Result: ✅ (Correct)
+
+================================================================================
+Example 29/30
+Input text: What is the Clippers's full name?
+LLM response: {"intent": "team_info", "attribute": "full_name", "entity": "Clippers"}
+Extracted - Intent: team_info, Attribute: full_name, Name: Clippers
+Expected - Intent: team_info, Attribute: full_name, Name: Clippers
+Result: ✅ (Correct)
+
+================================================================================
+Example 30/30
+Input text: Can you provide the full official name of the 76ers?
+LLM response: {"intent": "team_info", "attribute": "full_name", "entity": "76ers"}
+Extracted - Intent: team_info, Attribute: full_name, Name: 76ers
+Expected - Intent: team_info, Attribute: full_name, Name: 76ers
+Result: ✅ (Correct)
+
+
+================================================================================
+Intent Classification
+================================================================================
+Accuracy: 1.0000
+              precision    recall  f1-score   support
+
+ player_info     1.0000    1.0000    1.0000        20
+   team_info     1.0000    1.0000    1.0000        10
+
+    accuracy                         1.0000        30
+   macro avg     1.0000    1.0000    1.0000        30
+weighted avg     1.0000    1.0000    1.0000        30
+
+
+================================================================================
+Attribute Classification
+================================================================================
+Accuracy: 1.0000
+               precision    recall  f1-score   support
+
+ abbreviation     1.0000    1.0000    1.0000         2
+         city     1.0000    1.0000    1.0000         2
+      college     1.0000    1.0000    1.0000         2
+   conference     1.0000    1.0000    1.0000         2
+      country     1.0000    1.0000    1.0000         2
+     division     1.0000    1.0000    1.0000         2
+ draft_number     1.0000    1.0000    1.0000         2
+  draft_round     1.0000    1.0000    1.0000         2
+   draft_year     1.0000    1.0000    1.0000         2
+    full_name     1.0000    1.0000    1.0000         2
+       height     1.0000    1.0000    1.0000         2
+jersey_number     1.0000    1.0000    1.0000         2
+     position     1.0000    1.0000    1.0000         2
+         team     1.0000    1.0000    1.0000         2
+       weight     1.0000    1.0000    1.0000         2
+
+     accuracy                         1.0000        30
+    macro avg     1.0000    1.0000    1.0000        30
+ weighted avg     1.0000    1.0000    1.0000        30
+
+
+================================================================================
+Entity Extraction
+================================================================================
+Accuracy: 0.9667 (29/30)
+
+⏱️  Timing Summary:
+   Total time: 41611.84 ms (41.61 s)
+   Average per example: 1387.06 ms

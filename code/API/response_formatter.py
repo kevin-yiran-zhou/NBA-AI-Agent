@@ -1,29 +1,11 @@
-"""
-Response Formatter Module
-
-This module formats API results into user-friendly natural language responses.
-"""
-
 from typing import Dict, Any, Optional
 
 
 class ResponseFormatter:
-    """
-    Formats API results into natural language responses.
-    """
+    """Formats API results into natural language responses."""
     
     def format(self, intent: str, api_result: Dict[str, Any], slots: Optional[Dict[str, Any]] = None) -> str:
-        """
-        Format API result based on intent.
-        
-        Args:
-            intent: The intent type
-            api_result: The API result dictionary (from APIRouter)
-            slots: The original slots (optional, for context)
-            
-        Returns:
-            Formatted natural language response
-        """
+        """Format API result based on intent."""
         if not api_result.get("success", False):
             error = api_result.get("error", "Unknown error")
             return f"I'm sorry, I couldn't find that information. {error}"
@@ -42,16 +24,7 @@ class ResponseFormatter:
             return self.format_generic(intent, data)
     
     def format_team_info(self, data: Dict[str, Any], slots: Optional[Dict[str, Any]] = None) -> str:
-        """
-        Format team information response.
-        
-        Args:
-            data: API result data containing team_id, team_name, attribute, value
-            slots: Original slots (optional)
-            
-        Returns:
-            Formatted response string
-        """
+        """Format team information response."""
         team_name = data.get("team_name", "the team")
         attribute = data.get("attribute", "")
         value = data.get("value", "")
@@ -71,16 +44,7 @@ class ResponseFormatter:
             return f"{team_name}'s {attribute} is {value}."
     
     def format_player_info(self, data: Dict[str, Any], slots: Optional[Dict[str, Any]] = None) -> str:
-        """
-        Format player information response.
-        
-        Args:
-            data: API result data containing player_id, player_name, attribute, value
-            slots: Original slots (optional)
-            
-        Returns:
-            Formatted response string
-        """
+        """Format player information response."""
         player_name = data.get("player_name", "the player")
         attribute = data.get("attribute", "")
         value = data.get("value", "")
@@ -133,15 +97,7 @@ class ResponseFormatter:
             return f"{player_name}'s {attribute} is {value}."
     
     def format_game_info(self, data: Dict[str, Any]) -> str:
-        """
-        Format game information response.
-        
-        Args:
-            data: API result data containing game information
-            
-        Returns:
-            Formatted response string
-        """
+        """Format game information response."""
         # If it's a list of games
         if "games" in data:
             count = data.get("count", 0)
@@ -182,16 +138,7 @@ class ResponseFormatter:
             return f"On {date}, {visitor_team} vs {home_team} - Status: {status}."
     
     def format_generic(self, intent: str, data: Dict[str, Any]) -> str:
-        """
-        Generic formatter for other intents.
-        
-        Args:
-            intent: The intent type
-            data: API result data
-            
-        Returns:
-            Formatted response string
-        """
+        """Generic formatter for other intents."""
         # For intents that are not yet fully implemented
         if isinstance(data, dict) and "value" in data:
             return f"The result is: {data['value']}"

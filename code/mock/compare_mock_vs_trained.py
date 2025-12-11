@@ -1,10 +1,3 @@
-"""
-Compare Mock Predictor vs Trained Model
-
-This script demonstrates the difference between Mock predictor and trained model
-by testing queries from the training data.
-"""
-
 import json
 import sys
 import os
@@ -18,7 +11,6 @@ from end_to_end import EndToEndAgent
 
 def load_training_queries(n=10):
     """Load sample queries from training data."""
-    # Dataset is in bert/dataset/ relative to code/ directory
     dataset_path = os.path.join(_parent_dir, 'bert', 'dataset', 'train.json')
     with open(dataset_path, 'r', encoding='utf-8') as f:
         data = json.load(f)

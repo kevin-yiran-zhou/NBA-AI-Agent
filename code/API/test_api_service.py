@@ -1,9 +1,3 @@
-"""
-Test script for api_service.py
-
-This script tests the NBAApiService class to ensure all methods work correctly.
-"""
-
 try:
     from .api_service import NBAApiService
 except ImportError:

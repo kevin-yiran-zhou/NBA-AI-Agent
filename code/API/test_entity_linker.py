@@ -1,9 +1,3 @@
-"""
-Test script for entity_linker.py
-
-This script tests the EntityLinker class to ensure entity linking works correctly.
-"""
-
 try:
     from .api_service import NBAApiService
     from .entity_linker import EntityLinker

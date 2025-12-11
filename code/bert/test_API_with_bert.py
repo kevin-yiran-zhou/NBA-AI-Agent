@@ -1,7 +1,3 @@
-"""
-Test script for End-to-End Agent with BERT model.
-Tests the complete pipeline: BERT prediction -> Entity Linking -> API Call -> Response Formatting
-"""
 import os
 import sys
 # Add parent directory to path for imports
@@ -24,7 +20,7 @@ def test_API_with_bert():
     print("End-to-End Agent Test with BERT")
     print("="*60)
     
-    # Set up paths - script is in code/bert/, models are at project root
+    # Set up paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(os.path.dirname(script_dir))
     model_dir = os.path.join(project_root, "models", "bert_multi")
@@ -75,12 +71,9 @@ def test_API_with_bert():
                 if not query:
                     continue
                 
-                # Track model timing (BERT + spaCy)
                 model_start = time.perf_counter()
                 bert_result = bert_predictor.predict(query, extract_entity=True, preprocess=True)
                 model_time_ms = bert_result['bert_ms'] + bert_result.get('spacy_ms', 0.0)
-                
-                # Track API timing (entity linking + API call + formatting)
                 api_start = time.perf_counter()
                 result = agent.process_query(query)
                 api_time_ms = (time.perf_counter() - api_start) * 1000.0

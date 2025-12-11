@@ -1,7 +1,3 @@
-"""
-Train BERT model for intent and attribute classification.
-Simplified version: only predicts intent and attribute (no input prediction).
-"""
 import json
 import torch
 from torch.utils.data import Dataset, DataLoader
@@ -13,9 +9,6 @@ import numpy as np
 import torch.nn as nn
 import os
 
-# ----------------------------------------------------
-# 1. Load data
-# ----------------------------------------------------
 def load_data(path):
     """Load data from JSON file."""
     with open(path, "r") as f:
@@ -25,9 +18,6 @@ def load_data(path):
     attributes = [ex["slots"]["attribute"] for ex in data]
     return texts, intents, attributes
 
-# ----------------------------------------------------
-# 2. Dataset class
-# ----------------------------------------------------
 class MultiTaskDataset(Dataset):
     def __init__(self, texts, intents, attrs, tokenizer, max_len=64):
         self.texts = texts
@@ -54,9 +44,6 @@ class MultiTaskDataset(Dataset):
             "attr_label": torch.tensor(self.attrs[idx], dtype=torch.long)
         }
 
-# ----------------------------------------------------
-# 3. Multi-task model definition (Intent + Attribute only)
-# ----------------------------------------------------
 class BertForIntentAndAttr(nn.Module):
     def __init__(self, num_intents, num_attrs):
         super().__init__()
@@ -82,9 +69,6 @@ class BertForIntentAndAttr(nn.Module):
         # Return 4 values for compatibility with end_to_end.py (which expects input_logits as 3rd arg)
         return intent_logits, attr_logits, None, loss
 
-# ----------------------------------------------------
-# 4. Evaluation
-# ----------------------------------------------------
 def evaluate(model, loader, device, intent_encoder, attr_encoder):
     model.eval()
     preds_intent, preds_attr, trues_intent, trues_attr = [], [], [], []
@@ -107,11 +91,8 @@ def evaluate(model, loader, device, intent_encoder, attr_encoder):
     print("="*60)
     print(classification_report(trues_attr, preds_attr, target_names=attr_encoder.classes_, digits=4, zero_division=0))
 
-# ----------------------------------------------------
-# Main training script
-# ----------------------------------------------------
 if __name__ == "__main__":
-    # Set up paths - script is in code/bert/, dataset and models are at project root
+    # Set up paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(os.path.dirname(script_dir))
     dataset_dir = os.path.join(project_root, "dataset")
