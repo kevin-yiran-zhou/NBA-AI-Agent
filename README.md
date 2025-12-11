@@ -60,51 +60,31 @@ python -m spacy download en_core_web_trf
    - Create `code/API/API_KEY.txt`
    - Paste your Ball Don't Lie API key inside
 
-### Option 1: Using BERT (requires training)
+### Option 1: Using BERT
 
-First, train the model:
+Train:
 ```bash
 cd code/bert
 python train_bert.py
 ```
 
-Then use it:
-```python
-from code.end_to_end import EndToEndAgent
-
-agent = EndToEndAgent.from_model_dir("models/bert_multi")
-result = agent.process_query("Which conference are the Lakers in?")
-print(result["formatted_response"])
+Test:
+```bash
+cd code/bert
+python test_API_with_bert.py
 ```
 
-### Option 2: Using LLM (zero-shot)
+### Option 2: Using LLM
 
-```python
-from code.LLM.test_API_with_llm import LLMEndToEndAgent, LLMPredictor
-
-llm_predictor = LLMPredictor()
-agent = LLMEndToEndAgent(llm_predictor)
-result = agent.process_query("Which conference are the Lakers in?")
-print(result["formatted_response"])
-```
-
-Or run the test script:
+Test:
 ```bash
 cd code/LLM
 python test_API_with_llm.py
 ```
 
-### Option 3: Using Mock Predictor (for testing)
+### Option 3: Using Mock Predictor
 
-```python
-from code.end_to_end import EndToEndAgent
-
-agent = EndToEndAgent.with_mock_predictor()
-result = agent.process_query("Which conference are the Lakers in?")
-print(result["formatted_response"])
-```
-
-Or run the test script:
+Test:
 ```bash
 cd code/mock
 python test_api_with_mock.py
