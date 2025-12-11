@@ -2,6 +2,8 @@
 
 An AI agent that understands natural-language NBA questions and fetches answers from the Ball Don't Lie API.
 
+![System Architecture](system.png)
+
 ## 📋 Overview
 
 The system implements three NLU methods for intent classification and slot filling:
